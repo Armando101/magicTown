@@ -1,7 +1,12 @@
 import React from "react";
+import "../styles/components/App.scss";
 
 function App() {
-  return <div>My firs App using React</div>;
+  return (
+    <div className="primary">
+      <p>My first App using React</p>
+    </div>
+  );
 }
 
 export default App;
