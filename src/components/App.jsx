@@ -1,11 +1,16 @@
 import React from "react";
-import "../styles/components/App.scss";
+import HomePage from "../pages/HomePage";
+import { userInfo, mostLikedTowns, latestReviews } from "../dummyData";
 
 function App() {
   return (
-    <div className="primary">
-      <p>My first App using React</p>
-    </div>
+    <>
+      <HomePage
+        userInfo={userInfo}
+        mostLikedTowns={mostLikedTowns}
+        latestReviews={latestReviews}
+      />
+    </>
   );
 }
 

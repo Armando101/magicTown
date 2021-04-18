@@ -1,0 +1,28 @@
+@import "../base/fonts.scss";
+@import "../base/colors.scss";
+@import "../abstract/mixins.scss";
+
+.searchbar {
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  &__input {
+    height: 50px;
+    width: 420px;
+    padding: 15px;
+    font-size: 1.6rem;
+    font-family: $main-font-family;
+    border: 2px solid #131c25;
+    border-radius: 5px;
+    box-shadow: 0px 11px 20px -1px rgba($color: $primary-brand-600, $alpha: 0.5);
+  }
+  h1 {
+    font-size: 4.8rem;
+    margin-top: 60px;
+    color: $background-color;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../abstract/mixins.scss";
+@import "../base/colors.scss";
+
+.brand {
+  @include flex-row;
+  height: 100%;
+  align-items: center;
+  color: $grey-900;
+  > * {
+    margin: 0 20px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  img {
+    height: 60px;
+    width: 60px;
+  }
+}
