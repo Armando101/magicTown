@@ -1,0 +1,10 @@
+@import "../abstract/mixins.scss";
+
+.hero {
+  width: 100%;
+  height: 575px;
+  background-image: url("https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

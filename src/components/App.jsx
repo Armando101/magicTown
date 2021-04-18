@@ -1,7 +1,17 @@
 import React from "react";
+import HomePage from "../pages/HomePage";
+import { userInfo, mostLikedTowns, latestReviews } from "../dummyData";
 
 function App() {
-  return <div>My first App using React</div>;
+  return (
+    <>
+      <HomePage
+        userInfo={userInfo}
+        mostLikedTowns={mostLikedTowns}
+        latestReviews={latestReviews}
+      />
+    </>
+  );
 }
 
 export default App;

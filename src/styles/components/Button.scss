@@ -1,0 +1,20 @@
+@import "../base/colors.scss";
+
+.button {
+  min-width: 80px;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, $gradient-1, $gradient-2);
+  cursor: pointer;
+
+  p {
+    color: $background-color;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.25px;
+  }
+}

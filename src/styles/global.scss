@@ -1,6 +1,8 @@
-@import url("./base/colors.scss");
-@import url("./base/fonts.scss");
-@import url("./base/layout.scss");
+// @import url("./base/colors.scss");
+// @import url("./base/fonts.scss");
+// @import url("./base/layout.scss");
+@import "./base/colors.scss";
+@import "./base/fonts.scss";
 
 * {
   box-sizing: border-box;
@@ -12,6 +14,16 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: $background-color;
+  font-family: $main-font-family;
+}
+
 p {
   font-size: 1.6rem;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin: auto 80px;
 }
