@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/components/Button.scss";
 
-function Button(props) {
+function Button({ label }) {
   return (
     <a className="button">
-      <p>{props.label}</p>
+      <p>{label}</p>
     </a>
   );
 }

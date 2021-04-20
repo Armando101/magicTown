@@ -1,5 +1,5 @@
 import React from "react";
-import HomePage from "../pages/HomePage";
+import HomePage from "@pages/HomePage";
 import { userInfo, mostLikedTowns, latestReviews } from "../dummyData";
 
 function App() {

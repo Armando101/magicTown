@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/components/DiscoverTownCard.scss";
+import "@styles/components/DiscoverTownCard.scss";
+import Button from "./Button";
 
 function DiscoverTownCard({ townInfo }) {
   const townName = `${townInfo.name} - ${townInfo.state}`;
@@ -13,6 +14,7 @@ function DiscoverTownCard({ townInfo }) {
       <div className="discovertowncard__body">
         <h6 className="discovertowncard__title">{townName}</h6>
         <p className="discovertowncard__description">{townInfo.description}</p>
+        <Button label={"Enséñame más"} />
       </div>
     </div>
   );

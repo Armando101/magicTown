@@ -6,6 +6,9 @@
   grid-template-columns: repeat(3, minmax(auto, 450px));
   gap: 10px 30px;
   margin: 30px auto 0;
+  & h3 {
+    font-weight: normal;
+  }
   > .section-title {
     grid-column: 1/-1;
   }

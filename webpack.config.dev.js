@@ -10,6 +10,12 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@components": path.resolve(__dirname, "src/components/"),
+      "@styles": path.resolve(__dirname, "src/styles/"),
+      "@pages": path.resolve(__dirname, "src/pages/"),
+      "@layout": path.resolve(__dirname, "src/layout/"),
+    },
   },
   mode: "development",
   module: {
