@@ -7,9 +7,7 @@
   padding: 10px;
   max-width: 650px;
   min-height: 100px;
-  border: 1px solid $primary-brand-800;
-  border-radius: 20px;
-  box-shadow: 0px 5px 15px -1px rgb(147 101 19 / 25%);
+  border: none;
   .avatar {
     @include flex-column;
     height: 100%;
