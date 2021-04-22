@@ -9,15 +9,25 @@ import Main from "../layout/Main";
 
 import Review from "../components/Review";
 import Footer from "../components/Footer";
+import Popper from "../components/Popper";
 
 function HomePage({ userInfo, mostLikedTowns, latestReviews }) {
   return (
     <>
       <Header>
-        {userInfo.logged ? (
+        {!userInfo.logged ? (
           <>
             <Brand />
             <nav>
+              <Button label="Inicio" type="home" />
+              <Popper>
+                <>
+                  <Button label="Mis favoritos" />
+                  <Button label="Mis reseñas" />
+                  <Button label="Cuenta" />
+                  <Button label="Cerrar Sesión" />
+                </>
+              </Popper>
               <Avatar userInfo={userInfo} />
             </nav>
           </>
@@ -25,8 +35,9 @@ function HomePage({ userInfo, mostLikedTowns, latestReviews }) {
           <>
             <Brand />
             <nav>
-              <Button label="Registro" />
-              <Button label="Inicio de Sesión" />
+              <Button label="Inicio" type="home" />
+              <Button label="Registro" type="header" />
+              <Button label="Iniciar Sesión" type="header" />
             </nav>
           </>
         )}
