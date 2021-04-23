@@ -1,0 +1,381 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Herminia",
+      "password": "bedu2021",
+      "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. Sunt laborum elit eiusmod non non ipsum. Eu sint ullamco fugiat laboris et ex fugiat nulla nisi cillum mollit. Sint sint enim est fugiat laboris incididunt in exercitation duis incididunt elit minim ipsum exercitation. Culpa incididunt dolor cupidatat laboris magna labore ad sint tempor commodo proident sunt. Et dolor consectetur tempor cupidatat nulla aliquip minim mollit sit cupidatat anim proident consequat do. Enim irure minim irure Lorem magna. Lorem aute aute cillum aute qui pariatur quis ad eu. Cillum consectetur do laborum nostrud sint aliquip duis sint elit ea. Et exercitation quis esse deserunt consectetur anim irure dolor magna eiusmod laboris anim. Nisi ad sunt aliqua aliqua labore aute sint laborum consectetur tempor ad.",
+      "avatar": "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg",
+      "favourites": []
+    },
+    {
+      "id": 2,
+      "username": "Raul",
+      "password": "bedu2021",
+      "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. Sunt laborum elit eiusmod non non ipsum. Eu sint ullamco fugiat laboris et ex fugiat nulla nisi cillum mollit. Sint sint enim est fugiat laboris incididunt in exercitation duis incididunt elit minim ipsum exercitation. Culpa incididunt dolor cupidatat laboris magna labore ad sint tempor commodo proident sunt. Et dolor consectetur tempor cupidatat nulla aliquip minim mollit sit cupidatat anim proident consequat do. Enim irure minim irure Lorem magna. Lorem aute aute cillum aute qui pariatur quis ad eu. Cillum consectetur do laborum nostrud sint aliquip duis sint elit ea. Et exercitation quis esse deserunt consectetur anim irure dolor magna eiusmod laboris anim. Nisi ad sunt aliqua aliqua labore aute sint laborum consectetur tempor ad.",
+      "avatar": "https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg",
+      "favourites": []
+    },
+    {
+      "id": 3,
+      "username": "Armando",
+      "password": "bedu2021",
+      "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. Sunt laborum elit eiusmod non non ipsum. Eu sint ullamco fugiat laboris et ex fugiat nulla nisi cillum mollit. Sint sint enim est fugiat laboris incididunt in exercitation duis incididunt elit minim ipsum exercitation. Culpa incididunt dolor cupidatat laboris magna labore ad sint tempor commodo proident sunt. Et dolor consectetur tempor cupidatat nulla aliquip minim mollit sit cupidatat anim proident consequat do. Enim irure minim irure Lorem magna. Lorem aute aute cillum aute qui pariatur quis ad eu. Cillum consectetur do laborum nostrud sint aliquip duis sint elit ea. Et exercitation quis esse deserunt consectetur anim irure dolor magna eiusmod laboris anim. Nisi ad sunt aliqua aliqua labore aute sint laborum consectetur tempor ad.",
+      "avatar": "https://eshendetesia.com/images/profile/po.jpeg",
+      "favourites": []
+    },
+    {
+      "id": 4,
+      "username": "Sebastian",
+      "password": "bedu2021",
+      "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. Sunt laborum elit eiusmod non non ipsum. Eu sint ullamco fugiat laboris et ex fugiat nulla nisi cillum mollit. Sint sint enim est fugiat laboris incididunt in exercitation duis incididunt elit minim ipsum exercitation. Culpa incididunt dolor cupidatat laboris magna labore ad sint tempor commodo proident sunt. Et dolor consectetur tempor cupidatat nulla aliquip minim mollit sit cupidatat anim proident consequat do. Enim irure minim irure Lorem magna. Lorem aute aute cillum aute qui pariatur quis ad eu. Cillum consectetur do laborum nostrud sint aliquip duis sint elit ea. Et exercitation quis esse deserunt consectetur anim irure dolor magna eiusmod laboris anim. Nisi ad sunt aliqua aliqua labore aute sint laborum consectetur tempor ad.",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQTc75is72-G1uGWDy1_NIOW7l6xLnOJzGogEANzqG8oynySXFPQRdAxTcf95K2iM98Gs&usqp=CAU",
+      "favourites": []
+    }
+  ],
+  "towns": [
+    {
+      "id": 1,
+      "rate": 0,
+      "name": "San Pedro Tlaquepaque",
+      "state": "Jalisco",
+      "clima": "Semicálido",
+      "incorporation_year": "2018",
+      "biome": "Urbano",
+      "attractions": ["Andador Independencia"],
+      "festivities": ["Fiestas de San Pedro Tlaquepaque"],
+      "dishes": ["Carne en su jugo"],
+      "ethnics": [],
+      "photos": [
+        "https://media.timeout.com/images/103928725/image.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/ParqueHidalgoTlaque2.jpg",
+        "https://live.staticflickr.com/5625/30587546262_47530e08d1_b.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 2,
+      "rate": 0,
+      "name": "Lagos de Moreno",
+      "state": "Jalisco",
+      "clima": "Semiseco",
+      "incorporation_year": "2012",
+      "biome": "Valle",
+      "attractions": ["Parroquia de la Asunción en el Centro Histórico"],
+      "festivities": ["Fiestas a Nuestro Padre Jesús del Calvario"],
+      "dishes": ["Pacholas"],
+      "ethnics": [],
+      "photos": [
+        "https://www.mexicoenfotos.com/MX15099484704679.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/BIBLIOTECA_PUBLICA_REGIONAL_%22MARIA_SOINE_DE_HELGUERA%22_DE_LAGOS_DE_MORENO%2CJALISCO._MEXICO..jpg",
+        "https://udgtv.com/wp-content/uploads/2017/07/Lagos-de-Moreno-Medios.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 3,
+      "rate": 0,
+      "name": "Tequila",
+      "state": "Jalisco",
+      "clima": "Subtropical",
+      "incorporation_year": "2003",
+      "biome": "Valle",
+      "attractions": ["Tren Tequila Express o el José Cuervo Express"],
+      "festivities": ["Feria Nacional del Tequila"],
+      "dishes": ["Birria"],
+      "ethnics": ["Chichimecas", "Otomíes", "Toltecas", "Nahuatlacas"],
+      "photos": [
+        "https://www.gob.mx/cms/uploads/image/file/521316/Tequila-JALISCO-web.jpg",
+        "https://mk0outandaboutpf40tm.kinstacdn.com/wp-content/uploads/2020/01/Depositphotos_9999077_xl-2015-scaled.jpg",
+        "https://www.tripsavvy.com/thmb/O5IBhrKz82kD8eCKOwbp3gBE4n4=/2048x1367/filters:no_upscale():max_bytes(150000):strip_icc()/Guadalajara_Tequila3-10eb091deddf43e682714b39f7924fe1.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 4,
+      "rate": 0,
+      "name": "Yuriria",
+      "state": "Guanajuato",
+      "clima": "Semicálido",
+      "incorporation_year": "2012",
+      "biome": "Bosque",
+      "attractions": ["Laguna de Yuriria"],
+      "festivities": ["Fiesta de la Preciosa Sangre de Cristo"],
+      "dishes": ["Caldo michi"],
+      "ethnics": [],
+      "photos": [
+        "https://www.mexicodesconocido.com.mx/wp-content/uploads/2019/06/guanajuato-yuriria-exconvento-JC-0716_JCmd.gif",
+        "https://losmundosdemexico.com/wp-content/uploads/2018/01/Yuriria-Pueblo-Ma%CC%81gico-Guanajuato-.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Lago_Yuriria%2C_Guanajuato-_Yuriria_Lake%2C_Guanajuato_%2824321532035%29.jpg/1200px-Lago_Yuriria%2C_Guanajuato-_Yuriria_Lake%2C_Guanajuato_%2824321532035%29.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 5,
+      "rate": 0,
+      "name": "Jalpa de Canovas",
+      "state": "Guanajuato",
+      "clima": "Subhúmedo",
+      "incorporation_year": "2012",
+      "biome": "Bosque",
+      "attractions": ["Hacienda de Jalpa de Cánovas"],
+      "festivities": ["La Judea"],
+      "dishes": ["Caldo de zorra"],
+      "ethnics": [],
+      "photos": [
+        "https://guanajuato.mx/site2/wp-content/uploads/2020/12/jalpa-de-canovas-pueblo-magico-de-guanajuato.jpg",
+        "https://www.eleconomista.com.mx/__export/1507908201289/sites/eleconomista/img/historico/principal-jalapa-canovas.jpg_1612941218.jpg",
+        "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/11/jalpa_de_canovas_el_pueblo_magico_que_nacio_al-interior_de_una_hacienda_mexico_travel_channel_1200X680.jpg.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 6,
+      "rate": 0,
+      "name": "Mineral de Pozos",
+      "state": "Guanajuato",
+      "clima": "Semiseco",
+      "incorporation_year": "2012",
+      "biome": "Semidesierto",
+      "attractions": ["Mina de los Cinco Señores"],
+      "festivities": ["Señor de los Trabajos"],
+      "dishes": ["Colonche"],
+      "ethnics": [],
+      "photos": [
+        "https://www.gob.mx/cms/uploads/article/main_image/86002/Gto_mineral-de-pozos-web.jpg",
+        "https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2017-10/mineral-pozos.jpg",
+        "https://www.eluniversal.com.mx/sites/default/files/2019/03/26/mineral-pozos-guanajuato-pueblo-magico-1.jpeg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 7,
+      "rate": 0,
+      "name": "Batopilas",
+      "state": "Chihuahua",
+      "clima": "Semihúmedo",
+      "incorporation_year": "2012",
+      "biome": "Montaña",
+      "attractions": ["Hacienda San Miguel"],
+      "festivities": ["Fiestas Patronales de la Virgen del Carmen"],
+      "dishes": ["Chile con queso"],
+      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
+      "photos": [
+        "https://www.pueblosmagicosde.org/wp-content/uploads/2019/07/Batopilas-Pueblo-Magico-de-Chihuahua-v001-compressor.jpg",
+        "http://cdn.shopify.com/s/files/1/2492/3552/articles/Batopilas_1200x1200.jpg?v=1524244168",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xomgMg4T1gINcYplQ9HWfgzIKjEBzukAHg&usqp=CAU"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 8,
+      "rate": 0,
+      "name": "Casas Grandes",
+      "state": "Chihuahua",
+      "clima": "Extremo",
+      "incorporation_year": "2015",
+      "biome": "Desierto",
+      "attractions": ["Zona arqueológica Paquimé"],
+      "festivities": ["Cabalgata Binacional Villista"],
+      "dishes": ["Tostada de lomo de cerdo"],
+      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
+      "photos": [
+        "https://www.gob.mx/cms/uploads/image/file/520871/Chihuahua_Casas-Crandes_web.jpg",
+        "https://www.gob.mx/cms/uploads/article/main_image/84967/Chihuahua_Casas-Crandes_Paquime-web.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/04/Plaza_Mormona_en_Nuevo_Casas_Grandes%2C_Chihuahua.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 9,
+      "rate": 0,
+      "name": "Creel",
+      "state": "Chihuahua",
+      "clima": "Templado",
+      "incorporation_year": "2007",
+      "biome": "Sierra",
+      "attractions": ["Barrancas del Cobre"],
+      "festivities": ["Fiesta patronal de Cristo Rey"],
+      "dishes": ["Caldillo de carne seca"],
+      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
+      "photos": [
+        "https://i.pinimg.com/originals/a5/c2/62/a5c2626d356882b1be43d1a98ab363e1.jpg",
+        "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/09/creel-monjes-facebook-mtch-1200x680ok.jpg",
+        "https://static.travelagewest.com/i/sized/780/437/www.cfmedia.vfmleonardo.com/imageRepo/2/0/65/502/36/001_Exterior_view_(Exterior_view)_R.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 10,
+      "rate": 0,
+      "name": "Mazunte",
+      "state": "Oaxaca",
+      "clima": "Cálido",
+      "incorporation_year": "2015",
+      "biome": "Playa",
+      "attractions": ["Centro Mexicano de la Tortuga"],
+      "festivities": ["Festival Internacional de Jazz"],
+      "dishes": ["Mariscos"],
+      "ethnics": ["Náhuatl"],
+      "photos": [
+        "https://www.playasmexico.mx/IMG/arton598.jpg",
+        "https://hotbook.com.mx/wp-content/uploads/2015/12/oaxaca_portada.jpg",
+        "https://d3tf9yuhsp2bpn.cloudfront.net/images/2020/08/29/20200829-1598676280-Atardecer-en-Punta-Cometa-desde-Puerto-tu-experiencia-II.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 11,
+      "rate": 0,
+      "name": "San Pablo Villa de Mitla",
+      "state": "Oaxaca",
+      "clima": "Seco",
+      "incorporation_year": "2015",
+      "biome": "Valle",
+      "attractions": ["Zona Arqueológica de Yagul y Mitla"],
+      "festivities": ["Villa Mágica de Mitla"],
+      "dishes": ["Mole"],
+      "ethnics": ["Zapotecos", "Mixtecos"],
+      "photos": [
+        "https://www.gob.mx/cms/uploads/article/main_image/85797/Oaxaca-Mitla-Zona-Arqueologica-web.jpg",
+        "https://mexicodesconocidoviajes.mx/wp-content/uploads/2019/09/mitla_IG_md_ok.jpg",
+        "https://i0.wp.com/oaxacaculture.com/wp-content/uploads/2019/12/IMG_9936-2-1-scaled.jpg?fit=500%2C690"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 12,
+      "rate": 0,
+      "name": "Santa Catarina Juquila",
+      "state": "Oaxaca",
+      "clima": "Húmedo",
+      "incorporation_year": "2020",
+      "biome": "Bosque",
+      "attractions": ["Santuario Mariano de la Inmaculada Virgen de Juquila"],
+      "festivities": ["Celebración de la Virgen de Juquila"],
+      "dishes": ["Enchiladas Juquileñas"],
+      "ethnics": ["Chatinos"],
+      "photos": [
+        "https://www.gob.mx/cms/uploads/article/main_image/102846/foto__5_.JPG",
+        "https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2019-04/juquila-Portada%20%281%29.jpg",
+        "http://renacimientooaxaca.mx/media/k2/items/cache/5fa21cd9e0d2531a2f1dfdffbab46f70_XL.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 13,
+      "rate": 0,
+      "name": "Aculco",
+      "state": "Estado de México",
+      "clima": "Subhúmedo",
+      "incorporation_year": "2015",
+      "biome": "Montaña",
+      "attractions": ["Cascadas la concepción Tixhiñu"],
+      "festivities": ["Día de la Fraternidad"],
+      "dishes": ["Escamoles"],
+      "ethnics": ["Otomíes"],
+      "photos": [
+        "https://www.gob.mx/cms/uploads/image/file/530648/Mexico_Aculco_Cascada-Tixhin_u-web.jpg",
+        "http://revistaaventurero.com.mx/wp-content/uploads/2018/09/ACULCO-www.aculco.gob_.mx_.jpg",
+        "https://turismoi.mx/uploads/mx/photo/photo_file/16140/2108-1.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 14,
+      "rate": 0,
+      "name": "Ixtapan de la Sal",
+      "state": "Estado de México",
+      "clima": "Semicálido ",
+      "incorporation_year": "2015",
+      "biome": "Bosque",
+      "attractions": ["Museo Arturo San Román"],
+      "festivities": ["Asunción de María"],
+      "dishes": ["Chilacayotes en pipián"],
+      "ethnics": ["Matlatzincas", "Otomíes"],
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6c/PlazaChurchIxtapan.JPG",
+        "https://www.mexicodesconocido.com.mx/sites/default/files/fichas-destino/estado_mexico_ixtapan_sal_parroquia_asuncion_sl.jpg",
+        "https://www.dondeir.com/wp-content/uploads/2018/01/ixtapan-la-sal-5-lugares-imperdibles-del-pueblo-magico-4.jpg"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 15,
+      "rate": 0,
+      "name": "Valle del Carbon",
+      "state": "Estado de México",
+      "clima": "Templado",
+      "incorporation_year": "2015",
+      "biome": "Bosque",
+      "attractions": ["Cerro de la Bufa"],
+      "festivities": ["Aniversario de la Erección de Villa del Carbón"],
+      "dishes": ["Barbacoa de carnero"],
+      "ethnics": ["Cachihuapan", "Taxhimay", "Temanacoya", "Zacapexco"],
+      "photos": [
+        "https://www.eluniversal.com.mx/sites/default/files/2017/02/27/principal_-_cortesia_turismo_del_estado_de_mexico.jpg",
+        "http://cdn.shopify.com/s/files/1/2492/3552/articles/taxhimay_1200x1200.jpg?v=1517506071",
+        "https://experiencia.edomex.gob.mx/sites/default/files/2020-08/Villa%20del%20Carb%C3%B3n%2C%20Centro%2C%20Kiosco_1.jpg"
+      ],
+      "reviews": []
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userId": 1,
+      "townId": 3,
+      "rate": 5,
+      "description": "No te puedes perder el tour del maestro tequilero, podrás conocer los paisajes y las tequileras. No olvides usar protector solar y un sombrero",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "townId": 1,
+      "rate": 4,
+      "description": "Tu primer parada sin duda debe ser el Parián, podrás disfrutar de música, bebidas y artesanías. No olvides tomarte una foto en Andador independencia",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "townId": 4,
+      "rate": 4,
+      "description": "Comerse un helado en los muelles mientras el viento sopla no tiene precio. ¿Qué onda con el cocodrilo de metal que pusieron en el centro? jaja",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "townId": 4,
+      "rate": 5,
+      "description": "Un pueblo fantasma por excelencia, te sientes como en una película. Entrar a las minas es una experiencia emocionante",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "townId": 9,
+      "rate": 4,
+      "description": "Lugar muy interesante en especial los recorridos en áreas Tarahumaras",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "townId": 7,
+      "rate": 3,
+      "description": "Bonito pero con clima muy incomodo",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "townId": 10,
+      "rate": 5,
+      "description": "Exquisito clima y gastronomía. Las playas de Oaxaca son sin dudarlo, las mejores del país",
+      "creation_date": "2021-03-07T01:23:46.000Z"
+    }
+  ]
+}
