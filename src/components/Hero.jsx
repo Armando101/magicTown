@@ -1,10 +1,13 @@
 import React from "react";
 import "../styles/components/Hero.scss";
 import SearchForm from "./SearchForm";
-function Hero(props) {
+function Hero({ isSearch = true, cover }) {
   return (
     <div className="hero">
-      <SearchForm />
+      <div>
+        <img src={cover} alt="Foto" />
+        {isSearch && <SearchForm />}
+      </div>
     </div>
   );
 }
