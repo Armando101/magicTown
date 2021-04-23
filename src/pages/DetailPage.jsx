@@ -1,6 +1,7 @@
 import React from "react";
-import About from "../components/About";
-import Hero from "../components/Hero";
+import About from "@components/About";
+import Galeria from "@components/Galery";
+import Hero from "@components/Hero";
 
 const details = [
   {
@@ -9,6 +10,8 @@ const details = [
     stars: 5,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vero asperiores labore laborum culpa velit accusantium eius ipsam quam expedita sed ea, illo quibusdam nam dolorum ipsa id. Veniam, voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora officia eveniet minima, ipsum pariatur enim perspiciatis velit iusto eos, architecto similique a reprehenderit ad debitis dolores. Sapiente nesciunt consequatur ad molestias exercitationem accusantium id quaerat iusto sunt quibusdam, veritatis tempora libero, commodi minus alias rerum. Possimus maxime dolores atque.",
+    cover:
+      "https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg",
   },
   {
     id: 1,
@@ -16,6 +19,8 @@ const details = [
     stars: 3,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vero asperiores labore laborum culpa velit accusantium eius ipsam quam expedita sed ea, illo quibusdam nam dolorum ipsa id. Veniam, voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora officia eveniet minima, ipsum pariatur enim perspiciatis velit iusto eos, architecto similique a reprehenderit ad debitis dolores. Sapiente nesciunt consequatur ad molestias exercitationem accusantium id quaerat iusto sunt quibusdam, veritatis tempora libero, commodi minus alias rerum. Possimus maxime dolores atque.",
+    cover:
+      "https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg",
   },
   {
     id: 2,
@@ -23,6 +28,8 @@ const details = [
     stars: 1,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vero asperiores labore laborum culpa velit accusantium eius ipsam quam expedita sed ea, illo quibusdam nam dolorum ipsa id. Veniam, voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora officia eveniet minima, ipsum pariatur enim perspiciatis velit iusto eos, architecto similique a reprehenderit ad debitis dolores. Sapiente nesciunt consequatur ad molestias exercitationem accusantium id quaerat iusto sunt quibusdam, veritatis tempora libero, commodi minus alias rerum. Possimus maxime dolores atque.",
+    cover:
+      "https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg",
   },
   {
     id: 3,
@@ -30,6 +37,8 @@ const details = [
     stars: 3,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vero asperiores labore laborum culpa velit accusantium eius ipsam quam expedita sed ea, illo quibusdam nam dolorum ipsa id. Veniam, voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora officia eveniet minima, ipsum pariatur enim perspiciatis velit iusto eos, architecto similique a reprehenderit ad debitis dolores. Sapiente nesciunt consequatur ad molestias exercitationem accusantium id quaerat iusto sunt quibusdam, veritatis tempora libero, commodi minus alias rerum. Possimus maxime dolores atque.",
+    cover:
+      "https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg",
   },
   {
     id: 4,
@@ -37,6 +46,8 @@ const details = [
     stars: 4,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vero asperiores labore laborum culpa velit accusantium eius ipsam quam expedita sed ea, illo quibusdam nam dolorum ipsa id. Veniam, voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora officia eveniet minima, ipsum pariatur enim perspiciatis velit iusto eos, architecto similique a reprehenderit ad debitis dolores. Sapiente nesciunt consequatur ad molestias exercitationem accusantium id quaerat iusto sunt quibusdam, veritatis tempora libero, commodi minus alias rerum. Possimus maxime dolores atque.",
+    cover:
+      "https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg",
   },
 ];
 
@@ -46,14 +57,14 @@ const DetailPage = (props) => {
   /*
     Esto se reemplazará por una llamda a la API
   */
-  const cover =
-    "https://www.eluniversal.com.mx/sites/default/files/2019/07/26/taxco_de_alarcon_pueblo_magico_0.jpg";
+
   const town = details.find((town) => String(town.id) === idTown);
   console.log(town);
   return (
     <>
-      <Hero isSearch={false} cover={cover} />
+      <Hero isSearch={false} cover={town.cover} />
       <About {...town} />
+      <Galeria />
     </>
   );
 };

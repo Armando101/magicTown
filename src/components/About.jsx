@@ -34,7 +34,6 @@ const About = ({ name, stars, description }) => {
             ></iframe>`,
         }}
       />
-      ;
     </section>
   );
 };
