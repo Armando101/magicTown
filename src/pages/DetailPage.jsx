@@ -2,6 +2,7 @@ import React from "react";
 import About from "@components/About";
 import Galeria from "@components/Galery";
 import Hero from "@components/Hero";
+import Comments from "../components/Comments";
 
 const details = [
   {
@@ -65,6 +66,7 @@ const DetailPage = (props) => {
       <Hero isSearch={false} cover={town.cover} />
       <About {...town} />
       <Galeria />
+      <Comments name={town.name} />
     </>
   );
 };
