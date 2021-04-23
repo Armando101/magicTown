@@ -3,12 +3,9 @@
 .discover {
   display: grid;
   grid-template-rows: 60px repeat(1, 2fr);
-  grid-template-columns: repeat(3, minmax(auto, 450px));
-  gap: 10px 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 18px;
   margin: 30px auto 0;
-  & h3 {
-    font-weight: normal;
-  }
   > .section-title {
     grid-column: 1/-1;
   }
