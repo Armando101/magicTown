@@ -16,8 +16,10 @@ const About = ({ name, stars, description }) => {
             </label>
           ))}
         </div>
-        <h3>Acerca de</h3>
-        <p>{description}</p>
+        <div className="about__description">
+          <h3 className="about__title">Acerca de</h3>
+          <p>{description}</p>
+        </div>
       </div>
       <div
         className="about__map"
