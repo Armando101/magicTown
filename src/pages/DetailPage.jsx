@@ -7,7 +7,7 @@ const details = [
   {
     id: 0,
     name: "Bernal, Queretaro",
-    stars: 5,
+    stars: 4,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vero asperiores labore laborum culpa velit accusantium eius ipsam quam expedita sed ea, illo quibusdam nam dolorum ipsa id. Veniam, voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora officia eveniet minima, ipsum pariatur enim perspiciatis velit iusto eos, architecto similique a reprehenderit ad debitis dolores. Sapiente nesciunt consequatur ad molestias exercitationem accusantium id quaerat iusto sunt quibusdam, veritatis tempora libero, commodi minus alias rerum. Possimus maxime dolores atque.",
     cover:
