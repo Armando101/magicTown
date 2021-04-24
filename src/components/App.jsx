@@ -4,6 +4,7 @@ import { userInfo, mostLikedTowns, latestReviews } from "../dummyData";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import DetailPage from "@pages/DetailPage";
 
+
 function App() {
   return (
     <>
