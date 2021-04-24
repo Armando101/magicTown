@@ -1,17 +1,15 @@
 import React from "react";
 import HomePage from "@pages/HomePage";
 import { userInfo, mostLikedTowns, latestReviews } from "../dummyData";
-
+import AppRouter from "../routers/AppRouter";
 
 function App() {
   return (
-    <>
-      <HomePage
-        userInfo={userInfo}
-        mostLikedTowns={mostLikedTowns}
-        latestReviews={latestReviews}
-      />
-    </>
+    <AppRouter
+      userInfo={userInfo}
+      mostLikedTowns={mostLikedTowns}
+      latestReviews={latestReviews}
+    />
   );
 }
 

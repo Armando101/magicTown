@@ -7,6 +7,7 @@ import Avatar from "./Avatar";
 import Popper from "@material-ui/core/Popper";
 
 import "../styles/components/Navbar.scss";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar({ userInfo }) {
   const [togglePopper, setTogglePopper] = useState({
@@ -28,7 +29,9 @@ function Navbar({ userInfo }) {
     <nav className="navbar">
       {userInfo ? (
         <>
-          <Button label="Inicio" type="home" />
+          <NavLink to="/home" className="button button--home">
+            <p>Inicio</p>
+          </NavLink>
           <Button
             label=""
             type={`navbar-popper ${togglePopper.clicked ? "--clicked" : ""}`}
@@ -36,19 +39,33 @@ function Navbar({ userInfo }) {
           />
           <Popper open={togglePopper.openEl} anchorEl={togglePopper.anchorEl}>
             <div className="navbar-menu">
-              <Button label="Mis favoritos" />
-              <Button label="Mis reseñas" />
-              <Button label="Cuenta" />
-              <Button label="Cerrar Sesión" />
+              <NavLink to="/profile/favorites" className="button">
+                <p>Mis favoritos</p>
+              </NavLink>
+              <NavLink to="/profile/reviews" className="button">
+                <p>Mis reseñas</p>
+              </NavLink>
+              <NavLink to="/profile" className="button">
+                <p>Cuenta</p>
+              </NavLink>
+              <NavLink to="/home" className="button">
+                <p>Cerrar Sesión</p>
+              </NavLink>
             </div>
           </Popper>
           <Avatar userInfo={userInfo} />
         </>
       ) : (
         <>
-          <Button label="Inicio" type="home" />
-          <Button label="Registro" type="header" />
-          <Button label="Iniciar Sesión" type="header" />
+          <NavLink to="/home" className="button button--home">
+            <p>Inicio</p>
+          </NavLink>
+          <NavLink to="/home" className="button button--header">
+            <p>Registro</p>
+          </NavLink>
+          <NavLink to="/login" className="button button--header">
+            <p>Iniciar Sesión</p>
+          </NavLink>
         </>
       )}
     </nav>
