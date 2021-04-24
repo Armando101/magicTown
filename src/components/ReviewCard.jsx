@@ -17,7 +17,7 @@ function ReviewCard({ reviewInfo }) {
         <header className="reviewcard__header">
           <div className="reviewcard_stars">
             <h4>{reviewInfo.townName}</h4> <Rating name="read-only" value={reviewInfo.rate} readOnly />
-          </div>
+          </div> {reviewInfo.rate}
         </header>
         <q className="reviewcard__copy"> {reviewInfo.description} </q>
         <div className="author">

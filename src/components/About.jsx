@@ -1,20 +1,20 @@
 import React from "react";
 import "@styles/components/About.scss";
+import Rating from "@material-ui/lab/Rating";
 
 const About = ({ name, stars, description, maps }) => {
-  console.log(name, stars, description);
-  const starsArr = [...Array(stars).keys()];
+  // console.log(name, stars, description);
   return (
     <section className="about">
       <div className="about__info">
-        <h2 className="about__name">{name}</h2>
-        <div className="about__stars">
-          {starsArr.map((_, index) => (
-            <label className="about__star" key={index}>
-              {" "}
-              ⭐{" "}
-            </label>
-          ))}
+        <div className="detail_stars">
+          <h1>{name}</h1>{" "}
+          <Rating
+            className="detail_stars"
+            name="read-only"
+            value={stars}
+            readOnly
+          />
         </div>
         <div className="about__description">
           <h3 className="about__title">Acerca de</h3>
