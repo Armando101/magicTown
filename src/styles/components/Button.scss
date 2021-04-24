@@ -6,11 +6,14 @@
   height: 37px;
   margin: 0 24px;
   border-radius: 8px;
-  background-image: linear-gradient(to top, $gradient-1, $gradient-2);
+  background-image: linear-gradient(to right, $gradient-1, $gradient-2);
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  &:hover {
+    filter: brightness(0.75);
+  }
   > p {
     color: #fff;
     padding: 8px 24px;

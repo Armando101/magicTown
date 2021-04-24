@@ -4,7 +4,7 @@ import Discover from "../components/Discover";
 import Hero from "../components/Hero";
 import Main from "../layout/Main";
 
-import Review from "../components/Review";
+import Reviews from "../components/Reviews";
 import Footer from "../components/Footer";
 
 function HomePage({ userInfo, mostLikedTowns, latestReviews }) {
@@ -13,7 +13,7 @@ function HomePage({ userInfo, mostLikedTowns, latestReviews }) {
       <Hero />
       <Main>
         <Discover mostLikedTowns={mostLikedTowns} />
-        <Review latestReviews={latestReviews} />
+        <Reviews userInfo={userInfo} latestReviews={latestReviews} />
       </Main>
       <Footer />
     </>

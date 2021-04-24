@@ -10,19 +10,45 @@
   text-align: center;
   width: 100%;
   height: 100%;
-  &__input {
+  &__form {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
     height: 50px;
+  }
+  &__input {
+    height: 100%;
     width: 420px;
-    padding: 15px;
+    padding: 8px 8px 8px 16px;
     font-size: 1.6rem;
     font-family: $main-font-family;
-    border: 2px solid #131c25;
-    border-radius: 5px;
-    box-shadow: 0px 11px 20px -1px rgba($color: $primary-brand-600, $alpha: 0.5);
+    border: none;
+    border-radius: 5px 0 0 5px;
+    &::placeholder {
+      color: $grey-300;
+    }
+  }
+  &__submit {
+    height: 100%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: $primary-brand-500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    > img {
+      width: 70%;
+      height: 70%;
+    }
+    &:hover {
+      background-color: $primary-brand-600;
+    }
   }
   h1 {
-    font-size: 4.8rem;
-    margin-top: 60px;
+    font-size: 6.4rem;
+    margin-top: 80px;
     color: $background-color;
+    > span {
+      color: $primary-brand-500;
+    }
   }
 }
