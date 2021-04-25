@@ -50,5 +50,8 @@
     margin-top: 80px;
     color: $background-color;
     text-shadow: 0px 0px 11px black;
+    & span {
+      color: $primary-brand-500;
+    }
   }
 }
