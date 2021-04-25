@@ -1,6 +1,7 @@
 import React from "react";
 import "@styles/components/About.scss";
 import Rating from "@material-ui/lab/Rating";
+import Map from "./Map";
 
 const About = ({ name, stars, description, maps }) => {
   // console.log(name, stars, description);
@@ -21,19 +22,7 @@ const About = ({ name, stars, description, maps }) => {
           <p>{description}</p>
         </div>
       </div>
-      <div
-        className="about__map"
-        dangerouslySetInnerHTML={{
-          __html: `<iframe
-              src=${maps}
-              width="100%"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>`,
-        }}
-      />
+      <Map maps={maps} />
     </section>
   );
 };
