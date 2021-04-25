@@ -11,8 +11,7 @@
     margin-left: auto;
   }
   &__user {
-    @include flex-column;
-    justify-content: center;
+    @include flex-column(center);
     margin-left: 25px;
 
     &-name {
@@ -27,10 +26,22 @@
       color: $grey-400;
     }
   }
+  & Button {
+    align-self: center;
+    width: 240px;
+  }
   &__social {
+    @include flex-row(normal, center);
+    align-self: center;
+    & > p {
+      font-size: 1.9rem;
+      font-weight: 500;
+      margin-right: 15px;
+    }
     & img {
       width: 40px;
       height: 40px;
+      margin-right: 20px;
     }
   }
 }
