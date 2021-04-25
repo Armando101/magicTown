@@ -1,0 +1,32 @@
+.input-review {
+  margin-top: 32px;
+  margin-left: 100px;
+  width: 90%;
+  &__rate {
+    display: flex;
+    align-items: center;
+    & p {
+      margin-right: 20px;
+    }
+  }
+  &__area {
+    width: 90%;
+    height: 80px;
+    font-family: "Montserrat";
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 32px;
+    padding-left: 10px;
+    padding-top: 7px;
+    border: solid 1px gray;
+    resize: none;
+  }
+  &__button {
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+    & Button {
+      font-size: 1rem;
+    }
+  }
+}
