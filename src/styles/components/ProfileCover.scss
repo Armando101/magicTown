@@ -1,10 +1,36 @@
+@import "@styles/base/colors.scss";
+@import "@styles/abstract/mixins.scss";
+
 .profile-cover {
-  display: flex;
-  & img {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 3fr;
+  & > img {
     width: 144px;
     height: 144px;
     border-radius: 300px;
+    margin-left: auto;
   }
   &__user {
+    @include flex-column;
+    justify-content: center;
+    margin-left: 25px;
+
+    &-name {
+      font-size: 2.3rem;
+      font-weight: normal;
+      color: $grey-600;
+      margin-bottom: 10px;
+    }
+    &-date {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: $grey-400;
+    }
+  }
+  &__social {
+    & img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
