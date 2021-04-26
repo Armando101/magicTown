@@ -14,7 +14,7 @@ function DiscoverTownCard({ townInfo }) {
       <div className="discovertowncard__body">
         <h6 className="discovertowncard__title">{townName}</h6>
         <p className="discovertowncard__description">{townInfo.description}</p>
-        <Button label={"Enséñame más"} />
+        <Button label="Enséñame más" />
       </div>
     </div>
   );

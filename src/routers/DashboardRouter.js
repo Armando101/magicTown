@@ -6,6 +6,7 @@ import Brand from "../components/Brand";
 import Navbar from "../components/Navbar";
 import DetailsPage from "../pages/DetailsPage";
 import HomePage from "../pages/HomePage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
   return (
@@ -18,17 +19,6 @@ function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
       <Switch>
         <Route
           exact
-          path="/details/:townId"
-          component={() => (
-            <DetailsPage
-              userInfo={userInfo}
-              mostLikedTowns={mostLikedTowns}
-              latestReviews={latestReviews}
-            />
-          )}
-        />
-        <Route
-          exact
           path="/home"
           component={() => (
             <HomePage
@@ -39,7 +29,19 @@ function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
           )}
         />
 
-        <Redirect to="/home" />
+        <Route
+          exact
+          path="/details/:townId"
+          component={() => (
+            <DetailsPage
+              userInfo={userInfo}
+              mostLikedTowns={mostLikedTowns}
+              latestReviews={latestReviews}
+            />
+          )}
+        />
+
+        <Route component={NotFoundPage} />
       </Switch>
     </>
   );
