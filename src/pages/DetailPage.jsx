@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import About from "@components/About";
 import Galeria from "@components/Galery";
 import Hero from "@components/Hero";
 import Comments from "../components/Comments";
+
+import { UserContext } from "../context/UserContext";
 
 const details = [
   {
@@ -68,12 +70,13 @@ const DetailPage = (props) => {
   /*
     Esto se reemplazará por una llamda a la API
   */
-
+  const { user, setUser } = useContext(UserContext);
   const town = details.find((town) => String(town.id) === idTown);
   console.log(town);
   return (
     <>
       <Hero isSearch={false} cover={town.cover} />
+      <p>{new String(user)}</p>
       <About {...town} />
       <Galeria />
       <Comments name={town.name} />
