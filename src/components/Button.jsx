@@ -3,12 +3,12 @@ import "../styles/components/Button.scss";
 
 function Button({ label, type, onClick }) {
   return (
-    <a
-      className={!type ? `button` : `button button--${type}`}
+    <button
+      className={`button ${!type ? "" : `button--${type}`}`}
       onClick={onClick}
     >
       <p>{label}</p>
-    </a>
+    </button>
   );
 }
 

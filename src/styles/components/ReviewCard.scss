@@ -34,6 +34,9 @@
   @include flex-row;
   align-items: center;
   gap: 24px;
+  & span {
+    font-size: 2rem;
+  }
 }
 .reviewcard__copy {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

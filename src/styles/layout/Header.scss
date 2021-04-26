@@ -5,7 +5,6 @@
 .header {
   @include flex-row;
   width: 100%;
-  max-width: $breakpoint-xl;
   height: 88px;
   align-items: center;
   justify-content: space-between;

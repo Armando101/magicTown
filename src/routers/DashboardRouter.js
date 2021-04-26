@@ -4,7 +4,7 @@ import { Redirect, Route, Switch } from "react-router";
 import Header from "../layout/Header";
 import Brand from "../components/Brand";
 import Navbar from "../components/Navbar";
-import DetailsPage from "../pages/DetailsPage";
+import DetailPage from "../pages/DetailPage";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 
@@ -30,15 +30,9 @@ function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
         />
 
         <Route
+          path="/detail/:id"
           exact
-          path="/details/:townId"
-          component={() => (
-            <DetailsPage
-              userInfo={userInfo}
-              mostLikedTowns={mostLikedTowns}
-              latestReviews={latestReviews}
-            />
-          )}
+          render={(props) => <DetailPage {...props} />}
         />
 
         <Route component={NotFoundPage} />
