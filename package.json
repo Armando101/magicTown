@@ -36,7 +36,8 @@
     "webpack-dev-server": "^3.11.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-minimizer-webpack-plugin": "^2.0.0",
-    "terser-webpack-plugin": "^5.1.1"
+    "terser-webpack-plugin": "^5.1.1",
+    "source-map-loader": "^1.0.0"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",

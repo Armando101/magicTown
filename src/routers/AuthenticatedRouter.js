@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route, Switch } from "react-router";
+import { Route, Switch, withRouter } from "react-router";
 
 import Header from "../layout/Header";
 import Brand from "../components/Brand";
@@ -8,19 +8,19 @@ import DetailPage from "../pages/DetailPage";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 
-function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
+function AuthenticatedRouter({ userInfo, mostLikedTowns, latestReviews }) {
   return (
     <>
       <Header>
         <Brand />
-        <Navbar userInfo={userInfo} />
+        <Navbar />
       </Header>
 
       <Switch>
         <Route
           exact
           path="/home"
-          component={() => (
+          render={() => (
             <HomePage
               userInfo={userInfo}
               mostLikedTowns={mostLikedTowns}
@@ -29,11 +29,11 @@ function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
           )}
         />
 
-        <Route
-          path="/detail/:id"
-          exact
-          render={(props) => <DetailPage {...props} />}
-        />
+        <Route exact path="/detail/:id" render={() => withRouter(DetailPage)} />
+
+        <Route exact path="/profile" />
+        <Route exact path="/profile/reviews" />
+        <Route exact path="/profile/favorites" />
 
         <Route component={NotFoundPage} />
       </Switch>
@@ -41,4 +41,4 @@ function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
   );
 }
 
-export default DashboardRouter;
+export default AuthenticatedRouter;

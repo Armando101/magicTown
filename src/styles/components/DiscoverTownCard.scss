@@ -12,6 +12,7 @@
   background-color: white;
   &__thumbnail {
     width: 60%;
+    max-width: 80px;
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;

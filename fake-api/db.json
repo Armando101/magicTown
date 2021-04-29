@@ -42,9 +42,29 @@
       "clima": "Cálido",
       "incorporation_year": "2012",
       "biome": "Sierra Madre Occidental",
-      "attractions": ["Parroquia del Señor del Salitre", "Plazuela Hidalgo", "El Parián", "Los Chamucos", "La Presa de Malpaso", "Caídas de agua de Los Alisos y Ciénega", "Cascadas de los Huenchos y el Garruño", "Llanura de la Ciénega de Quijas"],
-      "festivities": ["Fiestra patronal de El Señor del Salitre", "Feria de la Guayaba", "Festival de Día de Muertos"],
-      "dishes": ["Dulces de guayaba", "Chuletas glaseadas de guayaba", "Tostada de jaiba", "Camarones empanizados", "Huachinango frito", "Pozole verde y rojo"],
+      "attractions": [
+        "Parroquia del Señor del Salitre",
+        "Plazuela Hidalgo",
+        "El Parián",
+        "Los Chamucos",
+        "La Presa de Malpaso",
+        "Caídas de agua de Los Alisos y Ciénega",
+        "Cascadas de los Huenchos y el Garruño",
+        "Llanura de la Ciénega de Quijas"
+      ],
+      "festivities": [
+        "Fiestra patronal de El Señor del Salitre",
+        "Feria de la Guayaba",
+        "Festival de Día de Muertos"
+      ],
+      "dishes": [
+        "Dulces de guayaba",
+        "Chuletas glaseadas de guayaba",
+        "Tostada de jaiba",
+        "Camarones empanizados",
+        "Huachinango frito",
+        "Pozole verde y rojo"
+      ],
       "ethnics": ["Wixárikas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82715/calvillo_aguascalientes.jpeg",
@@ -61,9 +81,28 @@
       "clima": "Semicálido",
       "incorporation_year": "2006",
       "biome": "Semidesierto",
-      "attractions": ["Acueducto Escondido de Asientos", "Casa Larrañaga", "Ex Convento del Señor del Tepozán", "Monasterio Franciscano del siglo XVII", "Museo Minero", "Museo de Cactáceas", "Parroquia de Nuestra Señora de Belén", "Santuario de Guadalupe", "Tren El Piojito"],
-      "festivities": ["Fiesta de Nuestra Señora de Belén", "Fiestas del Señor de Tepozán", "Día del minero", "Fiestas a San Francisco de Asís"],
-      "dishes": ["Conejo a la Chichimeca", "Gorditas de la región", "Dulces típicos de la región"],
+      "attractions": [
+        "Acueducto Escondido de Asientos",
+        "Casa Larrañaga",
+        "Ex Convento del Señor del Tepozán",
+        "Monasterio Franciscano del siglo XVII",
+        "Museo Minero",
+        "Museo de Cactáceas",
+        "Parroquia de Nuestra Señora de Belén",
+        "Santuario de Guadalupe",
+        "Tren El Piojito"
+      ],
+      "festivities": [
+        "Fiesta de Nuestra Señora de Belén",
+        "Fiestas del Señor de Tepozán",
+        "Día del minero",
+        "Fiestas a San Francisco de Asís"
+      ],
+      "dishes": [
+        "Conejo a la Chichimeca",
+        "Gorditas de la región",
+        "Dulces típicos de la región"
+      ],
       "ethnics": ["Chichimecas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/83860/CALLE-real-de-asientos-web.jpg",
@@ -80,8 +119,23 @@
       "clima": "Subtropical",
       "incorporation_year": "2015",
       "biome": "Cañón semidesértico",
-      "attractions": ["Accesorios de charrería", "Boca del túnel", "Iglesia Parroquial", "Mercado de artesanías", "Palacio Municipal", "Plaza principal", "Presa del Jocoque", "Presa Plutarco", "Recorridos en bicicleta", "Santuario del Cristo Roto"],
-      "festivities": ["Feria del Maíz", "Fiesta de San Juan", "Feria del Libro de San José de Gracia"],
+      "attractions": [
+        "Accesorios de charrería",
+        "Boca del túnel",
+        "Iglesia Parroquial",
+        "Mercado de artesanías",
+        "Palacio Municipal",
+        "Plaza principal",
+        "Presa del Jocoque",
+        "Presa Plutarco",
+        "Recorridos en bicicleta",
+        "Santuario del Cristo Roto"
+      ],
+      "festivities": [
+        "Feria del Maíz",
+        "Fiesta de San Juan",
+        "Feria del Libro de San José de Gracia"
+      ],
       "dishes": ["Pacholas de Aguascalientes", "Membrillete con queso"],
       "ethnics": ["Chichimecas"],
       "photos": [
@@ -99,7 +153,13 @@
       "clima": "Semicálido",
       "incorporation_year": "2012",
       "biome": "Bosque",
-      "attractions": ["Cervecería Tecate", "Ruta Puerta Norte del Vino", "La Rumorosa y El Vallecito", "El Cuchamá", "Zona Arqueológica Vallecitos"],
+      "attractions": [
+        "Cervecería Tecate",
+        "Ruta Puerta Norte del Vino",
+        "La Rumorosa y El Vallecito",
+        "El Cuchamá",
+        "Zona Arqueológica Vallecitos"
+      ],
       "festivities": ["Danzas de La Rumorosa"],
       "dishes": ["Pan dulce y vino", "Tiradito de abulón"],
       "ethnics": ["Yumanos"],
@@ -118,9 +178,23 @@
       "clima": "Semicálido",
       "incorporation_year": "2012",
       "biome": "Bahía",
-      "attractions": ["Misión de Nuestra Señora de Loreto", "Observación de ballenas", "Sierra de la Giganta", "Centro Histórico", "Misión de San Francisco Javier de Viggé Biaundó"],
-      "festivities": ["Fiestas de Nuestra Señora de Loreto", "Fundación de Loreto", "Fiesta de San Javier"],
-      "dishes": ["Machaca de pescado", "Almejas tatemadas", "Tortillas de harina"],
+      "attractions": [
+        "Misión de Nuestra Señora de Loreto",
+        "Observación de ballenas",
+        "Sierra de la Giganta",
+        "Centro Histórico",
+        "Misión de San Francisco Javier de Viggé Biaundó"
+      ],
+      "festivities": [
+        "Fiestas de Nuestra Señora de Loreto",
+        "Fundación de Loreto",
+        "Fiesta de San Javier"
+      ],
+      "dishes": [
+        "Machaca de pescado",
+        "Almejas tatemadas",
+        "Tortillas de harina"
+      ],
       "ethnics": ["Pericúes"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/83862/Chicas-Playa-Loreto-BCS_web.jpg",
@@ -137,9 +211,24 @@
       "clima": "Semicálido",
       "incorporation_year": "2006",
       "biome": "Oasis",
-      "attractions": ["Punta Lobos", "Club de Playa de Guaycura", "Hotel California", "Misión de Todos Santos​"],
-      "festivities": ["Festival del Arte", "Festival de Reggae", "Festival de Cine Latino", "Fiestas patronales"],
-      "dishes": ["Machaca de carne seca", "Camarones rellenos", "Filete imperial de camarón", "Tortillas de harina"],
+      "attractions": [
+        "Punta Lobos",
+        "Club de Playa de Guaycura",
+        "Hotel California",
+        "Misión de Todos Santos​"
+      ],
+      "festivities": [
+        "Festival del Arte",
+        "Festival de Reggae",
+        "Festival de Cine Latino",
+        "Fiestas patronales"
+      ],
+      "dishes": [
+        "Machaca de carne seca",
+        "Camarones rellenos",
+        "Filete imperial de camarón",
+        "Tortillas de harina"
+      ],
       "ethnics": ["Pericúes"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82793/TODOS-SANTOS.jpg",
@@ -156,7 +245,12 @@
       "clima": "Semihúmedo",
       "incorporation_year": "2012",
       "biome": "Montaña",
-      "attractions": ["Barrancas del Cobre", "Casa Barffuson", "Chepe", "Hacienda San Miguel"],
+      "attractions": [
+        "Barrancas del Cobre",
+        "Casa Barffuson",
+        "Chepe",
+        "Hacienda San Miguel"
+      ],
       "festivities": ["Fiestas Patronales de la Virgen del Carmen"],
       "dishes": ["Chile con queso"],
       "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
@@ -188,7 +282,7 @@
     },
     {
       "id": 9,
-      "rate": 0,
+      "rate": 2,
       "name": "Creel",
       "state": "Chihuahua",
       "clima": "Templado",
@@ -498,7 +592,8 @@
       "rate": 3,
       "description": "Muy interesante la historia detrás de las zonas arqueológicas, los telares y artesanías de la región. La comida ni se diga, deliciosa...",
       "creation_date": "2021-03-07T01:23:46.000Z"
-    },{
+    },
+    {
       "id": 9,
       "userId": 2,
       "townId": 21,

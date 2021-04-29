@@ -4,11 +4,13 @@ import Button from "./Button";
 
 function DiscoverTownCard({ townInfo }) {
   const townName = `${townInfo.name} - ${townInfo.state}`;
+  const thumbnail = { ...townInfo.photos };
+
   return (
     <div className="discovertowncard">
       <img
         className="discovertowncard__thumbnail"
-        src={townInfo.thumbnail}
+        src={thumbnail[0]}
         alt={townName}
       />
       <div className="discovertowncard__body">

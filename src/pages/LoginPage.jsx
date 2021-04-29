@@ -1,11 +1,7 @@
 import React from "react";
 
-function LoginPage() {
-  return (
-    <div>
-      <h1>Login</h1>
-    </div>
-  );
+function LoginPage({ children }) {
+  return <>{children}</>;
 }
 
 export default LoginPage;

@@ -1,0 +1,62 @@
+@import "../abstract/mixins.scss";
+@import "../../styles/base/colors.scss";
+
+.login-wrapper {
+  @include flex-column;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0), #111),
+    url(https://i.ibb.co/dGDgVcK/erik-aquino-r0z-S3-YIFAU-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  > form {
+    width: 650px;
+    height: 600px;
+    @include flex-column;
+    background-color: #fff;
+    border: solid 2px $grey-200;
+    border-radius: 8px;
+    box-shadow: 0 20px 16px -8px rgba(147, 175, 191, 0.2);
+    padding: 40px;
+    > h1 {
+      font-size: 4.8rem;
+      color: $primary-brand-600;
+      margin-bottom: 72px;
+    }
+    > p {
+      font-size: 1.6rem;
+      color: $grey-500;
+      margin-bottom: 24px;
+    }
+    > label {
+      font-size: 1.6rem;
+      color: $grey-500;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    > input {
+      height: 60px;
+      padding: 20px 24px;
+      border-radius: 8px;
+      border: 1px solid $grey-300;
+      margin-bottom: 24px;
+    }
+    > span {
+      margin: 24px 0 12px;
+      color: $grey-400;
+      font-size: 1.6rem;
+    }
+    > a {
+      color: $primary-brand-600;
+      font-size: 1.6rem;
+    }
+  }
+  & ~ .header {
+    background-color: $primary-brand-500;
+  }
+}

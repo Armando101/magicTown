@@ -7,13 +7,13 @@ import Main from "../layout/Main";
 import Reviews from "../components/Reviews";
 import Footer from "../components/Footer";
 
-function HomePage({ userInfo, mostLikedTowns, latestReviews }) {
+function HomePage({ mostLikedTowns, latestReviews }) {
   return (
     <>
       <Hero />
       <Main>
         <Discover mostLikedTowns={mostLikedTowns} />
-        <Reviews userInfo={userInfo} latestReviews={latestReviews} />
+        <Reviews latestReviews={latestReviews} />
       </Main>
       <Footer />
     </>

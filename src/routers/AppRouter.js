@@ -1,26 +1,31 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { useContext } from "react";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import DashboardRouter from "./DashboardRouter";
-import LoginPage from "../pages/LoginPage";
+import { UserContext } from "../context/UserContext";
+import AuthenticatedRouter from "./AuthenticatedRouter";
+import NoAuthenticatedRouter from "./NoAuthenticatedRouter";
 
-function AppRouter({ userInfo, mostLikedTowns, latestReviews }) {
+function AppRouter({ mostLikedTowns, latestReviews }) {
+  const { user, setUser } = useContext(UserContext);
+
   return (
     <Router>
       <>
         <div className="content-wrapper">
           <Switch>
-            <Route exact path="/login" component={() => <LoginPage />} />
-            <Route
-              path="/"
-              component={() => (
-                <DashboardRouter
-                  userInfo={userInfo}
-                  mostLikedTowns={mostLikedTowns}
-                  latestReviews={latestReviews}
-                />
-              )}
-            ></Route>
+            {user ? (
+              <AuthenticatedRouter
+                userInfo={user}
+                mostLikedTowns={mostLikedTowns}
+                latestReviews={latestReviews}
+              />
+            ) : (
+              <NoAuthenticatedRouter
+                userInfo={user}
+                mostLikedTowns={mostLikedTowns}
+                latestReviews={latestReviews}
+              />
+            )}
           </Switch>
         </div>
       </>

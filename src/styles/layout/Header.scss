@@ -30,4 +30,7 @@
     width: auto;
     align-items: center;
   }
+  &--login {
+    background-color: $primary-brand-500;
+  }
 }

@@ -4,7 +4,7 @@
   "description": "MagicTownsFake-API",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 8080"
+    "start": "json-server --watch db.json --port 8080 "
   },
   "author": "Equipo 9",
   "license": "ISC",
