@@ -1,5 +1,6 @@
 import React from "react";
-import FavoritesCard from "./FavoritesCard";
+import FavoritesCards from "./FavoritesCards";
+import "@styles/components/favorites.scss";
 
 const cards = [
   {
@@ -46,11 +47,9 @@ const cards = [
 
 const Favorites = () => {
   return (
-    <section>
+    <section className="favorites">
       <h3>Mis favoritos</h3>
-      {cards.map((card) => (
-        <FavoritesCard key={card.id} {...card} />
-      ))}
+      <FavoritesCards cards={cards} />
     </section>
   );
 };
