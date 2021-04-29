@@ -1,0 +1,11 @@
+@import "@styles/base/colors.scss";
+
+.favorites {
+  & h3 {
+    font-size: 3.3rem;
+    font-weight: normal;
+    color: $grey-500;
+    margin-top: 40px;
+    margin-left: 66px;
+  }
+}
