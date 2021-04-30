@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/components/Review.scss";
+import "../styles/components/MediaQueries.scss";
 import Button from "./Button";
 import ReviewCard from "./ReviewCard";
+
 
 function Reviews({ userInfo, latestReviews }) {
   return (

@@ -4,6 +4,14 @@ import Galeria from "@components/Galery";
 import Hero from "@components/Hero";
 import Comments from "../components/Comments";
 
+
+// const commentv2 = [{
+//   id: 0,
+//   name: "Bernal",
+//   comments:
+//   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora veniam quod, sint, vel temporibus provident, at est expedita quae quis fuga voluptatibus. Neque dolores fuga iusto temporibus inventore aliquam.",
+
+// }];
 const details = [
   {
     id: 0,
