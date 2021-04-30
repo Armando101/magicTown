@@ -3,6 +3,7 @@
 
 .discovertowncard {
   @include flex-row;
+  justify-content: space-between;
   width: 430px;
   min-height: 210px;
   border-radius: 20px 0 0 20px;
@@ -28,6 +29,9 @@
     margin-bottom: 10px;
   }
   &__description {
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-bottom: auto;
   }
 }

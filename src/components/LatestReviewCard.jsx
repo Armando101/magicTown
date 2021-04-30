@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Avatar from "./Avatar";
 import Rating from "@material-ui/lab/Rating";
 
@@ -6,6 +6,7 @@ import "../styles/components/ReviewCard.scss";
 
 function LatestReviewCard({ reviewInfo }) {
   const author = { ...reviewInfo.user };
+  const townInfo = { ...reviewInfo.town };
 
   return (
     <div className="reviewcard">
@@ -13,7 +14,9 @@ function LatestReviewCard({ reviewInfo }) {
       <div className="reviewcard__body">
         <header className="reviewcard__header">
           <div className="reviewcard_stars">
-            <h4>{reviewInfo.townName}</h4>
+            <h4>
+              {townInfo.name},{townInfo.state}
+            </h4>
             <Rating name="read-only" value={reviewInfo.rate || 0} readOnly />
           </div>
         </header>

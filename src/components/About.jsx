@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "@styles/components/About.scss";
 import Rating from "@material-ui/lab/Rating";
 import DetailList from "./DetailList";
+import Map from "./Map";
 
 const About = (town) => {
   const festivities = { ...town.festivities };
@@ -50,7 +51,7 @@ const About = (town) => {
           </div>
         </div>
       </div>
-      {/* <Map maps={} /> */}
+      <Map maps={town.mapsURL} />
     </section>
   );
 };

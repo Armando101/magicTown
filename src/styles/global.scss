@@ -28,3 +28,17 @@ p {
 .content-wrapper {
   min-height: 100vh;
 }
+
+.modal-parent {
+  position: relative;
+}
+
+.logout-modal {
+  position: absolute;
+  width: 400px;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+}

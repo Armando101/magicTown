@@ -22,6 +22,7 @@ const DetailPage = () => {
     setTown(response.town);
     setReviews(response.reviews);
   }, []);
+
   return (
     <>
       <Hero isSearch={false} cover={photos[0]} />
@@ -29,9 +30,13 @@ const DetailPage = () => {
       <Gallery photos={photos} />
       <div>
         <h3 className="section-title">Reseñas de otros viajeros</h3>
-        {Object.values(reviews).map((review, index) => {
-          return <ReviewCard key={index} reviewInfo={review} />;
-        })}
+        {reviews.length == 0 ? (
+          <p>Aún nadie ha escrito alguna reseña, se el primero!</p>
+        ) : (
+          Object.values(reviews).map((review, index) => {
+            return <ReviewCard key={index} reviewInfo={review} />;
+          })
+        )}
       </div>
       <Comments name={town.name} />
     </>

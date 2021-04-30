@@ -8,14 +8,17 @@ import Popper from "@material-ui/core/Popper";
 
 import "../styles/components/Navbar.scss";
 import { UserContext } from "../context/UserContext";
+import { Modal } from "@material-ui/core";
 
 function Navbar() {
+  const { user, setUser } = useContext(UserContext);
+
   const [togglePopper, setTogglePopper] = useState({
     anchorEl: null,
     openEl: false,
   });
 
-  const { user, setUser } = useContext(UserContext);
+  const [isOpen, setOpen] = useState(false);
 
   const handleTogglePopper = (e) => {
     const { currentTarget } = e;
@@ -25,12 +28,20 @@ function Navbar() {
     });
   };
 
+  const handleOpen = (e) => {
+    setOpen(true);
+  };
+
+  const handleClose = (e) => {
+    setOpen(false);
+  };
+
   const handleLogOut = (e) => {
     setUser(null);
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar modal-parent">
       {user != null ? (
         <>
           <NavLink to="/home" className="button button--home">
@@ -52,12 +63,26 @@ function Navbar() {
               <NavLink to="/profile" className="button">
                 <p>Cuenta</p>
               </NavLink>
-              <NavLink to="/home" className="button" onClick={handleLogOut}>
+              <NavLink to="/home" className="button " onClick={handleOpen}>
                 <p>Cerrar Sesión</p>
               </NavLink>
             </div>
           </Popper>
           <Avatar userAvatar={user.avatar} />
+          <Modal
+            open={isOpen}
+            onClose={handleClose}
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+          >
+            <div className="logout-modal">
+              <h2 id="simple-modal-title">
+                ¿Estas seguro que quieres cerrar tu sesión?
+              </h2>
+              <Button label="Sí" onClick={handleLogOut} />
+              <Button label="No" onClick={handleClose} />
+            </div>
+          </Modal>
         </>
       ) : (
         <>
