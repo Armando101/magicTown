@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import DetailPage from "../pages/DetailPage";
 import HomePage from "../pages/HomePage";
 import Favorite from "../pages/Favorite";
+import UserProfilePage from "../pages/UserProfilePage";
 
 function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
   return (
@@ -34,6 +35,7 @@ function DashboardRouter({ userInfo, mostLikedTowns, latestReviews }) {
           render={(props) => <DetailPage {...props} />}
         />
         <Route path="/favorite" component={Favorite} />
+        <Route path="/profile" component={UserProfilePage} />
         <Route component={() => <h2>Not Found</h2>} />
         <Redirect to="/home" />
       </Switch>

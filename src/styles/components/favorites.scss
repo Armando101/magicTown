@@ -10,4 +10,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+  &__about {
+    padding: 10px 20px;
+  }
 }
