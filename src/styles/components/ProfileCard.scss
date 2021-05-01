@@ -1,0 +1,19 @@
+@import "src/styles/base/colors.scss";
+@import "src/styles/base/fonts.scss";
+
+.profile-card {
+  background-color: white;
+  width: 334px;
+  height: 164px;
+  border-radius: 8px;
+  padding: 0px 24px;
+  box-sizing: content-box;
+  &__profile {
+    color: $primary-brand-600;
+    @include title();
+  }
+  &__favorites {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

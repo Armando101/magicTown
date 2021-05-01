@@ -22,3 +22,10 @@ $main-font-family: "Montserrat";
 // $header-1: 48px;
 // $header-1: 48px;
 // $header-1: 48px;
+
+@mixin title {
+  font-size: 3.3rem;
+  font-weight: normal;
+  margin-top: 40px;
+  margin-left: 66px;
+}

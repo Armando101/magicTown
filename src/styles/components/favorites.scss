@@ -1,11 +1,13 @@
 @import "@styles/base/colors.scss";
+@import "src/styles/base/fonts.scss";
 
 .favorites {
-  & h3 {
-    font-size: 3.3rem;
-    font-weight: normal;
+  &__title {
     color: $grey-500;
-    margin-top: 40px;
-    margin-left: 66px;
+    @include title();
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 }

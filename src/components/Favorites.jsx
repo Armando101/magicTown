@@ -1,6 +1,7 @@
 import React from "react";
 import FavoritesCards from "./FavoritesCards";
 import "@styles/components/favorites.scss";
+import ProfileCard from "./ProfileCard";
 
 const cards = [
   {
@@ -48,8 +49,11 @@ const cards = [
 const Favorites = () => {
   return (
     <section className="favorites">
-      <h3>Mis favoritos</h3>
-      <FavoritesCards cards={cards} />
+      <h3 className="favorites__title">Mis favoritos</h3>
+      <div className="favorites__content">
+        <FavoritesCards cards={cards} />
+        <ProfileCard />
+      </div>
     </section>
   );
 };
