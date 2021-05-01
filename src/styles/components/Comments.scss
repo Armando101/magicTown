@@ -13,3 +13,13 @@
     color: $primary-brand-600;
   }
 }
+
+@media (max-width: 320px){
+  .input-review{
+    margin: 16px;
+  }
+  .comments{
+    padding: 16px;
+  }
+}
+

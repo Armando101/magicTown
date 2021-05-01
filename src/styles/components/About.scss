@@ -6,7 +6,7 @@
   box-sizing: border-box;
   &__info {
     display: grid;
-    grid-template-rows: 0fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
   }
   &__detail_stars {
     font-size: 2.2rem;
@@ -35,3 +35,16 @@
 
 }
 
+@media (max-width: 320px){
+  .about{display: grid;
+  grid-template-columns: 1fr;
+  padding: 16px;
+  }
+  .about__info{
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+  }
+  .about__map{
+    width: 100%;
+  }
+}

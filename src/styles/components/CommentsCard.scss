@@ -51,3 +51,24 @@
   text-align: right;
 }
 
+@media (max-width: 320px){
+  .commentscard_stars {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+  .commentscard{
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 768px){
+  .commentscard{
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 1024px){
+  .commentscard{
+    margin-right: 16px;
+  }
+}

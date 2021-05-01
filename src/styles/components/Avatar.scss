@@ -14,3 +14,14 @@
     width: 75px;
   }
 }
+@media (max-width: 320px){
+  .commentscard {
+    .avatar__userphoto{
+      height:100%; 
+      width: 50px;
+    }
+}
+  .avatar{
+    margin-right: 8px;
+  }
+}
