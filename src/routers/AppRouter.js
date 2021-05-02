@@ -5,7 +5,7 @@ import { UserContext } from "../context/UserContext";
 import AuthenticatedRouter from "./AuthenticatedRouter";
 import NoAuthenticatedRouter from "./NoAuthenticatedRouter";
 
-function AppRouter({ mostLikedTowns, latestReviews }) {
+function AppRouter() {
   const { user, setUser } = useContext(UserContext);
 
   return (
@@ -14,17 +14,9 @@ function AppRouter({ mostLikedTowns, latestReviews }) {
         <div className="content-wrapper">
           <Switch>
             {user ? (
-              <AuthenticatedRouter
-                userInfo={user}
-                mostLikedTowns={mostLikedTowns}
-                latestReviews={latestReviews}
-              />
+              <AuthenticatedRouter userInfo={user} />
             ) : (
-              <NoAuthenticatedRouter
-                userInfo={user}
-                mostLikedTowns={mostLikedTowns}
-                latestReviews={latestReviews}
-              />
+              <NoAuthenticatedRouter userInfo={user} />
             )}
           </Switch>
         </div>

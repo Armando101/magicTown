@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { UserContext } from "../context/UserContext.js";
-import { mostLikedTowns, latestReviews } from "../dummyData";
 import AppRouter from "../routers/AppRouter";
 
 function App() {
@@ -8,10 +7,7 @@ function App() {
 
   return (
     <UserContext.Provider value={{ user, setUser }}>
-      <AppRouter
-        mostLikedTowns={mostLikedTowns}
-        latestReviews={latestReviews}
-      />
+      <AppRouter />
     </UserContext.Provider>
   );
 }

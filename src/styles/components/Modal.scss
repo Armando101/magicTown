@@ -1,0 +1,18 @@
+@import "../abstract/mixins.scss";
+@import "../base/colors.scss";
+
+.modal {
+  @include flex-column;
+  position: absolute;
+  width: auto;
+  max-width: 420px;
+  background-color: #fff;
+  border: 2px solid $primary-brand-600;
+  padding: 30px;
+  top: 50vh;
+  left: 43vw;
+  border-radius: 8px;
+  > * {
+    margin: 10px 0;
+  }
+}

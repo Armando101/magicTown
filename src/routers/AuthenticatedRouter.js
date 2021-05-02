@@ -4,11 +4,14 @@ import { Route, Switch, withRouter } from "react-router";
 import Header from "../layout/Header";
 import Brand from "../components/Brand";
 import Navbar from "../components/Navbar";
-import DetailPage from "../pages/DetailPage";
 import HomePage from "../pages/HomePage";
+import DetailPage from "../pages/DetailPage";
+import ResultPage from "../pages/ResultPage";
+import FavoritePage from "../pages/FavoritePage";
 import NotFoundPage from "../pages/NotFoundPage";
+import Footer from "../components/Footer";
 
-function AuthenticatedRouter({ userInfo, mostLikedTowns, latestReviews }) {
+function AuthenticatedRouter({ userInfo }) {
   return (
     <>
       <Header>
@@ -20,20 +23,16 @@ function AuthenticatedRouter({ userInfo, mostLikedTowns, latestReviews }) {
         <Route
           exact
           path="/home"
-          render={() => (
-            <HomePage
-              userInfo={userInfo}
-              mostLikedTowns={mostLikedTowns}
-              latestReviews={latestReviews}
-            />
-          )}
+          render={() => <HomePage userInfo={userInfo} />}
         />
 
-        <Route exact path="/detail/:id" render={() => withRouter(DetailPage)} />
+        <Route exact path="/detail/:id" render={withRouter(DetailPage)} />
 
         <Route exact path="/profile" />
         <Route exact path="/profile/reviews" />
-        <Route exact path="/profile/favorites" />
+        <Route exact path="/profile/favorites" component={FavoritePage} />
+
+        <Route path="/search/:keyword" component={ResultPage} />
 
         <Route component={NotFoundPage} />
       </Switch>

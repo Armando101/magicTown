@@ -7,6 +7,8 @@ import getUser from "../services/getUser";
 
 import "../styles/components/LoginForm.scss";
 
+import { Modal } from "@material-ui/core";
+
 function RegisterForm() {
   const initForm = {
     username: "",
@@ -17,16 +19,17 @@ function RegisterForm() {
     favorites: [],
   };
 
-  const [form, setForm] = useState(initForm);
-
   const { user, setUser } = useContext(UserContext);
+
+  const [form, setForm] = useState(initForm);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.username || !form.password) {
-      alert("Llene todos los campos!");
+      handleOpen();
       return;
     }
 
@@ -51,6 +54,14 @@ function RegisterForm() {
       ...form,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const handleOpen = (e) => {
+    setModalOpen(true);
+  };
+
+  const handleClose = (e) => {
+    setModalOpen(false);
   };
 
   return (
@@ -81,6 +92,18 @@ function RegisterForm() {
         <span>¿Ya eres Miembro?</span>
         <NavLink to="/login"> Inicia Sesión </NavLink>
       </form>
+      <Modal
+        open={isModalOpen}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <div className="modal modal--form">
+          <h2 id="simple-modal-title">
+            !Por favor, llene correctamente los campos!
+          </h2>
+        </div>
+      </Modal>
     </div>
   );
 }

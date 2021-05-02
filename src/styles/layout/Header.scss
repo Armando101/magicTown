@@ -30,7 +30,12 @@
     width: auto;
     align-items: center;
   }
-  &--login {
+  &--fixed {
     background-color: $primary-brand-500;
+  }
+  @media screen and (max-width: $breakpoint-xl) {
+    > * {
+      margin: 0;
+    }
   }
 }

@@ -666,5 +666,32 @@
       "description": "Llegar a Juquila es toda una travesía que vale totalmente la pena. Recomiendo viajar temprano y visitar el mercado y la iglesia.",
       "creation_date": "2021-03-07T01:23:46.000Z"
     }
+  ],
+  "favorites": [
+    {
+      "id": 3,
+      "townId": 3,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "townId": 4,
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "townId": 5,
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "townId": 6,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "townId": 2,
+      "id": 9
+    }
   ]
 }

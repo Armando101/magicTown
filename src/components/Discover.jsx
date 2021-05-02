@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import DiscoverTownCard from "./DiscoverTownCard";
-import "../styles/components/Discover.scss";
+
+import TownCard from "./TownCard";
+
 import getMostLikedTowns from "../services/getMostLikedTowns";
+
+import "../styles/components/Discover.scss";
 
 function Discover() {
   const [mostLikedTowns, setMostLikedTowns] = useState([{}]);
@@ -18,7 +21,7 @@ function Discover() {
         Descubre los Pueblos Mágicos mejor calificados
       </h3>
       {mostLikedTowns.map((town, index) => {
-        return <DiscoverTownCard key={index} townInfo={town} />;
+        return <TownCard key={index} townInfo={town} />;
       })}
     </div>
   );

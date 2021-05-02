@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 import Button from "./Button";
 import Avatar from "./Avatar";
@@ -20,6 +20,8 @@ function Navbar() {
 
   const [isOpen, setOpen] = useState(false);
 
+  const history = useHistory();
+
   const handleTogglePopper = (e) => {
     const { currentTarget } = e;
     setTogglePopper({
@@ -38,6 +40,7 @@ function Navbar() {
 
   const handleLogOut = (e) => {
     setUser(null);
+    history.push("/home");
   };
 
   return (
@@ -63,9 +66,11 @@ function Navbar() {
               <NavLink to="/profile" className="button">
                 <p>Cuenta</p>
               </NavLink>
-              <NavLink to="/home" className="button " onClick={handleOpen}>
-                <p>Cerrar Sesión</p>
-              </NavLink>
+              <Button
+                label="Cerrar Sesión"
+                className="button "
+                onClick={handleOpen}
+              />
             </div>
           </Popper>
           <Avatar userAvatar={user.avatar} />
@@ -75,7 +80,7 @@ function Navbar() {
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
           >
-            <div className="logout-modal">
+            <div className="modal">
               <h2 id="simple-modal-title">
                 ¿Estas seguro que quieres cerrar tu sesión?
               </h2>

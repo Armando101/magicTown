@@ -11,8 +11,10 @@ import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import DetailPage from "../pages/DetailPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import ResultPage from "../pages/ResultPage";
+import Footer from "../components/Footer";
 
-function NoAuthenticatedRouter({ userInfo, mostLikedTowns, latestReviews }) {
+function NoAuthenticatedRouter() {
   return (
     <>
       <Header>
@@ -40,18 +42,10 @@ function NoAuthenticatedRouter({ userInfo, mostLikedTowns, latestReviews }) {
           )}
         />
 
-        <Route
-          exact
-          path="/home"
-          render={() => (
-            <HomePage
-              mostLikedTowns={mostLikedTowns}
-              latestReviews={latestReviews}
-            />
-          )}
-        />
+        <Route exact path="/home" render={() => <HomePage />} />
 
         <Route exact path="/detail/:id" render={withRouter(DetailPage)} />
+        <Route path="/search/:keyword" component={ResultPage} />
 
         <Route component={NotFoundPage} />
       </Switch>

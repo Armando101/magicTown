@@ -1,12 +1,18 @@
 @import "../base/colors.scss";
+@import "../base/breakpoints.scss";
 
 .discover {
   display: grid;
   grid-template-rows: 60px repeat(1, 2fr);
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 10px 18px;
-  margin: 30px auto 0;
+  margin: 30px 0 0;
   > .section-title {
     grid-column: 1/-1;
+  }
+
+  @media screen and (max-width: $breakpoint-xl) {
+    margin: 30px auto 0;
   }
 }

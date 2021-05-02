@@ -4,7 +4,7 @@ import "../styles/layout/Header.scss";
 
 function Header({ children }) {
   const [isScrolled, setScrolled] = useState(false);
-  const isInLogin = useLocation().pathname.match(/\/(login|register)/g);
+  const mustFix = useLocation().pathname.match(/\/(login|register|profile)/g);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +25,7 @@ function Header({ children }) {
   return (
     <header
       className={`header ${isScrolled ? "header--scrolled" : ""} ${
-        isInLogin ? "header--login" : ""
+        mustFix ? "header--fixed" : ""
       }`}
     >
       {children}

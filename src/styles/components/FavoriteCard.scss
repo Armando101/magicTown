@@ -1,0 +1,39 @@
+@import "@styles/base/colors";
+.favorite-card {
+  padding: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  &__image {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+  }
+  &__name {
+    align-self: end;
+    font-weight: normal;
+    margin: 15px auto 0;
+    font-size: 3.3rem;
+    text-align: left;
+    color: $primary-brand-700;
+  }
+  &__state {
+    align-self: end;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: $grey-400;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    & > .MuiSvgIcon-root {
+      color: red;
+      font-size: 2.6em;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}

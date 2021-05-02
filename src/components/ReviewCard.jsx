@@ -8,7 +8,6 @@ function ReviewCard({ reviewInfo }) {
   const author = { ...reviewInfo.user };
   const creation_date = new Date(reviewInfo.creation_date).toDateString();
 
-  console.log(creation_date);
   return (
     <div className="reviewcard">
       <Avatar userAvatar={author.avatar} />
