@@ -60,7 +60,7 @@ function Navbar() {
               <NavLink to="/profile/favorites" className="button">
                 <p>Mis favoritos</p>
               </NavLink>
-              <NavLink to="/profile/reviews" className="button">
+              <NavLink to="/profile" className="button">
                 <p>Mis reseñas</p>
               </NavLink>
               <NavLink to="/profile" className="button">

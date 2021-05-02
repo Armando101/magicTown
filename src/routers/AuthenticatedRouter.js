@@ -9,7 +9,7 @@ import DetailPage from "../pages/DetailPage";
 import ResultPage from "../pages/ResultPage";
 import FavoritePage from "../pages/FavoritePage";
 import NotFoundPage from "../pages/NotFoundPage";
-import Footer from "../components/Footer";
+import UserProfilePage from "../pages/UserProfilePage";
 
 function AuthenticatedRouter({ userInfo }) {
   return (
@@ -28,8 +28,7 @@ function AuthenticatedRouter({ userInfo }) {
 
         <Route exact path="/detail/:id" render={withRouter(DetailPage)} />
 
-        <Route exact path="/profile" />
-        <Route exact path="/profile/reviews" />
+        <Route exact path="/profile" component={UserProfilePage} />
         <Route exact path="/profile/favorites" component={FavoritePage} />
 
         <Route path="/search/:keyword" component={ResultPage} />

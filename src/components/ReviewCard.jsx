@@ -10,7 +10,7 @@ function ReviewCard({ reviewInfo }) {
 
   return (
     <div className="reviewcard">
-      <Avatar userAvatar={author.avatar} />
+      {author.avatar && <Avatar userAvatar={author.avatar} />}
       <div className="reviewcard__body">
         <header className="reviewcard__header">
           <div className="reviewcard_stars">
@@ -20,7 +20,6 @@ function ReviewCard({ reviewInfo }) {
           </div>
         </header>
         <q className="reviewcard__copy"> {reviewInfo.description} </q>
-        <div className="author">{/* <cite>- {author.username}</cite> */}</div>
       </div>
     </div>
   );

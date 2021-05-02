@@ -9,10 +9,30 @@
   background-color: #fff;
   border: 2px solid $primary-brand-600;
   padding: 30px;
-  top: 50vh;
+  top: 30vh;
   left: 43vw;
   border-radius: 8px;
   > * {
     margin: 10px 0;
+  }
+  &--user-form {
+    width: 410px;
+    top: 20vh;
+    max-width: none;
+    > label {
+      font-size: 1.6rem;
+    }
+    > input,
+    textarea {
+      padding: 8px;
+      font-size: 1.8rem;
+      border-radius: 8px;
+    }
+    > textarea {
+      resize: none;
+    }
+  }
+  &__error {
+    color: red;
   }
 }
