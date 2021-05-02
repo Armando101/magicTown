@@ -39,9 +39,11 @@
 }
 
 @media (max-width: 768px){
-  .header{
-    display: none;
-
+  .header > *{
+    margin: 0px;
+  }
+  .brand h2{
+    font-size: 3.2rem !important;
   }
 
 }
