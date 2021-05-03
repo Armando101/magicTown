@@ -60,3 +60,46 @@
     background-color: $primary-brand-500;
   }
 }
+
+
+@media (max-width: 320px) {
+  .login-wrapper{
+    padding: 0px;
+    > form{
+      width: auto;
+      height: auto;
+      padding: 16px;
+      > h1{
+        font-size: 3.2rem;
+        margin-bottom: 16px;
+      }
+      > p{
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+        text-align: left;
+      }
+      > input {
+        height: 56px;
+        padding: 20px 24px;
+        border-radius: 8px;
+        border: 1px solid $grey-300;
+        margin-bottom: 24px;
+      }
+      > label {
+        font-size: 1.4rem;
+        color: $grey-500;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+      > span {
+        margin: 24px 0 12px;
+        font-size: 1.4rem;
+      }
+      > a {
+        font-size: 1.4rem;
+      }
+    }
+
+  }
+
+}

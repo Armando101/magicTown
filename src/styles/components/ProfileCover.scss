@@ -46,3 +46,51 @@
     }
   }
 }
+
+
+@media (max-width: 320px){
+  .profile-cover{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    > img{
+      margin-left: 85px;
+    }
+    &__user{
+      margin-left: 0px;
+      flex-direction: row;
+    }
+    &__social{
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+  }
+  .profile-cover__social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+}
+}
+@media (max-width: 768px){
+  .profile-cover{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    > img{
+      margin-left: 310px;
+    }
+    &__user{
+      margin-left: 0px;
+      flex-direction: row;
+    }
+    &__social{
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+  }
+  .profile-cover__social img {
+    width: 40px;
+    height: 40px;
+    margin-right: none;
+}
+}
