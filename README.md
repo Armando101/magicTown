@@ -28,7 +28,7 @@ _⚙️ Herramientas empleadas:_
 * [Zeplin](https://zeplin.io/) - Herramienta de colaboración para diseñadores de interfaces de usuario (UI) y desarrolladores front-end.
 * [Figma](https://www.figma.com/) - Aplicación para el diseño de interfaces.
 
-## Inicialización
+## 🚀 Inicialización
 
 Development Environment
 
@@ -42,14 +42,14 @@ Production Environment
 npm run build
 ```
 
-## Colaboradores
+## 💻 Colaboradores
 
 * María Herminia Jiménez Castillo - [Herminia-Jimenez](https://github.com/Herminia-Jimenez/)
 * Raúl Eduardo Méndez Vásquez - [Raulmendezv](https://github.com/Raulmendezv)
 * Sebastián Emilio Audetat Facio - [Grufty295](https://github.com/Grufty295)
 * Armando Rivera - [Armando](https://github.com/Armando101)
 
-### Diseñador UI
+### 🖌️ Diseñador UI
 * Brian Gibran Godoy Lomelí - [GibranGodoy](https://github.com/Armando101)
 
 ## 🎁 Expresiones de Gratitud:
