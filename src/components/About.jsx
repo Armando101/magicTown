@@ -36,7 +36,7 @@ const About = (town) => {
       <div className="about__info">
         <div className="detail__stars">
           <h1>
-            {town.name},{town.state}
+            {town.name}, {town.state}
           </h1>
 
           <Rating

@@ -58,10 +58,14 @@
 }
 
 @media (max-width: 320px){
-  .about{display: grid;
-  grid-template-columns: 1fr;
-  padding: 16px;
-  }
+  .about{
+    h1{
+      font-size: 1em;
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 16px;
+    }
   .about__info{
     display: grid;
     grid-template-rows: 0fr 1fr;
