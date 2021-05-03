@@ -4,8 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const { SourceMapDevToolPlugin } = require("webpack");
 
 module.exports = {
+  devtool: "eval-source-map",
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -48,6 +50,9 @@ module.exports = {
       filename: "[name].css",
     }),
     new CleanWebpackPlugin(),
+    new SourceMapDevToolPlugin({
+      filename: "[file].map",
+    }),
   ],
   optimization: {
     minimize: true,

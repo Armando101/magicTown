@@ -1,0 +1,38 @@
+@import "@styles/base/colors.scss";
+@import "src/styles/base/fonts.scss";
+
+.favorites {
+  &__title {
+    color: $grey-500;
+    @include title();
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    > .reviews {
+      display: grid;
+      grid-template-rows: 60px repeat(auto-fit, minmax(130px, 1fr));
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 66px;
+      > h2 {
+        @include title();
+        margin: 0;
+      }
+      > .review-wrapper {
+        border-radius: 10px;
+        border: 1px solid $grey-200;
+        padding: 16px;
+        margin: 24px auto;
+        width: fit-content;
+        box-shadow: 0px 3px 10px -4px;
+        > .reviewcard {
+          margin: 0;
+        }
+      }
+    }
+  }
+  &__about {
+    padding: 10px 20px;
+  }
+}

@@ -1,5 +1,6 @@
 @import "../abstract/mixins.scss";
 @import "../base/colors.scss";
+@import "../base/breakpoints.scss";
 
 .review {
   width: 100%;
@@ -48,5 +49,10 @@
   .reviews {
     width: 80%;
     margin: auto;
+  }
+  @media screen and (max-width: $breakpoint-m) {
+    .reviews > .reviewcard {
+      flex-direction: column;
+    }
   }
 }

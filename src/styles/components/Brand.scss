@@ -1,5 +1,6 @@
 @import "../abstract/mixins.scss";
 @import "../base/colors.scss";
+@import "../base/breakpoints.scss";
 
 .brand {
   @include flex-row;
@@ -10,10 +11,24 @@
     margin: 0 20px;
   }
   h2 {
-    font-size: 40px;
+    font-size: 4rem;
   }
   img {
     height: 60px;
     width: 60px;
+  }
+  @media screen and (max-width: $breakpoint-xl) {
+    h2 {
+      font: 3em sans-serif;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 840px) {
+    justify-content: center;
+    h2 {
+      display: none;
+    }
   }
 }

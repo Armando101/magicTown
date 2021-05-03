@@ -1,0 +1,26 @@
+@import "src/styles/base/colors.scss";
+@import "src/styles/base/fonts.scss";
+
+.profile-card {
+  background-color: white;
+  max-width: 334px;
+  height: fit-content;
+  border-radius: 8px;
+  padding: 16px 24px;
+  box-sizing: content-box;
+  text-align: left;
+  margin: 0 auto;
+
+  &__profile {
+    color: $primary-brand-600;
+    @include title();
+    margin: 0 16px;
+  }
+  &__favorites {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  > .button > P:hover {
+    background-color: #c5dee9;
+  }
+}

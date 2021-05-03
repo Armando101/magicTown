@@ -1,9 +1,13 @@
-@mixin flex-row {
+@mixin flex-row($justify-content: normal, $align-items: normal) {
   display: flex;
   flex-direction: row;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
-@mixin flex-column {
+@mixin flex-column($justify-content: normal, $align-items: normal) {
   display: flex;
   flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }

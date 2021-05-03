@@ -4,11 +4,7 @@ import "../styles/components/Avatar.scss";
 function Avatar({ userInfo }) {
   return (
     <div className="avatar">
-      <img
-        className="avatar__userphoto"
-        src={userInfo.profilePhoto}
-        alt="profile photo"
-      />
+      <img className="avatar__userphoto" src={userInfo} alt="profile photo" />
     </div>
   );
 }

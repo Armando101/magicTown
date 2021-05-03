@@ -1,5 +1,6 @@
 @import "../abstract/mixins.scss";
 @import "../base/colors.scss";
+@import "../base/breakpoints.scss";
 
 .navbar {
   > .button--navbar-popper {
@@ -46,19 +47,26 @@
       background-color: $grey-200;
     }
   }
+  @media screen and (max-width: $breakpoint-m) {
+    > .button {
+      margin: 0;
+    }
+  }
 }
 .navbar-menu {
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #fff;
   border-radius: 8px;
   > .button {
     margin: 0;
-    padding: 20px 0;
     height: auto;
+    background-image: none;
+    background-color: transparent;
     > p {
       color: $grey-700;
       padding: 15px 24px;
       border-radius: 8px;
+      font-size: 1.6rem;
       &:hover {
         background-image: none;
         background-color: $grey-200;

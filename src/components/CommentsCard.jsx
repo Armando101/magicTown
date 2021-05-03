@@ -5,17 +5,19 @@ import Rating from "@material-ui/lab/Rating";
 // import Box from '@material-ui/core/Box';
 
 import "../styles/components/CommentsCard.scss";
-import { userInfo } from "../dummyData";
 
 function CommentsCard({ reviewInfo }) {
+  console.log("AQUI ESSSS", reviewInfo.user);
+  const author = { ...reviewInfo.user };
+  const creation_date = new Date(reviewInfo.creation_date).toDateString();
   return (
     <div className="commentscard">
-      <Avatar userInfo={reviewInfo.user} />
+      <Avatar userInfo={author.avatar} />
       <div className="commentscard__body">
         <header className="commentscard__header">
           <div className="commentscard_stars">
-            <h4>{userInfo.username}</h4>{" "}
-            <Rating name="read-only" value={reviewInfo.rate} readOnly />
+            <h4>{author.username}</h4>{" "}
+            <Rating name="read-only" value={reviewInfo.rate||0} readOnly />
           </div>
         </header>
         <p className="commentscard__copy"> {reviewInfo.description} </p>

@@ -30,6 +30,14 @@
     width: auto;
     align-items: center;
   }
+  &--fixed {
+    background-color: $primary-brand-500;
+  }
+  @media screen and (max-width: $breakpoint-xl) {
+    > * {
+      margin: 0;
+    }
+  }
 }
 
 @media (max-width: 320px){

@@ -1,13 +1,21 @@
 import React from "react";
 import "../styles/components/Hero.scss";
 import SearchForm from "./SearchForm";
-function Hero({ isSearch = true, cover }) {
+
+const defaultCover = "https://i.ibb.co/1Mfq5qF/patzcuaro-michoacan.jpg";
+
+function Hero({ isSearch = true, cover = defaultCover }) {
   return (
-    <div className="hero">
-      <div>
-        <img src={cover} alt="Foto" />
-        {isSearch && <SearchForm />}
-      </div>
+    <div
+      className="hero"
+      style={{
+        backgroundImage: [
+          "linear-gradient(to bottom, rgba(34, 34, 34, 0), #111)",
+          `url(${cover})`,
+        ],
+      }}
+    >
+      <div>{isSearch && <SearchForm />}</div>
     </div>
   );
 }
