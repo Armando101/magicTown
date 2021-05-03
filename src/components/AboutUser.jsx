@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "@styles/components/favorites.scss";
 import ProfileCard from "./ProfileCard";
-import getUserFavorites from "../services/getUserReviews";
+import getUserReviews from "../services/getUserReviews";
 import ReviewCard from "./ReviewCard";
 
 const AboutUser = ({ id, description }) => {
   const [reviews, setReviews] = useState([{}]);
 
   useEffect(async () => {
-    await getUserFavorites(id).then((response) => {
+    await getUserReviews(id).then((response) => {
       console.log(response);
       setReviews(response);
     });

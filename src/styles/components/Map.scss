@@ -1,6 +1,8 @@
+@import "../abstract/mixins.scss";
 .map {
   margin: 0 auto;
   width: 70%;
+  text-align: center;
   & iframe {
     border-radius: 20px;
     border: 0;

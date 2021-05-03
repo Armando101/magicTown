@@ -8,11 +8,13 @@ import Button from "@components/Button";
 
 import { useHistory } from "react-router";
 import { UserContext } from "../context/UserContext";
+
 // import getUserFavorites from "../services/getUserFavorites";
 
 import "@styles/components/FavoriteCard.scss";
+import postService from "../services/postService";
 
-const FavoritesCard = ({ id, town, setFavorites }) => {
+const FavoritesCard = ({ id, town }) => {
   const [toggleFav, setToggleFav] = useState(true);
 
   const { user, setUser } = useContext(UserContext);
@@ -33,12 +35,7 @@ const FavoritesCard = ({ id, town, setFavorites }) => {
 
   const addFavorite = async () => {
     setToggleFav(true);
-
-    await fetch(`http://localhost:8080/favorites`, {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify({ userId: user.id, townId: town.id }),
-    });
+    await postService("favorites", { userId: user.id, townId: town.id });
   };
 
   return (

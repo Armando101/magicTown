@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+
 import "@styles/components/Map.scss";
-const Map = ({ maps }) => {
+
+const Map = ({ map }) => {
   return (
-    <div
-      className="map"
-      dangerouslySetInnerHTML={{
-        __html: `<iframe
-              src=${maps}
-              width="100%"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>`,
-      }}
-    ></div>
+    <div className="map">
+      <iframe
+        src={map}
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen={false}
+        loading="lazy"
+      ></iframe>
+    </div>
   );
 };
 

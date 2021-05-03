@@ -814,29 +814,24 @@
   ],
   "favorites": [
     {
-      "id": 3,
-      "townId": 3,
-      "userId": 1
+      "userId": 1,
+      "townId": 5,
+      "id": 10
     },
     {
-      "id": 4,
-      "townId": 4,
-      "userId": 1
+      "userId": 1,
+      "townId": 3,
+      "id": 12
     },
     {
       "userId": 1,
       "townId": 6,
-      "id": 8
+      "id": 13
     },
     {
       "userId": 1,
       "townId": 2,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "townId": 5,
-      "id": 10
+      "id": 14
     }
   ]
 }

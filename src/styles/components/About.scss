@@ -1,3 +1,5 @@
+@import "../abstract/mixins.scss";
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,6 +22,26 @@
   &__description p {
     letter-spacing: 0.5px;
   }
+  &__widgets {
+    > .icon {
+      @include flex-row;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
+      > p,
+      > .MuiSvgIcon-root {
+        font-size: 2.6rem;
+        line-height: 1;
+      }
+
+      > .MuiSvgIcon-root {
+        color: red;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
   &__map {
     margin: 0 auto;
     width: 70%;

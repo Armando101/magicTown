@@ -1,7 +1,7 @@
-async function getUserFavorites(id) {
+function getUserFavorites(id) {
   const apiURL = `http://localhost:8080/favorites?userId=${id}&_expand=town`;
 
-  return await fetch(apiURL, {
+  return fetch(apiURL, {
     method: "GET",
     headers: { "Content-type": "application/json" },
   })

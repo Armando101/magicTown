@@ -1,4 +1,4 @@
-async function getUserFavorites(id) {
+async function getUserReviews(id) {
   const apiURL = `http://localhost:8080/reviews?userId=${id}&_expand=town`;
 
   return await fetch(apiURL, {
@@ -11,4 +11,4 @@ async function getUserFavorites(id) {
     });
 }
 
-export default getUserFavorites;
+export default getUserReviews;
