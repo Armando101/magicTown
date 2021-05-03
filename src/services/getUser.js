@@ -1,5 +1,5 @@
 function getUser({ username, password }) {
-  const apiURL = `http://localhost:8080/users?username=${username}&password=${password}`;
+  const apiURL = `http://localhost:3001/users?username=${username}&password=${password}`;
   return fetch(apiURL, {
     method: "GET",
     headers: { "Content-type": "application/json" },

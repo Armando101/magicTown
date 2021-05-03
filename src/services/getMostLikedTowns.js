@@ -1,5 +1,5 @@
 function getMostLikedTowns() {
-  const apiURL = `http://localhost:8080/towns?_sort=rate&_order=asc&_limit=3`;
+  const apiURL = `http://localhost:3001/towns?_sort=rate&_order=asc&_limit=3`;
   return fetch(apiURL, {
     method: "GET",
     headers: { "Content-type": "application/json" },

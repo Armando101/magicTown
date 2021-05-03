@@ -1,5 +1,5 @@
 function getTownsByKeyword(keyword) {
-  const apiURL = `http://localhost:8080/towns?q=${keyword}`;
+  const apiURL = `http://localhost:3001/towns?q=${keyword}`;
   return fetch(apiURL, {
     method: "GET",
     headers: { "Content-type": "application/json" },

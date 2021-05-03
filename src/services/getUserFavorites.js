@@ -1,5 +1,5 @@
-function getUserFavorites(id) {
-  const apiURL = `http://localhost:8080/favorites?userId=${id}&_expand=town`;
+async function getUserFavorites(id) {
+  const apiURL = `http://localhost:3001/favorites?userId=${id}&_expand=town`;
 
   return fetch(apiURL, {
     method: "GET",

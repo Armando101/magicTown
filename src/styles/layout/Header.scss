@@ -39,3 +39,19 @@
     }
   }
 }
+
+@media (max-width: 320px){
+  .header{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .header > *{
+    margin: 0px;
+  }
+  .brand h2{
+    font-size: 3.2rem !important;
+  }
+
+}

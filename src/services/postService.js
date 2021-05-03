@@ -1,5 +1,5 @@
 function postService(url = "reviews", payload) {
-  const apiURL = `http://localhost:8080/${url}`;
+  const apiURL = `http://localhost:3001/${url}`;
 
   return fetch(apiURL, {
     method: "POST",

@@ -6,11 +6,12 @@ import "../styles/components/ReviewCard.scss";
 
 function LatestReviewCard({ reviewInfo }) {
   const author = { ...reviewInfo.user };
+  console.log(author)
   const townInfo = { ...reviewInfo.town };
 
   return (
     <div className="reviewcard">
-      <Avatar userAvatar={author.avatar} />
+      <Avatar userInfo={author.avatar} />
       <div className="reviewcard__body">
         <header className="reviewcard__header">
           <div className="reviewcard_stars">

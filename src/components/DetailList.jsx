@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/components/DetailList.scss";
 
 function DetailList({ title, data }) {
   return (

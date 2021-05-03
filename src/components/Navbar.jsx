@@ -73,7 +73,7 @@ function Navbar() {
               />
             </div>
           </Popper>
-          <Avatar userAvatar={user.avatar} />
+          <Avatar userInfo={user.avatar} />
           <Modal
             open={isOpen}
             onClose={handleClose}

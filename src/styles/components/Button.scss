@@ -49,3 +49,9 @@
     }
   }
 }
+
+@media (max-width: 320px){
+  .button > p {
+    font-size: 1em;
+  }
+}

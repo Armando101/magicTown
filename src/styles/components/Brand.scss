@@ -16,6 +16,9 @@
   img {
     height: 60px;
     width: 60px;
+    @media (max-width: $breakpoint-s + 40px) {
+      margin: 0 10px;
+    }
   }
   @media screen and (max-width: $breakpoint-xl) {
     h2 {

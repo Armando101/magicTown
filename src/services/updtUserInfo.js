@@ -1,5 +1,5 @@
 async function updtUserInfo(id, payload) {
-  const apiURL = `http://localhost:8080/users/${id}`;
+  const apiURL = `http://localhost:3001/users/${id}`;
 
   return await fetch(apiURL, {
     method: "PATCH",

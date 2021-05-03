@@ -15,10 +15,10 @@ function AboutWidgets({
   townId,
   userFavoriteInfo,
 }) {
-  const deleteFavorite = async () => {
+  const deleteFavorite = () => {
     setToggleFav(false);
 
-    await fetch(`http://localhost:8080/favorites/${userFavoriteInfo.id}`, {
+    fetch(`http://localhost:8080/favorites/${userFavoriteInfo.id}`, {
       method: "DELETE",
       headers: { "Content-type": "application/json" },
     });

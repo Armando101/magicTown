@@ -43,16 +43,6 @@ const DetailPage = () => {
       <Hero isSearch={false} cover={photos[0]} />
       <About {...town} />
       <Gallery photos={photos} />
-      <div>
-        <h3 className="section-title">Reseñas de otros viajeros</h3>
-        {reviews.length == 0 ? (
-          <p>Aún nadie ha escrito alguna reseña, se el primero!</p>
-        ) : (
-          Object.values(reviews).map((review, index) => {
-            return <ReviewCard key={index} reviewInfo={review} />;
-          })
-        )}
-      </div>
       <Comments
         townName={town.name}
         townId={town.id}
