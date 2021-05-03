@@ -7,6 +7,8 @@ import getMostLikedTowns from "../services/getMostLikedTowns";
 import "../styles/components/Discover.scss";
 
 
+
+
 function Discover() {
   const [mostLikedTowns, setMostLikedTowns] = useState([{}]);
 

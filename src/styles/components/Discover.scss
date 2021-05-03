@@ -12,12 +12,30 @@
     grid-column: 1/-1;
     
   }
-// .section-title{
-//   margin-left: 0px !important;
-// }
 
   @media screen and (max-width: $breakpoint-xl) {
     margin: 30px auto 0;
   }
 }
+  @media (max-width: 320px){
+    .discover{
+      grid-template-rows: none;
+    }
+    .discover > .section-title {
+      margin-bottom: 0px !important;
+    }
+  }
+  @media (max-width: 768px){
+    .discover{
+      display: grid;
+      // grid-template-rows: none;
+      grid-template-columns: 1fr;
+    }
+    .discover > .section-title {
+      margin: 16px;
+    }
+    h3{
+      font-size: 24px !important;
+    }
+  }
 
