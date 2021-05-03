@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import Map from "../components/Map";
+import Map from "./Map";
 
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
