@@ -1,5 +1,6 @@
 @import "./base/colors.scss";
 @import "./base/fonts.scss";
+@import "./base/breakpoints.scss";
 
 * {
   box-sizing: border-box;
@@ -23,6 +24,9 @@ p {
 .section-title {
   font-size: 2.8rem;
   margin: auto 80px;
+  @media (max-width: $breakpoint-m - 80px) {
+    margin: 0;
+  }
 }
 
 .content-wrapper {

@@ -56,3 +56,29 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-s + 40) {
+  .review__image {
+    height: 400px;
+  }
+  .review__overlay {
+    padding: 16px;
+    > h2 {
+      font-size: 32px;
+    }
+    > p {
+      font-size: 24px;
+      text-align: right;
+    }
+    > .button {
+      height: auto;
+      padding: 8px 0px 8px 0px;
+      margin-right: 0px;
+    }
+  }
+  .review {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 768px) {
+}

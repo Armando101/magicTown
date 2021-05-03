@@ -45,3 +45,17 @@
   font-size: 14px;
   text-align: right;
 }
+
+@media (max-width: 320px){
+  .reviewcard{
+    display: block;
+    margin: 0px;
+    width: 100%;
+  }
+  .reviewcard_stars{
+    display: block;
+  }
+  .author{
+    margin-top: 4px;
+  }
+}

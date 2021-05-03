@@ -1,5 +1,6 @@
 @import "src/styles/base/colors.scss";
 @import "src/styles/base/fonts.scss";
+@import "../base/breakpoints.scss";
 
 .profile-card {
   background-color: white;
@@ -22,5 +23,8 @@
   }
   > .button > P:hover {
     background-color: #c5dee9;
+  }
+  @media screen and (max-width: $breakpoint-m + 110px) {
+    display: none;
   }
 }

@@ -6,7 +6,6 @@ import "../styles/components/ReviewCard.scss";
 
 function LatestReviewCard({ reviewInfo }) {
   const author = { ...reviewInfo.user };
-  console.log(author)
   const townInfo = { ...reviewInfo.town };
 
   return (

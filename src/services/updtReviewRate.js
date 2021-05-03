@@ -1,5 +1,5 @@
-function updtUserInfo(id, payload) {
-  const apiURL = `http://localhost:3001/users/${id}`;
+function updtReviewRate(id, payload) {
+  const apiURL = `http://localhost:3001/towns/${id}`;
 
   return fetch(apiURL, {
     method: "PATCH",
@@ -12,4 +12,4 @@ function updtUserInfo(id, payload) {
     });
 }
 
-export default updtUserInfo;
+export default updtReviewRate;

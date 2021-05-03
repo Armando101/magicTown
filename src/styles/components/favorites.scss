@@ -1,5 +1,6 @@
 @import "@styles/base/colors.scss";
-@import "src/styles/base/fonts.scss";
+@import "@styles/base/fonts.scss";
+@import "@styles/base/breakpoints.scss";
 
 .favorites {
   &__title {
@@ -29,6 +30,13 @@
         > .reviewcard {
           margin: 0;
         }
+      }
+    }
+    @media screen and (max-width: $breakpoint-m + 110px) {
+      grid-template-columns: 1fr !important;
+
+      > .reviews {
+        margin-left: 0;
       }
     }
   }

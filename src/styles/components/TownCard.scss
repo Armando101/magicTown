@@ -30,9 +30,63 @@
     margin-bottom: 10px;
   }
   &__description {
-    max-width: 300px;
+    max-width: 100px;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-bottom: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .review {
+    > .section-title {
+      margin: 0px 24px 16px 24px !important;
+    }
+  }
+  .town-card {
+    @include flex-column;
+    // width: 0px;
+  }
+  .town-card__body > .button {
+    margin-top: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+    font-size: 12px !important;
+  }
+  .town-card__thumbnail {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .town-card {
+    width: auto;
+    margin: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .town-card {
+    @include flex-column;
+    width: auto;
+    margin: 16px;
+  }
+  .town-card__thumbnail {
+    width: 100%;
+    height: 140px;
+    max-width: none;
+  }
+  .town-card__body {
+    width: 100%;
+    height: 100%;
+  }
+  .town-card__description {
+    margin-bottom: auto;
+  }
+  .town-card__body > .button {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+    font-size: 12px !important;
   }
 }

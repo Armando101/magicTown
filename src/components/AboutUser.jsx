@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "@styles/components/favorites.scss";
+import "../styles/components/Favorites.scss";
 import ProfileCard from "./ProfileCard";
 import getUserReviews from "../services/getUserReviews";
 import ReviewCard from "./ReviewCard";
@@ -9,7 +9,6 @@ const AboutUser = ({ id, description }) => {
 
   useEffect(async () => {
     await getUserReviews(id).then((response) => {
-      console.log(response);
       setReviews(response);
     });
   }, []);

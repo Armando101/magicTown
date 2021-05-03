@@ -67,3 +67,29 @@
     }
   }
 }
+
+@media (max-width: 320px){
+  .searchbar__input{
+    width: 240px;
+    font-size: 14px;
+  }
+  .searchbar__form{
+    height: 40px;
+  }
+  .searchbar__submit{
+    width: 40px;
+  }
+  .searchbar__submit > img{
+    width: 24px;
+    height: 24px;
+  }
+  .searchbar > h1{
+    margin-top: 24px;
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 768px){
+  .searchbar > h1{
+    font-size: 40px;
+  }
+}

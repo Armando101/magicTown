@@ -7,6 +7,7 @@ import getTownById from "../services/getTownById.js";
 
 import { UserContext } from "../context/UserContext";
 import { useHistory } from "react-router";
+import updtReviewRate from "../services/updtReviewRate";
 
 const InputReview = ({ townId, reviewsState, openModal }) => {
   const { user, setUser } = useContext(UserContext);
@@ -26,7 +27,6 @@ const InputReview = ({ townId, reviewsState, openModal }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e.target.comment);
     if (user == null) {
       history.push("/login");
       return;
@@ -37,13 +37,15 @@ const InputReview = ({ townId, reviewsState, openModal }) => {
       return;
     }
 
-    await postService("reviews", {
+    postService("reviews", {
       userId: user.id,
       townId: townId,
       rate: rateValue,
       description: description,
       creation_date: new Date().toISOString().slice(0, 10),
     });
+
+    updtReviewRate(townId, { rate: rateValue });
 
     const response = await getTownById(townId);
 

@@ -3,7 +3,7 @@
 
 .discover {
   display: grid;
-  grid-template-rows: 60px repeat(1, 2fr);
+  grid-template-rows: auto repeat(1, 2fr);
   grid-template-columns: repeat(auto-fit, minmax(420px, 32%));
   gap: 10px 18px;
   margin: 30px 0 0;
@@ -17,5 +17,26 @@
   }
   @media screen and (max-width: $breakpoint-l) {
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  }
+}
+@media (max-width: breakpoint-s) {
+  .discover {
+    grid-template-rows: none;
+  }
+  .discover > .section-title {
+    margin-bottom: 0px !important;
+  }
+}
+@media (max-width: $breakpoint-m) {
+  .discover {
+    display: grid;
+    // grid-template-rows: none;
+    grid-template-columns: 1fr;
+  }
+  .discover > .section-title {
+    margin: 16px;
+  }
+  h3 {
+    font-size: 24px !important;
   }
 }

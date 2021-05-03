@@ -19,19 +19,12 @@
 }
 
 @media (max-width: 320px) {
-  .hero img {
-    height: 200px;
-  }
   .hero {
-    height: 200px;
+    height: 360px !important;
   }
 }
-
-// @media (max-width: 768px){
-//     .hero img{
-//       height: 200px;
-//     }
-//     .hero{
-//       height: 200px;
-//     }
-// }
+@media (max-width: 768px) {
+  .hero {
+    height: 450px;
+  }
+}
