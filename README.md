@@ -47,10 +47,10 @@ npm run build
 * María Herminia Jiménez Castillo - [Herminia-Jimenez](https://github.com/Herminia-Jimenez/)
 * Raúl Eduardo Méndez Vásquez - [Raulmendezv](https://github.com/Raulmendezv)
 * Sebastián Emilio Audetat Facio - [Grufty295](https://github.com/Grufty295)
-* Armando Rivera - [Armando](https://github.com/Armando101)
+* Armando Rivera - [Armando101](https://github.com/Armando101)
 
 ### 🖌️ Diseñador UI
-* Brian Gibran Godoy Lomelí - [GibranGodoy](https://github.com/Armando101)
+* Brian Gibran Godoy Lomelí - [GibranGodoy](https://github.com/GibranGodoy)
 
 ## 🎁 Expresiones de Gratitud:
 
