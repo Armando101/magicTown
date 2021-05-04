@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/components/Favorites.scss";
+import "../styles/components/favorites.scss";
 import ProfileCard from "./ProfileCard";
 import getUserReviews from "../services/getUserReviews";
 import ReviewCard from "./ReviewCard";
