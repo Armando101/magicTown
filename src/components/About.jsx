@@ -5,7 +5,7 @@ import DetailList from "./DetailList";
 
 import { UserContext } from "../context/UserContext";
 import getUserFavorites from "../services/getUserFavorites";
-import AboutWidgets from "../layout/AboutWidgets";
+import AboutWidgets from "../components/AboutWidgets";
 import compareTownName from "../helpers/compareTownName";
 
 const About = (town) => {
