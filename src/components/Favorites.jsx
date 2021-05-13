@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FavoritesCards from "./FavoritesCards";
-import "../styles/components/Favorites.scss";
+import "../styles/components/favorites.scss";
 import ProfileCard from "./ProfileCard";
 
 import getUserFavorites from "../services/getUserFavorites";
