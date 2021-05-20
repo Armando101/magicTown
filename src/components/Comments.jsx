@@ -5,7 +5,6 @@ import CommentsCard from "./CommentsCard";
 
 function Comments({ townName, townId, reviewsState, openModal }) {
   const reviews = { ...reviewsState.reviews };
-  console.log("asdas", Object.keys(reviews).length);
 
   return (
     <section className="comments">

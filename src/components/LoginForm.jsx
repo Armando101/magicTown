@@ -7,9 +7,12 @@ import getUser from "../services/getUser";
 import { Modal } from "@material-ui/core";
 
 import "../styles/components/LoginForm.scss";
+import getUserFavorites from "../services/getUserFavorites";
 
 function LoginForm() {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser, userFavorites, setUserFavorites } =
+    useContext(UserContext);
+
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState("incomplete");
   const history = useHistory();
@@ -28,8 +31,13 @@ function LoginForm() {
       password: e.target.passInput.value,
     })
       .then((user) => {
-        delete user[0].password;
-        setUser(user[0]);
+        delete user.password;
+        setUser(user);
+
+        getUserFavorites(user.id).then((favorites) => {
+          setUserFavorites(favorites);
+        });
+
         history.push("/home");
       })
       .catch((error) => {

@@ -1,5 +1,5 @@
 function compareTownName(arr = [], name) {
-  if (arr.length <= 1) return;
+  if (arr.length <= 1 || !name) return;
 
   const result = arr.filter((item) => {
     const town = { ...item.town };
@@ -9,7 +9,7 @@ function compareTownName(arr = [], name) {
       return false;
     }
   });
-  return result[0];
+  return result[0].id;
 }
 
 export default compareTownName;

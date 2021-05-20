@@ -8,6 +8,7 @@ import getUser from "../services/getUser";
 import "../styles/components/LoginForm.scss";
 
 import { Modal } from "@material-ui/core";
+import postService from "../services/postService";
 
 function RegisterForm() {
   const initForm = {
@@ -19,34 +20,34 @@ function RegisterForm() {
     favorites: [],
   };
 
-  const { user, setUser } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
 
   const [form, setForm] = useState(initForm);
   const [isModalOpen, setModalOpen] = useState(false);
 
   const history = useHistory();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.username || !form.password) {
+    const { username, password } = form;
+
+    if (!username || !password) {
       handleOpen();
       return;
     }
 
-    await fetch("http://localhost:8080/users", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
+    postService("users", {
+      ...form,
     });
 
-    const newUser = await getUser(form.username, form.password);
-
-    setUser(newUser);
-
-    history.push("/home");
+    getUser({ username, password })
+      .then((user) => {
+        setUser(user);
+        history.push("/home");
+      })
+      .catch((error) => {
+        handleOpen();
+      });
   };
 
   const handleChange = (e) => {

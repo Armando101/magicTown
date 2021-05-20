@@ -4,29 +4,24 @@ import Rating from "@material-ui/lab/Rating";
 import DetailList from "./DetailList";
 
 import { UserContext } from "../context/UserContext";
-import getUserFavorites from "../services/getUserFavorites";
+
 import AboutWidgets from "@components/AboutWidgets";
 import compareTownName from "../helpers/compareTownName";
 
 const About = (town) => {
-  const { user, setUser } = useContext(UserContext);
-
-  const [favorites, setFavorites] = useState([{}]);
+  const { user, userFavorites } = useContext(UserContext);
 
   const [toggleFav, setToggleFav] = useState(false);
 
-  const [userFavoriteInfo, setUserFavoriteInfo] = useState();
+  const [userFavoriteId, setUserFavoriteId] = useState("asdas");
 
   useEffect(() => {
     if (user == null) return;
-    getUserFavorites(user.id).then((response) => {
-      setFavorites(response);
-    });
 
-    const response = compareTownName(favorites, town.name);
+    const response = compareTownName(userFavorites, town.name);
+
     if (response) {
-      const result = { ...response };
-      setUserFavoriteInfo(result);
+      setUserFavoriteId(response);
       setToggleFav(true);
     }
   }, [town]);
@@ -64,11 +59,10 @@ const About = (town) => {
         </div>
       </div>
       <AboutWidgets
-        user={user}
         toggleFav={toggleFav}
         setToggleFav={setToggleFav}
         map={town.mapsURL}
-        userFavoriteInfo={userFavoriteInfo}
+        userFavoriteId={userFavoriteId}
         townId={town.id}
       />
     </section>

@@ -1,4 +1,6 @@
 function getUserFavorites(id) {
+  if (!id) return;
+
   const apiURL = `http://localhost:3001/favorites?userId=${id}&_expand=town`;
 
   return fetch(apiURL, {
@@ -8,6 +10,9 @@ function getUserFavorites(id) {
     .then((res) => res.json())
     .then((response) => {
       return response;
+    })
+    .catch((error) => {
+      return error;
     });
 }
 

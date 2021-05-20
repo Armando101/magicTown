@@ -5,32 +5,28 @@
       "username": "Herminia",
       "password": "bedu2021",
       "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. ",
-      "avatar": "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg",
-      "favourites": []
+      "avatar": "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg"
     },
     {
       "id": 2,
       "username": "Raul",
       "password": "bedu2021",
       "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. ",
-      "avatar": "https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg",
-      "favourites": []
+      "avatar": "https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg"
     },
     {
       "id": 3,
       "username": "Armando",
       "password": "bedu2021",
       "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. ",
-      "avatar": "https://eshendetesia.com/images/profile/po.jpeg",
-      "favourites": []
+      "avatar": "https://eshendetesia.com/images/profile/po.jpeg"
     },
     {
       "id": 4,
       "username": "Sebastian",
       "password": "bedu2021",
       "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. ",
-      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQTc75is72-G1uGWDy1_NIOW7l6xLnOJzGogEANzqG8oynySXFPQRdAxTcf95K2iM98Gs&usqp=CAU",
-      "favourites": []
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQTc75is72-G1uGWDy1_NIOW7l6xLnOJzGogEANzqG8oynySXFPQRdAxTcf95K2iM98Gs&usqp=CAU"
     }
   ],
   "towns": [
@@ -68,7 +64,9 @@
         "Huachinango frito",
         "Pozole verde y rojo"
       ],
-      "ethnics": ["Wixárikas"],
+      "ethnics": [
+        "Wixárikas"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82715/calvillo_aguascalientes.jpeg",
         "https://www.gob.mx/cms/uploads/image/file/507224/01_calvillo_aguascalientes.jpg",
@@ -111,7 +109,9 @@
         "Gorditas de la región",
         "Dulces típicos de la región"
       ],
-      "ethnics": ["Chichimecas"],
+      "ethnics": [
+        "Chichimecas"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/83860/CALLE-real-de-asientos-web.jpg",
         "https://www.gob.mx/cms/uploads/image/file/514877/Aguascalientes_Real-de-asientos_web.jpg",
@@ -147,8 +147,13 @@
         "Fiesta de San Juan",
         "Feria del Libro de San José de Gracia"
       ],
-      "dishes": ["Pacholas de Aguascalientes", "Membrillete con queso"],
-      "ethnics": ["Chichimecas"],
+      "dishes": [
+        "Pacholas de Aguascalientes",
+        "Membrillete con queso"
+      ],
+      "ethnics": [
+        "Chichimecas"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/84833/Cristo-Roto-San-Jose-de-Gracia-Aguascalientes-web-.jpg",
         "https://www.gob.mx/cms/uploads/image/file/520183/Tirolesa-en-San-jose-de-gracia-Aguascalientes-web.jpg",
@@ -174,9 +179,16 @@
         "El Cuchamá",
         "Zona Arqueológica Vallecitos"
       ],
-      "festivities": ["Danzas de La Rumorosa"],
-      "dishes": ["Pan dulce y vino", "Tiradito de abulón"],
-      "ethnics": ["Yumanos"],
+      "festivities": [
+        "Danzas de La Rumorosa"
+      ],
+      "dishes": [
+        "Pan dulce y vino",
+        "Tiradito de abulón"
+      ],
+      "ethnics": [
+        "Yumanos"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82732/Cerveceria-TECATE-01.jpg",
         "https://www.gob.mx/cms/uploads/image/file/507318/La-Cocina-que-Canta-Rancho-La_Puerta-Tecate.jpg",
@@ -212,7 +224,9 @@
         "Almejas tatemadas",
         "Tortillas de harina"
       ],
-      "ethnics": ["Pericúes"],
+      "ethnics": [
+        "Pericúes"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/83862/Chicas-Playa-Loreto-BCS_web.jpg",
         "https://www.gob.mx/cms/uploads/image/file/514522/baja-california_loreto_bahia-de-Loreto-golf_web.jpg",
@@ -249,7 +263,9 @@
         "Filete imperial de camarón",
         "Tortillas de harina"
       ],
-      "ethnics": ["Pericúes"],
+      "ethnics": [
+        "Pericúes"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82793/TODOS-SANTOS.jpg",
         "https://www.gob.mx/cms/uploads/image/file/507775/Hotel-California_BCS.jpg",
@@ -274,9 +290,18 @@
         "Chepe",
         "Hacienda San Miguel"
       ],
-      "festivities": ["Fiestas Patronales de la Virgen del Carmen"],
-      "dishes": ["Chile con queso"],
-      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
+      "festivities": [
+        "Fiestas Patronales de la Virgen del Carmen"
+      ],
+      "dishes": [
+        "Chile con queso"
+      ],
+      "ethnics": [
+        "Tarahumaras",
+        "Guarojíos",
+        "Tepehuanes",
+        "Pimas"
+      ],
       "photos": [
         "https://www.pueblosmagicosde.org/wp-content/uploads/2019/07/Batopilas-Pueblo-Magico-de-Chihuahua-v001-compressor.jpg",
         "http://cdn.shopify.com/s/files/1/2492/3552/articles/Batopilas_1200x1200.jpg?v=1524244168",
@@ -295,10 +320,21 @@
       "clima": "Extremo",
       "incorporation_year": "2015",
       "biome": "Desierto",
-      "attractions": ["Zona arqueológica Paquimé"],
-      "festivities": ["Cabalgata Binacional Villista"],
-      "dishes": ["Tostada de lomo de cerdo"],
-      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
+      "attractions": [
+        "Zona arqueológica Paquimé"
+      ],
+      "festivities": [
+        "Cabalgata Binacional Villista"
+      ],
+      "dishes": [
+        "Tostada de lomo de cerdo"
+      ],
+      "ethnics": [
+        "Tarahumaras",
+        "Guarojíos",
+        "Tepehuanes",
+        "Pimas"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/image/file/520871/Chihuahua_Casas-Crandes_web.jpg",
         "https://www.gob.mx/cms/uploads/article/main_image/84967/Chihuahua_Casas-Crandes_Paquime-web.jpg",
@@ -317,10 +353,21 @@
       "clima": "Templado",
       "incorporation_year": "2007",
       "biome": "Sierra",
-      "attractions": ["Barrancas del Cobre"],
-      "festivities": ["Fiesta patronal de Cristo Rey"],
-      "dishes": ["Caldillo de carne seca"],
-      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
+      "attractions": [
+        "Barrancas del Cobre"
+      ],
+      "festivities": [
+        "Fiesta patronal de Cristo Rey"
+      ],
+      "dishes": [
+        "Caldillo de carne seca"
+      ],
+      "ethnics": [
+        "Tarahumaras",
+        "Guarojíos",
+        "Tepehuanes",
+        "Pimas"
+      ],
       "photos": [
         "https://i.pinimg.com/originals/a5/c2/62/a5c2626d356882b1be43d1a98ab363e1.jpg",
         "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/09/creel-monjes-facebook-mtch-1200x680ok.jpg",
@@ -339,10 +386,18 @@
       "clima": "Subhúmedo",
       "incorporation_year": "2015",
       "biome": "Montaña",
-      "attractions": ["Cascadas la concepción Tixhiñu"],
-      "festivities": ["Día de la Fraternidad"],
-      "dishes": ["Escamoles"],
-      "ethnics": ["Otomíes"],
+      "attractions": [
+        "Cascadas la concepción Tixhiñu"
+      ],
+      "festivities": [
+        "Día de la Fraternidad"
+      ],
+      "dishes": [
+        "Escamoles"
+      ],
+      "ethnics": [
+        "Otomíes"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/image/file/530648/Mexico_Aculco_Cascada-Tixhin_u-web.jpg",
         "http://revistaaventurero.com.mx/wp-content/uploads/2018/09/ACULCO-www.aculco.gob_.mx_.jpg",
@@ -361,10 +416,19 @@
       "clima": "Semicálido ",
       "incorporation_year": "2015",
       "biome": "Bosque",
-      "attractions": ["Museo Arturo San Román"],
-      "festivities": ["Asunción de María"],
-      "dishes": ["Chilacayotes en pipián"],
-      "ethnics": ["Matlatzincas", "Otomíes"],
+      "attractions": [
+        "Museo Arturo San Román"
+      ],
+      "festivities": [
+        "Asunción de María"
+      ],
+      "dishes": [
+        "Chilacayotes en pipián"
+      ],
+      "ethnics": [
+        "Matlatzincas",
+        "Otomíes"
+      ],
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/PlazaChurchIxtapan.JPG",
         "https://www.mexicodesconocido.com.mx/sites/default/files/fichas-destino/estado_mexico_ixtapan_sal_parroquia_asuncion_sl.jpg",
@@ -383,10 +447,21 @@
       "clima": "Templado",
       "incorporation_year": "2015",
       "biome": "Bosque",
-      "attractions": ["Cerro de la Bufa"],
-      "festivities": ["Aniversario de la Erección de Villa del Carbón"],
-      "dishes": ["Barbacoa de carnero"],
-      "ethnics": ["Cachihuapan", "Taxhimay", "Temanacoya", "Zacapexco"],
+      "attractions": [
+        "Cerro de la Bufa"
+      ],
+      "festivities": [
+        "Aniversario de la Erección de Villa del Carbón"
+      ],
+      "dishes": [
+        "Barbacoa de carnero"
+      ],
+      "ethnics": [
+        "Cachihuapan",
+        "Taxhimay",
+        "Temanacoya",
+        "Zacapexco"
+      ],
       "photos": [
         "https://www.eluniversal.com.mx/sites/default/files/2017/02/27/principal_-_cortesia_turismo_del_estado_de_mexico.jpg",
         "http://cdn.shopify.com/s/files/1/2492/3552/articles/taxhimay_1200x1200.jpg?v=1517506071",
@@ -405,9 +480,15 @@
       "clima": "Subhúmedo",
       "incorporation_year": "2012",
       "biome": "Bosque",
-      "attractions": ["Hacienda de Jalpa de Cánovas"],
-      "festivities": ["La Judea"],
-      "dishes": ["Caldo de zorra"],
+      "attractions": [
+        "Hacienda de Jalpa de Cánovas"
+      ],
+      "festivities": [
+        "La Judea"
+      ],
+      "dishes": [
+        "Caldo de zorra"
+      ],
       "ethnics": [],
       "photos": [
         "https://guanajuato.mx/site2/wp-content/uploads/2020/12/jalpa-de-canovas-pueblo-magico-de-guanajuato.jpg",
@@ -427,9 +508,15 @@
       "clima": "Semiseco",
       "incorporation_year": "2012",
       "biome": "Semidesierto",
-      "attractions": ["Mina de los Cinco Señores"],
-      "festivities": ["Señor de los Trabajos"],
-      "dishes": ["Colonche"],
+      "attractions": [
+        "Mina de los Cinco Señores"
+      ],
+      "festivities": [
+        "Señor de los Trabajos"
+      ],
+      "dishes": [
+        "Colonche"
+      ],
       "ethnics": [],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/86002/Gto_mineral-de-pozos-web.jpg",
@@ -449,9 +536,15 @@
       "clima": "Semicálido",
       "incorporation_year": "2012",
       "biome": "Bosque",
-      "attractions": ["Laguna de Yuriria"],
-      "festivities": ["Fiesta de la Preciosa Sangre de Cristo"],
-      "dishes": ["Caldo michi"],
+      "attractions": [
+        "Laguna de Yuriria"
+      ],
+      "festivities": [
+        "Fiesta de la Preciosa Sangre de Cristo"
+      ],
+      "dishes": [
+        "Caldo michi"
+      ],
       "ethnics": [],
       "photos": [
         "https://www.mexicodesconocido.com.mx/wp-content/uploads/2019/06/guanajuato-yuriria-exconvento-JC-0716_JCmd.gif",
@@ -471,9 +564,15 @@
       "clima": "Semiseco",
       "incorporation_year": "2012",
       "biome": "Valle",
-      "attractions": ["Parroquia de la Asunción en el Centro Histórico"],
-      "festivities": ["Fiestas a Nuestro Padre Jesús del Calvario"],
-      "dishes": ["Pacholas"],
+      "attractions": [
+        "Parroquia de la Asunción en el Centro Histórico"
+      ],
+      "festivities": [
+        "Fiestas a Nuestro Padre Jesús del Calvario"
+      ],
+      "dishes": [
+        "Pacholas"
+      ],
       "ethnics": [],
       "photos": [
         "https://www.mexicoenfotos.com/MX15099484704679.jpg",
@@ -493,9 +592,15 @@
       "clima": "Semicálido",
       "incorporation_year": "2018",
       "biome": "Urbano",
-      "attractions": ["Andador Independencia"],
-      "festivities": ["Fiestas de San Pedro Tlaquepaque"],
-      "dishes": ["Carne en su jugo"],
+      "attractions": [
+        "Andador Independencia"
+      ],
+      "festivities": [
+        "Fiestas de San Pedro Tlaquepaque"
+      ],
+      "dishes": [
+        "Carne en su jugo"
+      ],
       "ethnics": [],
       "photos": [
         "https://media.timeout.com/images/103928725/image.jpg",
@@ -515,10 +620,21 @@
       "clima": "Subtropical",
       "incorporation_year": "2003",
       "biome": "Valle",
-      "attractions": ["Tren Tequila Express o el José Cuervo Express"],
-      "festivities": ["Feria Nacional del Tequila"],
-      "dishes": ["Birria"],
-      "ethnics": ["Chichimecas", "Otomíes", "Toltecas", "Nahuatlacas"],
+      "attractions": [
+        "Tren Tequila Express o el José Cuervo Express"
+      ],
+      "festivities": [
+        "Feria Nacional del Tequila"
+      ],
+      "dishes": [
+        "Birria"
+      ],
+      "ethnics": [
+        "Chichimecas",
+        "Otomíes",
+        "Toltecas",
+        "Nahuatlacas"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/image/file/521316/Tequila-JALISCO-web.jpg",
         "https://mk0outandaboutpf40tm.kinstacdn.com/wp-content/uploads/2020/01/Depositphotos_9999077_xl-2015-scaled.jpg",
@@ -537,10 +653,18 @@
       "clima": "Cálido",
       "incorporation_year": "2015",
       "biome": "Playa",
-      "attractions": ["Centro Mexicano de la Tortuga"],
-      "festivities": ["Festival Internacional de Jazz"],
-      "dishes": ["Mariscos"],
-      "ethnics": ["Náhuatl"],
+      "attractions": [
+        "Centro Mexicano de la Tortuga"
+      ],
+      "festivities": [
+        "Festival Internacional de Jazz"
+      ],
+      "dishes": [
+        "Mariscos"
+      ],
+      "ethnics": [
+        "Náhuatl"
+      ],
       "photos": [
         "https://www.playasmexico.mx/IMG/arton598.jpg",
         "https://hotbook.com.mx/wp-content/uploads/2015/12/oaxaca_portada.jpg",
@@ -559,10 +683,19 @@
       "clima": "Seco",
       "incorporation_year": "2015",
       "biome": "Valle",
-      "attractions": ["Zona Arqueológica de Yagul y Mitla"],
-      "festivities": ["Villa Mágica de Mitla"],
-      "dishes": ["Mole"],
-      "ethnics": ["Zapotecos", "Mixtecos"],
+      "attractions": [
+        "Zona Arqueológica de Yagul y Mitla"
+      ],
+      "festivities": [
+        "Villa Mágica de Mitla"
+      ],
+      "dishes": [
+        "Mole"
+      ],
+      "ethnics": [
+        "Zapotecos",
+        "Mixtecos"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/85797/Oaxaca-Mitla-Zona-Arqueologica-web.jpg",
         "https://mexicodesconocidoviajes.mx/wp-content/uploads/2019/09/mitla_IG_md_ok.jpg",
@@ -581,10 +714,18 @@
       "clima": "Húmedo",
       "incorporation_year": "2020",
       "biome": "Bosque",
-      "attractions": ["Santuario Mariano de la Inmaculada Virgen de Juquila"],
-      "festivities": ["Celebración de la Virgen de Juquila"],
-      "dishes": ["Enchiladas Juquileñas"],
-      "ethnics": ["Chatinos"],
+      "attractions": [
+        "Santuario Mariano de la Inmaculada Virgen de Juquila"
+      ],
+      "festivities": [
+        "Celebración de la Virgen de Juquila"
+      ],
+      "dishes": [
+        "Enchiladas Juquileñas"
+      ],
+      "ethnics": [
+        "Chatinos"
+      ],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/102846/foto__5_.JPG",
         "https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2019-04/juquila-Portada%20%281%29.jpg",
@@ -675,16 +816,6 @@
     },
     {
       "userId": 1,
-      "townId": 3,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "townId": 6,
-      "id": 13
-    },
-    {
-      "userId": 1,
       "townId": 2,
       "id": 14
     },
@@ -692,6 +823,11 @@
       "userId": 1,
       "townId": 1,
       "id": 15
+    },
+    {
+      "userId": 1,
+      "townId": 3,
+      "id": 16
     }
   ]
 }

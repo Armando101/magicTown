@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import "@styles/components/ProfileCover.scss";
-import facebook from "@icons/facebook.svg";
-import instagram from "@icons/instagram.svg";
-import twitter from "@icons/twitter.svg";
+import facebook from "../../public/assets/icons/facebook.svg";
+import instagram from "../../public/assets/icons/instagram.svg";
+import twitter from "../../public/assets/icons/twitter.svg";
 import { Modal } from "@material-ui/core";
 import updtUserInfo from "../services/updtUserInfo";
 

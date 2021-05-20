@@ -47,6 +47,8 @@ function NoAuthenticatedRouter() {
         <Route exact path="/detail/:id" render={withRouter(DetailPage)} />
         <Route path="/search/:keyword" component={ResultPage} />
 
+        <Route exact path="/" render={() => <HomePage />} />
+
         <Route component={NotFoundPage} />
       </Switch>
     </>

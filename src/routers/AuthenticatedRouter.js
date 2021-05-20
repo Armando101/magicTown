@@ -33,6 +33,8 @@ function AuthenticatedRouter({ userInfo }) {
 
         <Route path="/search/:keyword" component={ResultPage} />
 
+        <Route path="/" render={() => <HomePage userInfo={userInfo} />} />
+
         <Route component={NotFoundPage} />
       </Switch>
     </>

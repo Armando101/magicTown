@@ -19,7 +19,9 @@ function TownCard({ townInfo }) {
       <div className="town-card__body">
         <h6 className="town-card__title">{townName}</h6>
         <p className="town-card__description">{townInfo.description}</p>
-        <Button label="Enséñame más" onClick={handleClick} />
+        <div className="town-card__footer">
+          <Button label="Enséñame más" onClick={handleClick} />
+        </div>
       </div>
     </div>
   );
