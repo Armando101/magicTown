@@ -27,18 +27,25 @@
       "password": "bedu2021",
       "description": "Voluptate qui incididunt labore magna dolore in ipsum quis ullamco tempor minim proident. ",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQTc75is72-G1uGWDy1_NIOW7l6xLnOJzGogEANzqG8oynySXFPQRdAxTcf95K2iM98Gs&usqp=CAU"
+    },
+    {
+      "username": "tablero",
+      "password": "adsa",
+      "description": "",
+      "avatar": "https://img.favpng.com/8/0/5/computer-icons-user-profile-avatar-png-favpng-6jJk1WU2YkTBLjFs4ZwueE8Ub_t.jpg",
+      "favorites": [],
+      "id": 5
     }
   ],
   "towns": [
     {
-      "id": 1,
       "rate": 4,
       "name": "Calvillo",
-      "cover": "https://mexicodesconocidoviajes.mx/wp-content/uploads/2019/01/calvillo-santuario-de-la-virgen-de-guadalupe-aguascalientes-ok.jpg",
+      "coverURL": "https://mexicodesconocidoviajes.mx/wp-content/uploads/2019/01/calvillo-santuario-de-la-virgen-de-guadalupe-aguascalientes-ok.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29625.676831431327!2d-102.73221509474054!3d21.849449358736262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429cc1aa651f151%3A0x6ef110b7a1b1637f!2sCalvillo%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1619569933065!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29625.676831431327!2d-102.73221509474054!3d21.849449358736262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429cc1aa651f151%3A0x6ef110b7a1b1637f!2sCalvillo%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1619569933065!5m2!1ses-419!2smx",
       "state": "Aguascalientes",
-      "clima": "Cálido",
+      "weather": "Cálido",
       "incorporation_year": "2012",
       "biome": "Sierra Madre Occidental",
       "attractions": [
@@ -64,27 +71,23 @@
         "Huachinango frito",
         "Pozole verde y rojo"
       ],
-      "ethnics": [
-        "Wixárikas"
-      ],
+      "ethnics": ["Wixárikas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82715/calvillo_aguascalientes.jpeg",
         "https://www.gob.mx/cms/uploads/image/file/507224/01_calvillo_aguascalientes.jpg",
         "https://www.entornoturistico.com/wp-content/uploads/2016/12/Calvillo-Aguascalientes.jpg",
         "https://images.unsplash.com/photo-1602294934733-5b518674bb0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
         "https://images.unsplash.com/photo-1607355400789-a402b4d13107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1153&q=80"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 2,
       "rate": 5,
       "name": "Real de Asientos",
-      "cover": "https://i.pinimg.com/originals/f3/51/8e/f3518e4be8f347614540455d18b354f0.jpg",
+      "coverURL": "https://i.pinimg.com/originals/f3/51/8e/f3518e4be8f347614540455d18b354f0.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14772.079822606387!2d-102.09978417617394!3d22.239321627245573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a0051d6a88c9b%3A0x4016978679c5230!2sReal%20de%20Asientos%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1619570461771!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14772.079822606387!2d-102.09978417617394!3d22.239321627245573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a0051d6a88c9b%3A0x4016978679c5230!2sReal%20de%20Asientos%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1619570461771!5m2!1ses-419!2smx",
       "state": "Aguascalientes",
-      "clima": "Semicálido",
+      "weather": "Semicálido",
       "incorporation_year": "2006",
       "biome": "Semidesierto",
       "attractions": [
@@ -109,25 +112,21 @@
         "Gorditas de la región",
         "Dulces típicos de la región"
       ],
-      "ethnics": [
-        "Chichimecas"
-      ],
+      "ethnics": ["Chichimecas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/83860/CALLE-real-de-asientos-web.jpg",
         "https://www.gob.mx/cms/uploads/image/file/514877/Aguascalientes_Real-de-asientos_web.jpg",
         "https://blog.seccionamarilla.com.mx/wp-content/uploads/2018/01/Lugares-de-inter%C3%A9s-en-Real-de-Asientosp-770x514.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 3,
       "rate": 5,
       "name": "San José de Gracia",
-      "cover": "https://www.mexicodesconocido.com.mx/sites/default/files/fichas-destino/sanjosedegracia_cristoroto.jpg",
+      "coverURL": "https://www.mexicodesconocido.com.mx/sites/default/files/fichas-destino/sanjosedegracia_cristoroto.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14781.691127991438!2d-102.42300187619827!3d22.14797319093043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86820a9f24ccc6cd%3A0x22d31ea4c5ff898b!2sSan%20Jos%C3%A9%20de%20Gracia%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1619570535717!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14781.691127991438!2d-102.42300187619827!3d22.14797319093043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86820a9f24ccc6cd%3A0x22d31ea4c5ff898b!2sSan%20Jos%C3%A9%20de%20Gracia%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1619570535717!5m2!1ses-419!2smx",
       "state": "Aguascalientes",
-      "clima": "Subtropical",
+      "weather": "Subtropical",
       "incorporation_year": "2015",
       "biome": "Cañón semidesértico",
       "attractions": [
@@ -147,29 +146,22 @@
         "Fiesta de San Juan",
         "Feria del Libro de San José de Gracia"
       ],
-      "dishes": [
-        "Pacholas de Aguascalientes",
-        "Membrillete con queso"
-      ],
-      "ethnics": [
-        "Chichimecas"
-      ],
+      "dishes": ["Pacholas de Aguascalientes", "Membrillete con queso"],
+      "ethnics": ["Chichimecas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/84833/Cristo-Roto-San-Jose-de-Gracia-Aguascalientes-web-.jpg",
         "https://www.gob.mx/cms/uploads/image/file/520183/Tirolesa-en-San-jose-de-gracia-Aguascalientes-web.jpg",
         "https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/04/IMG_1595_cristo-roto_sn-jose-de-gracia_EPmd.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 4,
       "rate": 5,
       "name": "Tecate",
-      "cover": "https://tecate.travel/wp-content/uploads/2019/08/campo-alaska-bajacalifornia-1000x480.jpg",
+      "coverURL": "https://tecate.travel/wp-content/uploads/2019/08/campo-alaska-bajacalifornia-1000x480.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53802.506686214736!2d-116.65779035049769!3d32.562007135735584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d90ea89a5f62e7%3A0x84a7f77c07cd016e!2sTecate%2C%20B.C.!5e0!3m2!1ses-419!2smx!4v1619571106844!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53802.506686214736!2d-116.65779035049769!3d32.562007135735584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d90ea89a5f62e7%3A0x84a7f77c07cd016e!2sTecate%2C%20B.C.!5e0!3m2!1ses-419!2smx!4v1619571106844!5m2!1ses-419!2smx",
       "state": "Baja California",
-      "clima": "Semicálido",
+      "weather": "Semicálido",
       "incorporation_year": "2012",
       "biome": "Bosque",
       "attractions": [
@@ -179,32 +171,23 @@
         "El Cuchamá",
         "Zona Arqueológica Vallecitos"
       ],
-      "festivities": [
-        "Danzas de La Rumorosa"
-      ],
-      "dishes": [
-        "Pan dulce y vino",
-        "Tiradito de abulón"
-      ],
-      "ethnics": [
-        "Yumanos"
-      ],
+      "festivities": ["Danzas de La Rumorosa"],
+      "dishes": ["Pan dulce y vino", "Tiradito de abulón"],
+      "ethnics": ["Yumanos"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82732/Cerveceria-TECATE-01.jpg",
         "https://www.gob.mx/cms/uploads/image/file/507318/La-Cocina-que-Canta-Rancho-La_Puerta-Tecate.jpg",
         "https://bajaviajes.com/wp-content/uploads/2019/08/tour-al-pueblo-magico-tecate-baja-california.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 5,
       "rate": 5,
       "name": "Loreto",
-      "cover": "https://i.pinimg.com/originals/57/54/ab/5754abe646277062f5fd29738e78674e.jpg",
+      "coverURL": "https://i.pinimg.com/originals/57/54/ab/5754abe646277062f5fd29738e78674e.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28684.5014770941!2d-111.37124633987314!3d26.015139212890862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b43b89530f87b1%3A0x178b5e606baccafe!2sLoreto%2C%20B.C.S.!5e0!3m2!1ses-419!2smx!4v1619571245086!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28684.5014770941!2d-111.37124633987314!3d26.015139212890862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b43b89530f87b1%3A0x178b5e606baccafe!2sLoreto%2C%20B.C.S.!5e0!3m2!1ses-419!2smx!4v1619571245086!5m2!1ses-419!2smx",
       "state": "Baja California Sur",
-      "clima": "Semicálido",
+      "weather": "Semicálido",
       "incorporation_year": "2012",
       "biome": "Bahía",
       "attractions": [
@@ -224,25 +207,21 @@
         "Almejas tatemadas",
         "Tortillas de harina"
       ],
-      "ethnics": [
-        "Pericúes"
-      ],
+      "ethnics": ["Pericúes"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/83862/Chicas-Playa-Loreto-BCS_web.jpg",
         "https://www.gob.mx/cms/uploads/image/file/514522/baja-california_loreto_bahia-de-Loreto-golf_web.jpg",
         "https://www.gob.mx/cms/uploads/image/file/514522/baja-california_loreto_bahia-de-Loreto-golf_web.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 6,
       "rate": 0,
       "name": "Todos Santos",
-      "cover": "https://nbcs.mx/wp-content/uploads/2019/09/todos-santos.png",
+      "coverURL": "https://nbcs.mx/wp-content/uploads/2019/09/todos-santos.png",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29281.005543536307!2d-110.2528570929781!3d23.455930192553694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af03fe2b270ad7%3A0xf1a22fb71b5d13ea!2sTodos%20Santos%2C%20B.C.S.!5e0!3m2!1ses-419!2smx!4v1619571603282!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29281.005543536307!2d-110.2528570929781!3d23.455930192553694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af03fe2b270ad7%3A0xf1a22fb71b5d13ea!2sTodos%20Santos%2C%20B.C.S.!5e0!3m2!1ses-419!2smx!4v1619571603282!5m2!1ses-419!2smx",
       "state": "Baja California Sur",
-      "clima": "Semicálido",
+      "weather": "Semicálido",
       "incorporation_year": "2006",
       "biome": "Oasis",
       "attractions": [
@@ -263,25 +242,21 @@
         "Filete imperial de camarón",
         "Tortillas de harina"
       ],
-      "ethnics": [
-        "Pericúes"
-      ],
+      "ethnics": ["Pericúes"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/82793/TODOS-SANTOS.jpg",
         "https://www.gob.mx/cms/uploads/image/file/507775/Hotel-California_BCS.jpg",
         "https://foodandtravel.mx/wp-content/uploads/2016/01/shutterstock_302126516.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 7,
       "rate": 0,
       "name": "Batopilas",
-      "cover": "https://www.mexicoincreible.com/wp-content/uploads/2019/02/Batopilas-chihuahua.jpg",
+      "coverURL": "https://www.mexicoincreible.com/wp-content/uploads/2019/02/Batopilas-chihuahua.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19554.689932553647!2d-107.73896919504622!3d27.030236364417487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bf3c688ecb4f4d%3A0xe4017a202b964e29!2sBatopilas%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1619571824523!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19554.689932553647!2d-107.73896919504622!3d27.030236364417487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bf3c688ecb4f4d%3A0xe4017a202b964e29!2sBatopilas%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1619571824523!5m2!1ses-419!2smx",
       "state": "Chihuahua",
-      "clima": "Semihúmedo",
+      "weather": "Semihúmedo",
       "incorporation_year": "2012",
       "biome": "Montaña",
       "attractions": [
@@ -290,453 +265,298 @@
         "Chepe",
         "Hacienda San Miguel"
       ],
-      "festivities": [
-        "Fiestas Patronales de la Virgen del Carmen"
-      ],
-      "dishes": [
-        "Chile con queso"
-      ],
-      "ethnics": [
-        "Tarahumaras",
-        "Guarojíos",
-        "Tepehuanes",
-        "Pimas"
-      ],
+      "festivities": ["Fiestas Patronales de la Virgen del Carmen"],
+      "dishes": ["Chile con queso"],
+      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
       "photos": [
         "https://www.pueblosmagicosde.org/wp-content/uploads/2019/07/Batopilas-Pueblo-Magico-de-Chihuahua-v001-compressor.jpg",
         "http://cdn.shopify.com/s/files/1/2492/3552/articles/Batopilas_1200x1200.jpg?v=1524244168",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xomgMg4T1gINcYplQ9HWfgzIKjEBzukAHg&usqp=CAU"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 8,
       "rate": 0,
       "name": "Casas Grandes",
-      "cover": "https://megaconstrucciones.net/images/monumentos/foto/paquime-7.jpg",
+      "coverURL": "https://megaconstrucciones.net/images/monumentos/foto/paquime-7.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21906.142941300608!2d-107.96811843072228!3d30.37824413576373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86dcab5f3c9d0e55%3A0xffb83cb3782dc79a!2sNuevo%20Casas%20Grandes%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1619571940025!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21906.142941300608!2d-107.96811843072228!3d30.37824413576373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86dcab5f3c9d0e55%3A0xffb83cb3782dc79a!2sNuevo%20Casas%20Grandes%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1619571940025!5m2!1ses-419!2smx",
       "state": "Chihuahua",
-      "clima": "Extremo",
+      "weather": "Extremo",
       "incorporation_year": "2015",
       "biome": "Desierto",
-      "attractions": [
-        "Zona arqueológica Paquimé"
-      ],
-      "festivities": [
-        "Cabalgata Binacional Villista"
-      ],
-      "dishes": [
-        "Tostada de lomo de cerdo"
-      ],
-      "ethnics": [
-        "Tarahumaras",
-        "Guarojíos",
-        "Tepehuanes",
-        "Pimas"
-      ],
+      "attractions": ["Zona arqueológica Paquimé"],
+      "festivities": ["Cabalgata Binacional Villista"],
+      "dishes": ["Tostada de lomo de cerdo"],
+      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/image/file/520871/Chihuahua_Casas-Crandes_web.jpg",
         "https://www.gob.mx/cms/uploads/article/main_image/84967/Chihuahua_Casas-Crandes_Paquime-web.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/0/04/Plaza_Mormona_en_Nuevo_Casas_Grandes%2C_Chihuahua.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 9,
       "rate": 2,
       "name": "Creel",
-      "cover": "https://www.viajoconestilo.com/wp-content/uploads/2017/03/creel-chihuahua-1170x700.jpg",
+      "coverURL": "https://www.viajoconestilo.com/wp-content/uploads/2017/03/creel-chihuahua-1170x700.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28247.51535335517!2d-107.65457686290866!3d27.75001449753619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c097b28d9701e1%3A0x2705a0091689928e!2sCreel%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1619572036249!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28247.51535335517!2d-107.65457686290866!3d27.75001449753619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c097b28d9701e1%3A0x2705a0091689928e!2sCreel%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1619572036249!5m2!1ses-419!2smx",
       "state": "Chihuahua",
-      "clima": "Templado",
+      "weather": "Templado",
       "incorporation_year": "2007",
       "biome": "Sierra",
-      "attractions": [
-        "Barrancas del Cobre"
-      ],
-      "festivities": [
-        "Fiesta patronal de Cristo Rey"
-      ],
-      "dishes": [
-        "Caldillo de carne seca"
-      ],
-      "ethnics": [
-        "Tarahumaras",
-        "Guarojíos",
-        "Tepehuanes",
-        "Pimas"
-      ],
+      "attractions": ["Barrancas del Cobre"],
+      "festivities": ["Fiesta patronal de Cristo Rey"],
+      "dishes": ["Caldillo de carne seca"],
+      "ethnics": ["Tarahumaras", "Guarojíos", "Tepehuanes", "Pimas"],
       "photos": [
         "https://i.pinimg.com/originals/a5/c2/62/a5c2626d356882b1be43d1a98ab363e1.jpg",
         "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/09/creel-monjes-facebook-mtch-1200x680ok.jpg",
         "https://static.travelagewest.com/i/sized/780/437/www.cfmedia.vfmleonardo.com/imageRepo/2/0/65/502/36/001_Exterior_view_(Exterior_view)_R.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 10,
       "rate": 0,
       "name": "Aculco",
-      "cover": "https://i0.wp.com/mas-mexico.com.mx/wp-content/uploads/2019/09/gu%C3%ADa-24.jpg?fit=1200%2C687&ssl=1&p=33157",
+      "coverURL": "https://i0.wp.com/mas-mexico.com.mx/wp-content/uploads/2019/09/gu%C3%ADa-24.jpg?fit=1200%2C687&ssl=1&p=33157",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239741.48604427616!2d-99.968490298533!3d20.13568630022684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3abeed9afdea1%3A0x8764a0feee261427!2zQWN1bGNvLCBNw6l4Lg!5e0!3m2!1ses-419!2smx!4v1619572150178!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239741.48604427616!2d-99.968490298533!3d20.13568630022684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3abeed9afdea1%3A0x8764a0feee261427!2zQWN1bGNvLCBNw6l4Lg!5e0!3m2!1ses-419!2smx!4v1619572150178!5m2!1ses-419!2smx",
       "state": "Estado de México",
-      "clima": "Subhúmedo",
+      "weather": "Subhúmedo",
       "incorporation_year": "2015",
       "biome": "Montaña",
-      "attractions": [
-        "Cascadas la concepción Tixhiñu"
-      ],
-      "festivities": [
-        "Día de la Fraternidad"
-      ],
-      "dishes": [
-        "Escamoles"
-      ],
-      "ethnics": [
-        "Otomíes"
-      ],
+      "attractions": ["Cascadas la concepción Tixhiñu"],
+      "festivities": ["Día de la Fraternidad"],
+      "dishes": ["Escamoles"],
+      "ethnics": ["Otomíes"],
       "photos": [
         "https://www.gob.mx/cms/uploads/image/file/530648/Mexico_Aculco_Cascada-Tixhin_u-web.jpg",
         "http://revistaaventurero.com.mx/wp-content/uploads/2018/09/ACULCO-www.aculco.gob_.mx_.jpg",
         "https://turismoi.mx/uploads/mx/photo/photo_file/16140/2108-1.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 11,
       "rate": 0,
       "name": "Ixtapan de la Sal",
-      "cover": "https://upload.wikimedia.org/wikipedia/commons/6/6c/PlazaChurchIxtapan.JPG",
+      "coverURL": "https://upload.wikimedia.org/wikipedia/commons/6/6c/PlazaChurchIxtapan.JPG",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30207.836202993738!2d-99.6963336405734!3d18.843578178160456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdb9f6be8d50ad%3A0x420681b9e4ffa74c!2sIxtapan%20de%20la%20Sal%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1619572179165!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30207.836202993738!2d-99.6963336405734!3d18.843578178160456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdb9f6be8d50ad%3A0x420681b9e4ffa74c!2sIxtapan%20de%20la%20Sal%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1619572179165!5m2!1ses-419!2smx",
       "state": "Estado de México",
-      "clima": "Semicálido ",
+      "weather": "Semicálido ",
       "incorporation_year": "2015",
       "biome": "Bosque",
-      "attractions": [
-        "Museo Arturo San Román"
-      ],
-      "festivities": [
-        "Asunción de María"
-      ],
-      "dishes": [
-        "Chilacayotes en pipián"
-      ],
-      "ethnics": [
-        "Matlatzincas",
-        "Otomíes"
-      ],
+      "attractions": ["Museo Arturo San Román"],
+      "festivities": ["Asunción de María"],
+      "dishes": ["Chilacayotes en pipián"],
+      "ethnics": ["Matlatzincas", "Otomíes"],
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/PlazaChurchIxtapan.JPG",
         "https://www.mexicodesconocido.com.mx/sites/default/files/fichas-destino/estado_mexico_ixtapan_sal_parroquia_asuncion_sl.jpg",
         "https://www.dondeir.com/wp-content/uploads/2018/01/ixtapan-la-sal-5-lugares-imperdibles-del-pueblo-magico-4.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 12,
       "rate": 0,
       "name": "Villa del Carbón",
-      "cover": "https://www.unotv.com/uploads/2021/03/villa-del-carbon-edomex-124555.jpg",
+      "coverURL": "https://www.unotv.com/uploads/2021/03/villa-del-carbon-edomex-124555.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30044.401561972958!2d-99.48376618967492!3d19.73176544557827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d23e394fab98ab%3A0x543e327af4b7a2ea!2zVmlsbGEgZGVsIENhcmLDs24sIE3DqXgu!5e0!3m2!1ses-419!2smx!4v1619572292564!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30044.401561972958!2d-99.48376618967492!3d19.73176544557827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d23e394fab98ab%3A0x543e327af4b7a2ea!2zVmlsbGEgZGVsIENhcmLDs24sIE3DqXgu!5e0!3m2!1ses-419!2smx!4v1619572292564!5m2!1ses-419!2smx",
       "state": "Estado de México",
-      "clima": "Templado",
+      "weather": "Templado",
       "incorporation_year": "2015",
       "biome": "Bosque",
-      "attractions": [
-        "Cerro de la Bufa"
-      ],
-      "festivities": [
-        "Aniversario de la Erección de Villa del Carbón"
-      ],
-      "dishes": [
-        "Barbacoa de carnero"
-      ],
-      "ethnics": [
-        "Cachihuapan",
-        "Taxhimay",
-        "Temanacoya",
-        "Zacapexco"
-      ],
+      "attractions": ["Cerro de la Bufa"],
+      "festivities": ["Aniversario de la Erección de Villa del Carbón"],
+      "dishes": ["Barbacoa de carnero"],
+      "ethnics": ["Cachihuapan", "Taxhimay", "Temanacoya", "Zacapexco"],
       "photos": [
         "https://www.eluniversal.com.mx/sites/default/files/2017/02/27/principal_-_cortesia_turismo_del_estado_de_mexico.jpg",
         "http://cdn.shopify.com/s/files/1/2492/3552/articles/taxhimay_1200x1200.jpg?v=1517506071",
         "https://experiencia.edomex.gob.mx/sites/default/files/2020-08/Villa%20del%20Carb%C3%B3n%2C%20Centro%2C%20Kiosco_1.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 13,
       "rate": 0,
       "name": "Jalpa de Cánovas",
-      "cover": "https://guanajuato.mx/site2/wp-content/uploads/2020/12/jalpa-de-canovas-pueblo-magico-de-guanajuato.jpg",
+      "coverURL": "https://guanajuato.mx/site2/wp-content/uploads/2020/12/jalpa-de-canovas-pueblo-magico-de-guanajuato.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14911.267207795505!2d-101.98286686021497!3d20.879433081765896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842be35f25c1c703%3A0xc8ee24e1134d5398!2sJalpa%20de%20C%C3%A1novas%20Pueblo%20M%C3%A1gico!5e0!3m2!1ses-419!2smx!4v1619572637784!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14911.267207795505!2d-101.98286686021497!3d20.879433081765896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842be35f25c1c703%3A0xc8ee24e1134d5398!2sJalpa%20de%20C%C3%A1novas%20Pueblo%20M%C3%A1gico!5e0!3m2!1ses-419!2smx!4v1619572637784!5m2!1ses-419!2smx",
       "state": "Guanajuato",
-      "clima": "Subhúmedo",
+      "weather": "Subhúmedo",
       "incorporation_year": "2012",
       "biome": "Bosque",
-      "attractions": [
-        "Hacienda de Jalpa de Cánovas"
-      ],
-      "festivities": [
-        "La Judea"
-      ],
-      "dishes": [
-        "Caldo de zorra"
-      ],
+      "attractions": ["Hacienda de Jalpa de Cánovas"],
+      "festivities": ["La Judea"],
+      "dishes": ["Caldo de zorra"],
       "ethnics": [],
       "photos": [
         "https://guanajuato.mx/site2/wp-content/uploads/2020/12/jalpa-de-canovas-pueblo-magico-de-guanajuato.jpg",
         "https://www.eleconomista.com.mx/__export/1507908201289/sites/eleconomista/img/historico/principal-jalapa-canovas.jpg_1612941218.jpg",
         "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/11/jalpa_de_canovas_el_pueblo_magico_que_nacio_al-interior_de_una_hacienda_mexico_travel_channel_1200X680.jpg.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 14,
       "rate": 0,
       "name": "Mineral de Pozos",
-      "cover": "https://www.eluniversal.com.mx/sites/default/files/2019/03/26/mineral-pozos-guanajuato-pueblo-magico-1.jpeg",
+      "coverURL": "https://www.eluniversal.com.mx/sites/default/files/2019/03/26/mineral-pozos-guanajuato-pueblo-magico-1.jpeg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14876.973719253756!2d-100.50565697844674!3d21.222193473193194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d4c919701091d5%3A0xb23860dce8811f32!2sMineral%20de%20Pozos%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1619572702109!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14876.973719253756!2d-100.50565697844674!3d21.222193473193194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d4c919701091d5%3A0xb23860dce8811f32!2sMineral%20de%20Pozos%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1619572702109!5m2!1ses-419!2smx",
       "state": "Guanajuato",
-      "clima": "Semiseco",
+      "weather": "Semiseco",
       "incorporation_year": "2012",
       "biome": "Semidesierto",
-      "attractions": [
-        "Mina de los Cinco Señores"
-      ],
-      "festivities": [
-        "Señor de los Trabajos"
-      ],
-      "dishes": [
-        "Colonche"
-      ],
+      "attractions": ["Mina de los Cinco Señores"],
+      "festivities": ["Señor de los Trabajos"],
+      "dishes": ["Colonche"],
       "ethnics": [],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/86002/Gto_mineral-de-pozos-web.jpg",
         "https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2017-10/mineral-pozos.jpg",
         "https://www.eluniversal.com.mx/sites/default/files/2019/03/26/mineral-pozos-guanajuato-pueblo-magico-1.jpeg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 15,
       "rate": 0,
       "name": "Yuriria",
-      "cover": "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/09/yuriria-gob-guanajuato-mtch-1200x680ok.jpg",
+      "coverURL": "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/09/yuriria-gob-guanajuato-mtch-1200x680ok.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29953.253420573197!2d-101.14369798917386!3d20.210809378344017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cef866fb67101%3A0x6e9a49671f8a2e38!2sYuriria%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1619572776452!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29953.253420573197!2d-101.14369798917386!3d20.210809378344017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cef866fb67101%3A0x6e9a49671f8a2e38!2sYuriria%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1619572776452!5m2!1ses-419!2smx",
       "state": "Guanajuato",
-      "clima": "Semicálido",
+      "weather": "Semicálido",
       "incorporation_year": "2012",
       "biome": "Bosque",
-      "attractions": [
-        "Laguna de Yuriria"
-      ],
-      "festivities": [
-        "Fiesta de la Preciosa Sangre de Cristo"
-      ],
-      "dishes": [
-        "Caldo michi"
-      ],
+      "attractions": ["Laguna de Yuriria"],
+      "festivities": ["Fiesta de la Preciosa Sangre de Cristo"],
+      "dishes": ["Caldo michi"],
       "ethnics": [],
       "photos": [
         "https://www.mexicodesconocido.com.mx/wp-content/uploads/2019/06/guanajuato-yuriria-exconvento-JC-0716_JCmd.gif",
         "https://losmundosdemexico.com/wp-content/uploads/2018/01/Yuriria-Pueblo-Ma%CC%81gico-Guanajuato-.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Lago_Yuriria%2C_Guanajuato-_Yuriria_Lake%2C_Guanajuato_%2824321532035%29.jpg/1200px-Lago_Yuriria%2C_Guanajuato-_Yuriria_Lake%2C_Guanajuato_%2824321532035%29.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 16,
       "rate": 0,
       "name": "Lagos de Moreno",
-      "cover": "https://udgtv.com/wp-content/uploads/2017/07/Lagos-de-Moreno-Medios.jpg",
+      "coverURL": "https://udgtv.com/wp-content/uploads/2017/07/Lagos-de-Moreno-Medios.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59454.08860751171!2d-101.95813800080803!3d21.355206802605093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bd224a70c5e3b%3A0x19a7e618b734a551!2sLagos%20de%20Moreno%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1619572832520!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59454.08860751171!2d-101.95813800080803!3d21.355206802605093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bd224a70c5e3b%3A0x19a7e618b734a551!2sLagos%20de%20Moreno%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1619572832520!5m2!1ses-419!2smx",
       "state": "Jalisco",
-      "clima": "Semiseco",
+      "weather": "Semiseco",
       "incorporation_year": "2012",
       "biome": "Valle",
-      "attractions": [
-        "Parroquia de la Asunción en el Centro Histórico"
-      ],
-      "festivities": [
-        "Fiestas a Nuestro Padre Jesús del Calvario"
-      ],
-      "dishes": [
-        "Pacholas"
-      ],
+      "attractions": ["Parroquia de la Asunción en el Centro Histórico"],
+      "festivities": ["Fiestas a Nuestro Padre Jesús del Calvario"],
+      "dishes": ["Pacholas"],
       "ethnics": [],
       "photos": [
         "https://www.mexicoenfotos.com/MX15099484704679.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/b/b9/BIBLIOTECA_PUBLICA_REGIONAL_%22MARIA_SOINE_DE_HELGUERA%22_DE_LAGOS_DE_MORENO%2CJALISCO._MEXICO..jpg",
         "https://udgtv.com/wp-content/uploads/2017/07/Lagos-de-Moreno-Medios.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 17,
       "rate": 0,
       "name": "San Pedro Tlaquepaque",
-      "cover": "https://media.timeout.com/images/103928725/image.jpg",
+      "coverURL": "https://media.timeout.com/images/103928725/image.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119513.04343279231!2d-103.40842046909661!3d20.596933633277793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b387a6414a03%3A0x5e0b8b1c70beaa10!2sSan%20Pedro%20Tlaquepaque%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1619572919509!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119513.04343279231!2d-103.40842046909661!3d20.596933633277793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b387a6414a03%3A0x5e0b8b1c70beaa10!2sSan%20Pedro%20Tlaquepaque%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1619572919509!5m2!1ses-419!2smx",
       "state": "Jalisco",
-      "clima": "Semicálido",
+      "weather": "Semicálido",
       "incorporation_year": "2018",
       "biome": "Urbano",
-      "attractions": [
-        "Andador Independencia"
-      ],
-      "festivities": [
-        "Fiestas de San Pedro Tlaquepaque"
-      ],
-      "dishes": [
-        "Carne en su jugo"
-      ],
+      "attractions": ["Andador Independencia"],
+      "festivities": ["Fiestas de San Pedro Tlaquepaque"],
+      "dishes": ["Carne en su jugo"],
       "ethnics": [],
       "photos": [
         "https://media.timeout.com/images/103928725/image.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/c6/ParqueHidalgoTlaque2.jpg",
         "https://live.staticflickr.com/5625/30587546262_47530e08d1_b.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 18,
       "rate": 0,
       "name": "Tequila",
-      "cover": "https://i1.wp.com/blog.vivaaerobus.com/wp-content/uploads/2020/01/que-hacer-en-Tequila-Jalisco.jpg?fit=1400%2C787&ssl=1",
+      "coverURL": "https://i1.wp.com/blog.vivaaerobus.com/wp-content/uploads/2020/01/que-hacer-en-Tequila-Jalisco.jpg?fit=1400%2C787&ssl=1",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29822.185035253442!2d-103.84412243845337!3d20.881192704636323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842614da2b81b26f%3A0x38c2cd8e73684f12!2sTequila%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1619572941437!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29822.185035253442!2d-103.84412243845337!3d20.881192704636323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842614da2b81b26f%3A0x38c2cd8e73684f12!2sTequila%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1619572941437!5m2!1ses-419!2smx",
       "state": "Jalisco",
-      "clima": "Subtropical",
+      "weather": "Subtropical",
       "incorporation_year": "2003",
       "biome": "Valle",
-      "attractions": [
-        "Tren Tequila Express o el José Cuervo Express"
-      ],
-      "festivities": [
-        "Feria Nacional del Tequila"
-      ],
-      "dishes": [
-        "Birria"
-      ],
-      "ethnics": [
-        "Chichimecas",
-        "Otomíes",
-        "Toltecas",
-        "Nahuatlacas"
-      ],
+      "attractions": ["Tren Tequila Express o el José Cuervo Express"],
+      "festivities": ["Feria Nacional del Tequila"],
+      "dishes": ["Birria"],
+      "ethnics": ["Chichimecas", "Otomíes", "Toltecas", "Nahuatlacas"],
       "photos": [
         "https://www.gob.mx/cms/uploads/image/file/521316/Tequila-JALISCO-web.jpg",
         "https://mk0outandaboutpf40tm.kinstacdn.com/wp-content/uploads/2020/01/Depositphotos_9999077_xl-2015-scaled.jpg",
         "https://www.tripsavvy.com/thmb/O5IBhrKz82kD8eCKOwbp3gBE4n4=/2048x1367/filters:no_upscale():max_bytes(150000):strip_icc()/Guadalajara_Tequila3-10eb091deddf43e682714b39f7924fe1.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 19,
       "rate": 0,
       "name": "Mazunte",
-      "cover": "https://www.gob.mx/cms/uploads/article/main_image/85405/Oaxaca-Mazunte-Tortuguero-web.jpg",
+      "coverURL": "https://www.gob.mx/cms/uploads/article/main_image/85405/Oaxaca-Mazunte-Tortuguero-web.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7683.153821656431!2d-96.55816580441724!3d15.66750255630734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b9283dbb43db71%3A0x696048df9626e56e!2sMazunte%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1619573092981!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7683.153821656431!2d-96.55816580441724!3d15.66750255630734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b9283dbb43db71%3A0x696048df9626e56e!2sMazunte%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1619573092981!5m2!1ses-419!2smx",
       "state": "Oaxaca",
-      "clima": "Cálido",
+      "weather": "Cálido",
       "incorporation_year": "2015",
       "biome": "Playa",
-      "attractions": [
-        "Centro Mexicano de la Tortuga"
-      ],
-      "festivities": [
-        "Festival Internacional de Jazz"
-      ],
-      "dishes": [
-        "Mariscos"
-      ],
-      "ethnics": [
-        "Náhuatl"
-      ],
+      "attractions": ["Centro Mexicano de la Tortuga"],
+      "festivities": ["Festival Internacional de Jazz"],
+      "dishes": ["Mariscos"],
+      "ethnics": ["Náhuatl"],
       "photos": [
         "https://www.playasmexico.mx/IMG/arton598.jpg",
         "https://hotbook.com.mx/wp-content/uploads/2015/12/oaxaca_portada.jpg",
         "https://d3tf9yuhsp2bpn.cloudfront.net/images/2020/08/29/20200829-1598676280-Atardecer-en-Punta-Cometa-desde-Puerto-tu-experiencia-II.jpg"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 20,
       "rate": 0,
       "name": "San Pablo Villa de Mitla",
-      "cover": "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/12/san-pablo-villa-de-mitla-para-amantes-del-pasado-precolombino-de-oaxaca-mexico-travel-channel.jpg",
+      "coverURL": "https://mexicotravelchannel.com.mx/wp-content/uploads/2020/12/san-pablo-villa-de-mitla-para-amantes-del-pasado-precolombino-de-oaxaca-mexico-travel-channel.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30536.77839476733!2d-96.38712404238186!3d16.920492001370782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c0cc62c5dbfbb1%3A0x833164a7334bf3b0!2sSan%20Pablo%20Villa%20de%20Mitla%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1619573163323!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30536.77839476733!2d-96.38712404238186!3d16.920492001370782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c0cc62c5dbfbb1%3A0x833164a7334bf3b0!2sSan%20Pablo%20Villa%20de%20Mitla%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1619573163323!5m2!1ses-419!2smx",
       "state": "Oaxaca",
-      "clima": "Seco",
+      "weather": "Seco",
       "incorporation_year": "2015",
       "biome": "Valle",
-      "attractions": [
-        "Zona Arqueológica de Yagul y Mitla"
-      ],
-      "festivities": [
-        "Villa Mágica de Mitla"
-      ],
-      "dishes": [
-        "Mole"
-      ],
-      "ethnics": [
-        "Zapotecos",
-        "Mixtecos"
-      ],
+      "attractions": ["Zona Arqueológica de Yagul y Mitla"],
+      "festivities": ["Villa Mágica de Mitla"],
+      "dishes": ["Mole"],
+      "ethnics": ["Zapotecos", "Mixtecos"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/85797/Oaxaca-Mitla-Zona-Arqueologica-web.jpg",
         "https://mexicodesconocidoviajes.mx/wp-content/uploads/2019/09/mitla_IG_md_ok.jpg",
         "https://i0.wp.com/oaxacaculture.com/wp-content/uploads/2019/12/IMG_9936-2-1-scaled.jpg?fit=500%2C690"
-      ],
-      "reviews": []
+      ]
     },
     {
-      "id": 21,
       "rate": 0,
       "name": "Santa Catarina Juquila",
-      "cover": "https://1.bp.blogspot.com/-I1ClBSujBlg/X8aYrWFW2VI/AAAAAAAAK_A/uOhHjmJlBhAHsyqb7-42UQbqUA0MflKNwCLcBGAsYHQ/s1568/juquila%252C%2Boaxaca%2Bpueblo%2Bmagico-15.jpg",
+      "coverURL": "https://1.bp.blogspot.com/-I1ClBSujBlg/X8aYrWFW2VI/AAAAAAAAK_A/uOhHjmJlBhAHsyqb7-42UQbqUA0MflKNwCLcBGAsYHQ/s1568/juquila%252C%2Boaxaca%2Bpueblo%2Bmagico-15.jpg",
       "description": "Proin id ligula dictum, convallis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdiet sed id lacus. Mauris auctor interdum dignissim. Cras at lacus malesuada, mattis neque mattis, lacinia mauris. Nunc ornare blandit turpis, sit amet dignissim lacus egestas in. Ut in iaculis turpis, ac consequat turpis. Nullam mi tortor, auctor quis orci sed, posuere luctus enim. Ut sollicitudin neque at enim gravida, ut dictum est finibus. Praesent sit amet augue eu tortor pretium vehicula quis et ante. Aenean purus sem, pharetra et ante vel, tincidunt cursus ante.",
-      "mapsURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15322.71848808295!2d-97.29867232966652!3d16.236902169557847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b8703c6803eeb3%3A0x9f25733637d5b6b!2sSanta%20Catarina%20Juquila%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1619573300564!5m2!1ses-419!2smx",
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15322.71848808295!2d-97.29867232966652!3d16.236902169557847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85b8703c6803eeb3%3A0x9f25733637d5b6b!2sSanta%20Catarina%20Juquila%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1619573300564!5m2!1ses-419!2smx",
       "state": "Oaxaca",
-      "clima": "Húmedo",
+      "weather": "Húmedo",
       "incorporation_year": "2020",
       "biome": "Bosque",
-      "attractions": [
-        "Santuario Mariano de la Inmaculada Virgen de Juquila"
-      ],
-      "festivities": [
-        "Celebración de la Virgen de Juquila"
-      ],
-      "dishes": [
-        "Enchiladas Juquileñas"
-      ],
-      "ethnics": [
-        "Chatinos"
-      ],
+      "attractions": ["Santuario Mariano de la Inmaculada Virgen de Juquila"],
+      "festivities": ["Celebración de la Virgen de Juquila"],
+      "dishes": ["Enchiladas Juquileñas"],
+      "ethnics": ["Chatinos"],
       "photos": [
         "https://www.gob.mx/cms/uploads/article/main_image/102846/foto__5_.JPG",
         "https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2019-04/juquila-Portada%20%281%29.jpg",
         "http://renacimientooaxaca.mx/media/k2/items/cache/5fa21cd9e0d2531a2f1dfdffbab46f70_XL.jpg"
-      ],
-      "reviews": []
+      ]
     }
   ],
   "reviews": [
     {
-      "id": 1,
       "userId": 3,
       "townId": 15,
       "rate": 4,
@@ -780,7 +600,7 @@
       "userId": 3,
       "townId": 7,
       "rate": 3,
-      "description": "Bonito pero con clima muy incómodo.",
+      "description": "Bonito pero con weather muy incómodo.",
       "creation_date": "2021-03-07T01:23:46.000Z"
     },
     {
@@ -788,7 +608,7 @@
       "userId": 2,
       "townId": 19,
       "rate": 5,
-      "description": "Exquisito clima y gastronomía. Las playas de Oaxaca son sin dudarlo, las mejores del país.",
+      "description": "Exquisito weather y gastronomía. Las playas de Oaxaca son sin dudarlo, las mejores del país.",
       "creation_date": "2021-03-07T01:23:46.000Z"
     },
     {
