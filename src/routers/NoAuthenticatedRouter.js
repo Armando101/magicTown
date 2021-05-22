@@ -12,7 +12,6 @@ import HomePage from "../pages/HomePage";
 import DetailPage from "../pages/DetailPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import ResultPage from "../pages/ResultPage";
-import Footer from "../components/Footer";
 
 function NoAuthenticatedRouter() {
   return (

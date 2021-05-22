@@ -1,47 +1,56 @@
-import React, { useContext, useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 
 import { UserContext } from "../context/UserContext";
-import getUser from "../services/getUser";
 
 import { Modal } from "@material-ui/core";
 
+import { useForm } from "../hooks/useForm";
+
+import login from "../services/auth/login";
+import getUserFavorites from "../services/favorites/getUserFavorites";
+
 import "../styles/components/LoginForm.scss";
-import getUserFavorites from "../services/getUserFavorites";
 
 function LoginForm() {
-  const { user, setUser, userFavorites, setUserFavorites } =
-    useContext(UserContext);
+  const { setUser, setUserFavorites } = useContext(UserContext);
+
+  const [formLoginValues, handleLoginInputChange] = useForm({
+    username: "",
+    password: "",
+  });
+  const { username, password } = formLoginValues;
 
   const [isModalOpen, setModalOpen] = useState(false);
-  const [modalType, setModalType] = useState("incomplete");
+  const [modalType, setModalType] = useState("");
+  const MODAL_ERRORS = {
+    INCOMPLETE: "!Por favor, llene correctamente los campos!",
+    NOT_FOUND: "Usuario o Contraseña Incorrectos",
+  };
+
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!e.target.userInput.value || !e.target.passInput.value) {
-      setModalType("incomplete");
+    if (!username || !password) {
+      setModalType("INCOMPLETE");
       handleOpen();
       return;
     }
 
-    getUser({
-      username: e.target.userInput.value,
-      password: e.target.passInput.value,
-    })
+    login(username, password)
       .then((user) => {
-        delete user.password;
         setUser(user);
-
-        getUserFavorites(user.id).then((favorites) => {
+        history.goBack();
+      })
+      .then(() => {
+        getUserFavorites(user.uid).then((favorites) => {
           setUserFavorites(favorites);
         });
-
-        history.push("/home");
       })
       .catch((error) => {
-        setModalType("not-found");
+        setModalType("NOT_FOUND");
         handleOpen();
       });
   };
@@ -59,10 +68,22 @@ function LoginForm() {
       <form action="" onSubmit={handleSubmit}>
         <h1>Inicio de Sesión</h1>
         <p>Bienvenido de vuelta a Pueblos Mágicos</p>
-        <label htmlFor="user">Usuario</label>
-        <input id="userInput" placeholder="Usuario" type="text" />
-        <label htmlFor="pass">Contraseña</label>
-        <input id="passInput" placeholder="Contraseña" type="password" />
+        <label htmlFor="username">Usuario</label>
+        <input
+          placeholder="Usuario"
+          type="text"
+          name="username"
+          value={username}
+          onChange={handleLoginInputChange}
+        />
+        <label htmlFor="password">Contraseña</label>
+        <input
+          placeholder="Contraseña"
+          type="password"
+          name="password"
+          value={password}
+          onChange={handleLoginInputChange}
+        />
         <button type="submit" className="button">
           <p>Iniciar Sesión</p>
         </button>
@@ -74,16 +95,9 @@ function LoginForm() {
         open={isModalOpen}
         onClose={handleClose}
         aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
       >
         <div className="modal modal--form">
-          {modalType == "incomplete" ? (
-            <h2 id="simple-modal-title">
-              !Por favor, llene correctamente los campos!
-            </h2>
-          ) : (
-            <h2 id="simple-modal-title">Usuario o Contraseña Incorrectos</h2>
-          )}
+          <h2 id="simple-modal-title">{MODAL_ERRORS[modalType]}</h2>
         </div>
       </Modal>
     </div>

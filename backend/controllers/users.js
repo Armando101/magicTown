@@ -4,6 +4,14 @@ const User = require("../models/User");
 
 const patchUserInfo = async (req, res = response) => {
   const { id } = req.params;
+  const { uid } = req;
+
+  if (id !== uid) {
+    return res.status(401).json({
+      ok: false,
+      msg: "No tienes los privilegios para buscar estos registros",
+    });
+  }
 
   if (Object.keys(req.body).length == 0) {
     return res
@@ -23,7 +31,7 @@ const patchUserInfo = async (req, res = response) => {
       });
     }
 
-    res.status(201).json(updatedUser);
+    res.status(201).json({ ok: true, updatedUser });
   } catch (error) {
     console.log(error);
     if (error.codeName == "DuplicateKey") {

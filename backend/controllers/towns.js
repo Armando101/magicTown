@@ -12,16 +12,16 @@ const getTownById = async (req, res = response) => {
   const { id } = req.params;
 
   try {
-    const town = await Town.findOne({ id });
+    const town = await Town.findOne({ _id: id });
 
     if (!town) {
-      return res.status(400).json({
+      return res.status(404).json({
         ok: false,
         msg: "No existe pueblo con ese ID",
       });
     }
 
-    res.status(201).json(town);
+    res.status(201).json({ ok: true, town });
   } catch (error) {
     console.log(error);
     res
@@ -41,28 +41,31 @@ const getTownByKeyword = async (req, res = response) => {
         },
       },
       (err, towns) => {
-        if (err || data.length == 0) {
+        if (err || towns.length == 0) {
           return res.status(400).json({
             msg: `No encontramos algun pueblo con esta palabra: '${keyword}'`,
           });
         }
-        res.status(201).json(towns);
+        res.status(201).json({ ok: true, towns });
       }
     );
   } catch (error) {
     console.log(error);
     res.status(500).json({ msg: "Please talk to the System Manager" });
   }
-
-  res
-    .status(201)
-    .json({ ok: true, msg: `Towns with ${req.params.keyword} as keyword` });
 };
 
 const getTopRatedTowns = async (req, res = response) => {
-  const topRated = await Town.find().sort({ rate: -1 }).limit(3);
+  try {
+    const topRated = await Town.find().sort({ rate: -1 }).limit(3);
 
-  res.status(201).json(topRated);
+    res.status(201).json({ ok: true, topRated });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ ok: false, msg: "Please talk to the System Manager" });
+  }
 };
 
 const addTown = async (req, res = response) => {
@@ -107,10 +110,35 @@ const addTown = async (req, res = response) => {
   }
 };
 
+const updateTownRate = async (req, res = response) => {
+  const { id } = req.params;
+
+  try {
+    const updatedTown = await Town.findByIdAndUpdate(id, req.body, {
+      new: true,
+    });
+
+    if (!updatedTown) {
+      return res.status(404).json({
+        ok: false,
+        msg: "Pueblo no encontrado con el ID dado",
+      });
+    }
+
+    res.status(201).json({ ok: true, updatedTown });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ ok: false, msg: "Please talk to the System Manager" });
+  }
+};
+
 module.exports = {
   getTowns,
   getTownById,
   getTownByKeyword,
   getTopRatedTowns,
   addTown,
+  updateTownRate,
 };

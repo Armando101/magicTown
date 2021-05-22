@@ -18,7 +18,7 @@ const getUserFavorites = async (req, res = response) => {
       path: "town",
       select: ["name", "state", "rate", "coverURL"],
     });
-    res.status(201).json(userFavorites);
+    res.status(201).json({ ok: true, userFavorites });
   } catch (error) {
     console.log(error);
     res
@@ -42,7 +42,7 @@ const addUserFavorite = async (req, res = response) => {
     favorite = new UserFavorite({ user: id, town: req.body.town });
     await favorite.save();
 
-    res.status(201).json(favorite);
+    res.status(201).json({ ok: true, favorite });
   } catch (error) {
     console.log(error);
     res
@@ -53,7 +53,6 @@ const addUserFavorite = async (req, res = response) => {
 
 const deleteUserFavorite = async (req, res = response) => {
   const { id } = req.params;
-  const { uid } = req;
 
   try {
     const favorite = await UserFavorite.findById(id);
@@ -62,13 +61,6 @@ const deleteUserFavorite = async (req, res = response) => {
       return res.status(404).json({
         ok: false,
         msg: "Registro de Favorito no encontrado con ese ID",
-      });
-    }
-
-    if (favorite.user.toString() !== uid) {
-      return res.status(401).json({
-        ok: false,
-        msg: "No tienes los privilegios para eliminar este registro",
       });
     }
 

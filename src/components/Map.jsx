@@ -11,7 +11,7 @@ const Map = ({ map }) => {
         height="450"
         style={{ border: 0 }}
         allowFullScreen={false}
-        loading="lazy"
+        loading="eager"
       ></iframe>
     </div>
   );

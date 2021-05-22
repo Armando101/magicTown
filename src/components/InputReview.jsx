@@ -1,28 +1,33 @@
 import React, { useState, useContext } from "react";
 import Button from "@components/Button";
-import "@styles/components/InputReview.scss";
 import Rating from "@material-ui/lab/Rating";
-import postService from "../services/postService";
-import getTownById from "../services/getTownById.js";
 
 import { UserContext } from "../context/UserContext";
+
 import { useHistory } from "react-router";
-import updtReviewRate from "../services/updtReviewRate";
+
+import { useForm } from "../hooks/useForm";
+
+import addReview from "../services/reviews/addReview";
+import getTownReviews from "../services/reviews/getTownReviews";
+import patchTownRate from "../services/towns/patchTownRate";
+
+import "@styles/components/InputReview.scss";
 
 const InputReview = ({ townId, reviewsState, openModal }) => {
-  const { user, setUser } = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
   const history = useHistory();
 
-  const [rateValue, setRateValue] = useState(0);
-  const [description, setDescription] = useState("");
+  const [formReviewValues, handleReviewInputChange, reset] = useForm({
+    description: "",
+  });
+  const { description } = formReviewValues;
+
+  const [rate, setRate] = useState(0);
 
   const handleRateChange = (e, value) => {
-    setRateValue(value);
-  };
-
-  const handleDescriptionChange = (e) => {
-    setDescription(e.target.value);
+    setRate(value);
   };
 
   const handleSubmit = async (e) => {
@@ -36,25 +41,19 @@ const InputReview = ({ townId, reviewsState, openModal }) => {
       openModal();
       return;
     }
+    addReview(user.uid, { town: townId, rate, description })
+      .then((review) => {
+        getTownReviews(townId).then((reviews) => {
+          reviewsState.setReviews(reviews);
+        });
+        patchTownRate(townId, { rate });
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
 
-    postService("reviews", {
-      userId: user.id,
-      townId: townId,
-      rate: rateValue,
-      description: description,
-      creation_date: new Date().toISOString().slice(0, 10),
-    });
-
-    updtReviewRate(townId, { rate: rateValue });
-
-    const response = await getTownById(townId);
-
-    reviewsState.setReviews(response.reviews);
-
-    e.target.comment.value = "";
-
-    setRateValue(0);
-    setDescription("");
+    reset();
+    setRate(0);
   };
 
   return (
@@ -65,16 +64,17 @@ const InputReview = ({ townId, reviewsState, openModal }) => {
           className="detail_stars"
           onChange={handleRateChange}
           name="read-only"
-          value={rateValue}
+          value={rate}
         />
       </div>
       <textarea
         className="input-review__area"
-        name="comment"
+        name="description"
         cols="30"
         rows="10"
         placeholder="Escribe aquí tu experiencia..."
-        onChange={handleDescriptionChange}
+        value={description}
+        onChange={handleReviewInputChange}
       ></textarea>
       <div className="input-review__button">
         <Button label={"Publicar mi experiencia"} />

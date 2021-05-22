@@ -2,18 +2,19 @@ import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 import { UserContext } from "../context/UserContext";
-import getLatestReviews from "../services/getLatestReviews";
 
 import LatestReviewCard from "./LatestReviewCard";
+
+import getLatestReviews from "../services/reviews/getLatestReviews";
 
 import "../styles/components/Review.scss";
 
 function Reviews() {
-  const { user, setUser } = useContext(UserContext);
+  const { user } = useContext(UserContext);
   const [latestReviews, setLatestReviews] = useState([{}]);
 
-  useEffect(async () => {
-    await getLatestReviews().then((reviews) => {
+  useEffect(() => {
+    getLatestReviews().then((reviews) => {
       setLatestReviews(reviews);
     });
   }, []);

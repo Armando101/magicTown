@@ -1,25 +1,30 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 
+import { useForm } from "../hooks/useForm";
+
 import { Modal } from "@material-ui/core";
 
 import "../styles/components/SearchForm.scss";
 
-function SearchForm(props) {
+function SearchForm() {
+  const [formSearchValues, handleSearchInputChange] = useForm({
+    keyword: "",
+  });
+
+  const { keyword } = formSearchValues;
+
   const [isModalOpen, setModalOpen] = useState(false);
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const value = e.target.keywordinput.value;
-
-    if (!value.match("([A-Z]|[a-z])+") || value.length == 0) {
+    if (!keyword.match("([A-Z]|[a-z])+") || keyword.length == 0 || !keyword) {
       handleOpen();
     }
 
-    history.push(`/search/${value}`);
-    e.target.keywordinput.value = "";
+    history.push(`/search/${keyword}`);
   };
 
   const handleOpen = (e) => {
@@ -34,10 +39,12 @@ function SearchForm(props) {
     <div className="searchbar">
       <form className="searchbar__form" onSubmit={handleSubmit}>
         <input
-          name="keywordinput"
+          name="keyword"
           className="searchbar__input"
           type="text"
           placeholder="Comienza tu búsqueda..."
+          value={keyword}
+          onChange={handleSearchInputChange}
         />
         <button className="searchbar__submit" type="submit">
           <img src="https://img.icons8.com/ios/50/000000/search--v1.png" />
@@ -53,9 +60,7 @@ function SearchForm(props) {
         aria-describedby="simple-modal-description"
       >
         <div className="modal modal--form">
-          <h2 id="simple-modal-title">
-            !Por favor, llene correctamente los campos!
-          </h2>
+          <h2 id="simple-modal-title">!Por favor ingrese la palabra clave!</h2>
         </div>
       </Modal>
     </div>

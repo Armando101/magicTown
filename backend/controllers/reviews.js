@@ -12,7 +12,22 @@ const getLatestReviews = async (req, res = response) => {
         { path: "town", select: ["name", "state", "rate", "description"] },
       ]);
 
-    res.status(201).json(latestReviews);
+    res.status(201).json({ ok: true, latestReviews });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ ok: false, msg: "Please talk to the System Manager" });
+  }
+};
+
+const getTownReviews = async (req, res = response) => {
+  const { id } = req.params;
+
+  try {
+    const townReviews = await TownReview.find({ town: id }).populate("user");
+
+    res.status(201).json({ ok: true, townReviews });
   } catch (error) {
     console.log(error);
     res
@@ -37,7 +52,7 @@ const getUserReviews = async (req, res = response) => {
       path: "town",
       select: ["name"],
     });
-    res.status(201).json(userReviews);
+    res.status(201).json({ ok: true, userReviews });
   } catch (error) {
     console.log(error);
     res
@@ -59,13 +74,13 @@ const addReview = async (req, res = response) => {
     }
 
     review = new TownReview({
-      user: id,
       ...req.body,
+      user: id,
       creation_date: new Date().toLocaleString(),
     });
     await review.save();
 
-    res.status(201).json(review);
+    res.status(201).json({ ok: true, review });
   } catch (error) {
     console.log(error);
     res
@@ -74,4 +89,9 @@ const addReview = async (req, res = response) => {
   }
 };
 
-module.exports = { getLatestReviews, getUserReviews, addReview };
+module.exports = {
+  getLatestReviews,
+  getTownReviews,
+  getUserReviews,
+  addReview,
+};

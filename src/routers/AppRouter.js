@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 import { UserContext } from "../context/UserContext";
+
 import AuthenticatedRouter from "./AuthenticatedRouter";
 import NoAuthenticatedRouter from "./NoAuthenticatedRouter";
 
 function AppRouter() {
-  const { user, setUser } = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
   return (
     <Router>

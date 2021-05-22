@@ -4,9 +4,8 @@ import Rating from "@material-ui/lab/Rating";
 
 import "../styles/components/ReviewCard.scss";
 
-function ReviewCard({ reviewInfo }) {
-  const author = { ...reviewInfo.user };
-  const creation_date = new Date(reviewInfo.creation_date).toDateString();
+function ReviewCard({ user, creation_date, rate, description }) {
+  const author = { ...user };
 
   return (
     <div className="reviewcard">
@@ -15,11 +14,11 @@ function ReviewCard({ reviewInfo }) {
         <header className="reviewcard__header">
           <div className="reviewcard_stars">
             <h4>{author.username}</h4>
-            <Rating name="read-only" value={reviewInfo.rate || 0} readOnly />
+            <Rating name="read-only" value={rate || 0} readOnly />
             <span>{creation_date}</span>
           </div>
         </header>
-        <q className="reviewcard__copy"> {reviewInfo.description} </q>
+        <q className="reviewcard__copy"> {description} </q>
       </div>
     </div>
   );

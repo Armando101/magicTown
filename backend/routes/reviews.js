@@ -7,6 +7,7 @@ const { check } = require("express-validator");
 
 const {
   getLatestReviews,
+  getTownReviews,
   getUserReviews,
   addReview,
 } = require("../controllers/reviews");
@@ -17,6 +18,12 @@ const { validateJwt } = require("../middlewares/jwt-validator");
 const router = Router();
 
 router.get("/latest", getLatestReviews);
+
+router.get(
+  "/town/:id",
+  [check("id", "El pueblo es obligatorio").not().isEmpty(), validateFields],
+  getTownReviews
+);
 
 router.get(
   "/user/:id",
@@ -32,7 +39,6 @@ router.post(
   "/user/:id",
   [
     validateJwt,
-    check("id", "El usuario es obligatorio").not().isEmpty(),
     check("town", "El pueblo es obligatorio").not().isEmpty(),
     check("rate", "La calificación es obligatoria").not().isEmpty(),
     check("description", "La descripción es obligatoria").not().isEmpty(),

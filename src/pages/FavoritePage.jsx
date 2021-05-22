@@ -5,13 +5,13 @@ import Favorites from "@components/Favorites";
 import { UserContext } from "../context/UserContext";
 
 function Favorite() {
-  const { user } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
 
   return (
     <>
       <div className="favorite__cover"></div>
       <section>
-        <ProfileCover {...user} />
+        <ProfileCover {...user} setUser={setUser} />
         <Favorites />
       </section>
     </>

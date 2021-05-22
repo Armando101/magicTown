@@ -4,20 +4,20 @@ import { useParams } from "react-router";
 import Hero from "../components/Hero";
 import Main from "../layout/Main";
 import TownCard from "../components/TownCard";
+import Footer from "../components/Footer";
 
-import getTownsByKeyword from "../services/getTownsByKeyword";
+import getTownByKeyword from "../services/towns/getTownsByKeyword";
 
 import "../styles/pages/ResultPage.scss";
-import Footer from "../components/Footer";
 
 function ResultPage() {
   const [towns, setTowns] = useState([{}]);
 
   const { keyword } = useParams();
 
-  useEffect(async () => {
-    await getTownsByKeyword(keyword).then((response) => {
-      setTowns(response);
+  useEffect(() => {
+    getTownByKeyword(keyword).then((towns) => {
+      setTowns(towns);
     });
   }, [keyword]);
 
@@ -27,7 +27,7 @@ function ResultPage() {
       <Main>
         <div className="results-cards">
           {towns.map((town, index) => {
-            return <TownCard townInfo={town} key={index} />;
+            return <TownCard {...town} key={index} />;
           })}
         </div>
       </Main>

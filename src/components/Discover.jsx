@@ -2,17 +2,20 @@ import React, { useEffect, useState } from "react";
 
 import TownCard from "./TownCard";
 
-import getMostLikedTowns from "../services/getMostLikedTowns";
+import getTopRated from "../services/towns/getTopRatedTowns";
 
 import "../styles/components/Discover.scss";
 
 function Discover() {
-  const [mostLikedTowns, setMostLikedTowns] = useState([{}]);
+  const [topRatedTowns, setTopRatedTowns] = useState([{}]);
 
-  useEffect(async () => {
-    await getMostLikedTowns().then((towns) => {
-      setMostLikedTowns(towns);
+  useEffect(() => {
+    let isMounted = true;
+    getTopRated().then((towns) => {
+      isMounted && setTopRatedTowns(towns);
     });
+
+    return () => (isMounted = false);
   }, []);
 
   return (
@@ -20,8 +23,8 @@ function Discover() {
       <h3 className="section-title">
         Descubre los Pueblos Mágicos mejor calificados
       </h3>
-      {mostLikedTowns.map((town, index) => {
-        return <TownCard key={index} townInfo={town} />;
+      {topRatedTowns.map((town, index) => {
+        return <TownCard key={index} {...town} />;
       })}
     </div>
   );

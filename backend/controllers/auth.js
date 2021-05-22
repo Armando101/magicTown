@@ -28,6 +28,7 @@ const createUser = async (req, res = response) => {
     const token = await generateJWT(user.id, user.username);
 
     res.status(201).json({
+      ok: true,
       uid: user.id,
       username: user.username,
       avatar: user.avatar,
@@ -49,7 +50,7 @@ const userLogin = async (req, res = response) => {
     const user = await User.findOne({ username });
 
     if (!user) {
-      return res.status(400).json({
+      return res.status(404).json({
         ok: false,
         msg: "No existe usuario con ese nombre",
       });
@@ -68,6 +69,7 @@ const userLogin = async (req, res = response) => {
     const token = await generateJWT(user.id, user.username);
 
     res.status(201).json({
+      ok: true,
       uid: user.id,
       username: user.username,
       avatar: user.avatar,
@@ -85,9 +87,18 @@ const userLogin = async (req, res = response) => {
 const renewToken = async (req, res = response) => {
   const { uid, username } = req;
 
+  const user = await User.findOne({ username });
+
   const token = await generateJWT(uid, username);
 
-  res.json({ ok: true, token });
+  res.json({
+    ok: true,
+    token,
+    uid: user.id,
+    username: user.username,
+    avatar: user.avatar,
+    description: user.description,
+  });
 };
 
 module.exports = {

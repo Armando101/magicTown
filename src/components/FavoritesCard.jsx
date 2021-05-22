@@ -7,7 +7,8 @@ import Button from "@components/Button";
 import { useHistory } from "react-router";
 import { UserContext } from "../context/UserContext";
 
-import getUserFavorites from "../services/getUserFavorites";
+import getUserFavorites from "../services/favorites/getUserFavorites";
+import deleteUserFavorite from "../services/favorites/deleteUserFavorite";
 
 import "@styles/components/FavoriteCard.scss";
 
@@ -20,11 +21,8 @@ const FavoritesCard = ({ id, town }) => {
   };
 
   const deleteFavorite = () => {
-    fetch(`http://localhost:3001/favorites/${id}`, {
-      method: "DELETE",
-      headers: { "Content-type": "application/json" },
-    }).then(() => {
-      getUserFavorites(user.id).then((favorites) => {
+    deleteUserFavorite(id).then(() => {
+      getUserFavorites(user.uid).then((favorites) => {
         setUserFavorites(favorites);
       });
     });
@@ -34,7 +32,7 @@ const FavoritesCard = ({ id, town }) => {
     <div className="favorite-card">
       <img
         className="favorite-card__image"
-        src={town.cover}
+        src={town.coverURL}
         alt={`Imagen de ${town.name}`}
       />
       <h3 className="favorite-card__name">{town.name}</h3>

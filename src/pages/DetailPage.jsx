@@ -1,34 +1,41 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
 import About from "@components/About";
 import Gallery from "@components/Gallery";
 import Hero from "@components/Hero";
-import ReviewCard from "@components/ReviewCard";
 import Comments from "@components/Comments";
-
-import getTownById from "../services/getTownById.js";
-import { useParams } from "react-router";
-
+import Footer from "@components/Footer.jsx";
 import { Modal } from "@material-ui/core";
 
+import getTownById from "../services/towns/getTownById.js";
+import getTownReviews from "../services/reviews/getTownReviews.js";
+
 import "../styles/components/Modal.scss";
-import Footer from "../components/Footer.jsx";
 
 const DetailPage = () => {
-  const [town, setTown] = useState({});
+  const [details, setDetails] = useState({});
   const [reviews, setReviews] = useState({});
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const { id } = useParams();
+  const { state } = useLocation();
 
-  const photos = { ...town.photos };
+  const photos = { ...details.photos };
 
-  useEffect(async () => {
-    await getTownById(id).then((response) => {
-      setTown(response.town);
-      setReviews(response.reviews);
-    });
-  }, [setReviews]);
+  useEffect(() => {
+    let isMounted = true;
+    getTownById(state.id)
+      .then((town) => {
+        isMounted && setDetails(town);
+      })
+      .then(() => {
+        getTownReviews(state.id).then((reviews) => {
+          setReviews(reviews);
+        });
+      });
+
+    return () => (isMounted = false);
+  }, []);
 
   const handleOpen = (e) => {
     setModalOpen(true);
@@ -41,11 +48,11 @@ const DetailPage = () => {
   return (
     <>
       <Hero isSearch={false} cover={photos[0]} />
-      <About {...town} />
+      <About {...details} />
       <Gallery photos={photos} />
       <Comments
-        townName={town.name}
-        townId={town.id}
+        townName={details.name}
+        townId={details.id}
         reviewsState={{ reviews, setReviews }}
         openModal={handleOpen}
       />

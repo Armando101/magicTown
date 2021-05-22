@@ -11,9 +11,11 @@ const {
   getTownByKeyword,
   getTopRatedTowns,
   addTown,
+  updateTownRate,
 } = require("../controllers/towns");
 
 const { validateFields } = require("../middlewares/field-validator");
+const { validateJwt } = require("../middlewares/jwt-validator");
 
 const router = Router();
 
@@ -40,5 +42,16 @@ router.get(
 router.get("/toprated/", getTopRatedTowns);
 
 router.post("/", addTown);
+
+router.patch(
+  "/town/:id",
+  [
+    validateJwt,
+    check("id", "El identificador es obligatorio").not().isEmpty(),
+    check("rate", "La calificacion es obligatoria").not().isEmpty(),
+    validateFields,
+  ],
+  updateTownRate
+);
 
 module.exports = router;

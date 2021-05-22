@@ -13,15 +13,14 @@ const About = (town) => {
 
   const [toggleFav, setToggleFav] = useState(false);
 
-  const [userFavoriteId, setUserFavoriteId] = useState("asdas");
+  const [userFavoriteId, setUserFavoriteId] = useState();
 
   useEffect(() => {
     if (user == null) return;
 
-    const response = compareTownName(userFavorites, town.name);
-
-    if (response) {
-      setUserFavoriteId(response);
+    const id = compareTownName(userFavorites, town.name);
+    if (id) {
+      setUserFavoriteId(id);
       setToggleFav(true);
     }
   }, [town]);
@@ -61,7 +60,7 @@ const About = (town) => {
       <AboutWidgets
         toggleFav={toggleFav}
         setToggleFav={setToggleFav}
-        map={town.mapsURL}
+        mapURL={town.mapURL}
         userFavoriteId={userFavoriteId}
         townId={town.id}
       />

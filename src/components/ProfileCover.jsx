@@ -1,43 +1,43 @@
 import React, { useState } from "react";
+
 import Button from "./Button";
-import "@styles/components/ProfileCover.scss";
 import facebook from "../../public/assets/icons/facebook.svg";
 import instagram from "../../public/assets/icons/instagram.svg";
 import twitter from "../../public/assets/icons/twitter.svg";
 import { Modal } from "@material-ui/core";
-import updtUserInfo from "../services/updtUserInfo";
+
+import { useForm } from "../hooks/useForm";
+
+import patchUserInfo from "../services/users/patchUserInfo";
+
+import "@styles/components/ProfileCover.scss";
+import { useHistory } from "react-router";
 
 const ProfileCover = (user) => {
-  const initForm = {
+  const initialForm = {
     username: user.username,
     description: user.description,
     avatar: user.avatar,
   };
+  const [formPatchUserValues, handlePatchUserInputChange, resetForm] =
+    useForm(initialForm);
+  const { username, description, avatar } = formPatchUserValues;
 
-  const [form, setForm] = useState(initForm);
   const [isModalOpen, setModalOpen] = useState(false);
-  const [areFormErrors, setFormErrors] = useState(false);
+  const [isErrorInForm, setErrorInForm] = useState(false);
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const history = useHistory();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      !e.target.username.value &&
-      !e.target.description.value &&
-      !e.target.avatar.value
-    ) {
-      setFormErrors(true);
+    if (!username && !description && !avatar) {
+      setErrorInForm(true);
       return;
     }
 
-    await updtUserInfo(user.id, form).then((response) => {
-      user.setUser(response);
+    patchUserInfo(user.uid, { ...formPatchUserValues }).then((updatedUser) => {
+      user.setUser(null);
+      history.push("/login");
     });
   };
 
@@ -46,8 +46,8 @@ const ProfileCover = (user) => {
   };
 
   const handleClose = (e) => {
-    setFormErrors(false);
-    setForm(initForm);
+    resetForm();
+    setErrorInForm(false);
     setModalOpen(false);
   };
 
@@ -66,7 +66,7 @@ const ProfileCover = (user) => {
       </div>
       <Modal open={isModalOpen} onClose={handleClose}>
         <form onSubmit={handleSubmit} className="modal modal--user-form">
-          {areFormErrors && (
+          {isErrorInForm && (
             <p className="modal__error">
               ¡Por favor, llene correctamente los campos!
             </p>
@@ -76,21 +76,26 @@ const ProfileCover = (user) => {
           <input
             type="text"
             name="username"
-            id="username"
+            value={username}
             placeholder={user.username}
-            onChange={handleChange}
+            onChange={handlePatchUserInputChange}
           />
           <label htmlFor="description">Nombre de Descripción:</label>
           <textarea
             cols="10"
             rows="10"
             name="description"
-            id="description"
             placeholder="Describete!"
-            onChange={handleChange}
+            value={description}
+            onChange={handlePatchUserInputChange}
           />
           <label htmlFor="avatar">Imagen de tu Avatar (URL):</label>
-          <input type="url" name="avatar" id="avatar" onChange={handleChange} />
+          <input
+            type="url"
+            name="avatar"
+            value={avatar}
+            onChange={handlePatchUserInputChange}
+          />
           <Button label="Aplicar Cambios" />
         </form>
       </Modal>

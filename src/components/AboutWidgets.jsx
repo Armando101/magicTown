@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 
 import Map from "./Map";
 
@@ -7,13 +7,14 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 
 import { UserContext } from "../context/UserContext";
 
-import postService from "../services/postService";
-import getUserFavorites from "../services/getUserFavorites";
+import getUserFavorites from "../services/favorites/getUserFavorites";
+import deleteUserFavorite from "../services/favorites/deleteUserFavorite";
+import addUserFavorite from "../services/favorites/addUserFavorite";
 
 function AboutWidgets({
   toggleFav,
   setToggleFav,
-  map,
+  mapURL,
   townId,
   userFavoriteId,
 }) {
@@ -22,11 +23,8 @@ function AboutWidgets({
   const deleteFavorite = () => {
     setToggleFav(false);
 
-    fetch(`http://localhost:3001/favorites/${userFavoriteId}`, {
-      method: "DELETE",
-      headers: { "Content-type": "application/json" },
-    }).then(() => {
-      getUserFavorites(user.id).then((favorites) => {
+    deleteUserFavorite(userFavoriteId).then(() => {
+      getUserFavorites(user.uid).then((favorites) => {
         setUserFavorites(favorites);
       });
     });
@@ -34,8 +32,9 @@ function AboutWidgets({
 
   const addFavorite = () => {
     setToggleFav(true);
-    postService("favorites", { userId: user.id, townId }).then(() => {
-      getUserFavorites(user.id).then((favorites) => {
+
+    addUserFavorite(user.uid, { town: townId }).then(() => {
+      getUserFavorites(user.uid).then((favorites) => {
         setUserFavorites(favorites);
       });
     });
@@ -57,7 +56,7 @@ function AboutWidgets({
         )
       ) : null}
 
-      <Map map={map} />
+      <Map map={mapURL} />
     </div>
   );
 }

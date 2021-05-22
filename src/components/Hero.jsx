@@ -1,5 +1,7 @@
 import React from "react";
+
 import "../styles/components/Hero.scss";
+
 import SearchForm from "./SearchForm";
 
 const defaultCover = "https://i.ibb.co/1Mfq5qF/patzcuaro-michoacan.jpg";

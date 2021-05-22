@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
-import "../styles/components/favorites.scss";
+
 import ProfileCard from "./ProfileCard";
-import getUserReviews from "../services/getUserReviews";
 import ReviewCard from "./ReviewCard";
 
-const AboutUser = ({ id, description }) => {
-  const [reviews, setReviews] = useState([{}]);
+import getUserReviews from "../services/reviews/getUserReviews";
 
-  useEffect(async () => {
-    await getUserReviews(id).then((response) => {
-      setReviews(response);
+import "../styles/components/favorites.scss";
+
+const AboutUser = ({ uid, description }) => {
+  const [userReviews, setUserReviews] = useState([{}]);
+
+  useEffect(() => {
+    getUserReviews(uid).then((reviews) => {
+      setUserReviews(reviews);
     });
   }, []);
 
@@ -20,15 +23,15 @@ const AboutUser = ({ id, description }) => {
       <div className="favorites__content">
         <div className="reviews">
           <h2>Tus experiencias más recientes</h2>
-          {!reviews ? (
+          {!userReviews ? (
             <p>Aún no has escrito alguna reseña!</p>
           ) : (
-            reviews.map((review, index) => {
+            userReviews.map((review, index) => {
               const town = { ...review.town };
               return (
                 <div className="review-wrapper" key={index}>
                   <h3>{town.name}</h3>
-                  <ReviewCard reviewInfo={review} />
+                  <ReviewCard {...review} />
                 </div>
               );
             })
