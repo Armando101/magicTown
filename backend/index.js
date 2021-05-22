@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
 const { dbConnection } = require("./database/config");
+const path = require("path");
 
 const app = express();
 
@@ -15,7 +16,6 @@ app.use(cors());
 app.use(express.json());
 
 //Rutas
-
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/towns", require("./routes/towns"));
 app.use("/api/users", require("./routes/users"));

@@ -5,6 +5,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { SourceMapDevToolPlugin } = require("webpack");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   devtool: "eval-source-map",
@@ -60,6 +61,7 @@ module.exports = {
     new SourceMapDevToolPlugin({
       filename: "[file].map",
     }),
+    new Dotenv(),
   ],
   optimization: {
     minimize: true,
