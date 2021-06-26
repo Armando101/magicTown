@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import { UserContext } from "../context/UserContext.js";
+
 import AppRouter from "../routers/AppRouter";
 
 import renew from "../services/auth/renew";
@@ -9,18 +11,18 @@ function App() {
   const [user, setUser] = useState(UserContext._currentValue);
   const [userFavorites, setUserFavorites] = useState(UserContext._currentValue);
 
-  useEffect(() => {
+  useEffect(async () => {
     if (!user) {
-      renew()
-        .then((user) => {
-          setUser(user);
-          getUserFavorites(user.uid).then((favorites) => {
-            setUserFavorites(favorites);
-          });
-        })
-        .catch((error) => {
-          console.log(error.message);
-        });
+      try {
+        const renewedUser = await renew();
+        setUser(renewedUser);
+
+        const userFavorites = await getUserFavorites(renewedUser.uid);
+        setUserFavorites(userFavorites);
+      } catch (error) {
+        // setError(error.message);
+        console.log(error.message);
+      }
     }
   }, []);
 

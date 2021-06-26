@@ -1,6 +1,7 @@
 const { response } = require("express");
 
 const UserFavorite = require("../models/UserFavorites");
+const User = require("../models/User");
 
 const getUserFavorites = async (req, res = response) => {
   const { id } = req.params;
@@ -42,6 +43,11 @@ const addUserFavorite = async (req, res = response) => {
     favorite = new UserFavorite({ user: id, town: req.body.town });
     await favorite.save();
 
+    await User.findByIdAndUpdate(
+      { _id: id },
+      { $inc: { favoritesCounter: 1 } }
+    );
+
     res.status(201).json({ ok: true, favorite });
   } catch (error) {
     console.log(error);
@@ -53,6 +59,7 @@ const addUserFavorite = async (req, res = response) => {
 
 const deleteUserFavorite = async (req, res = response) => {
   const { id } = req.params;
+  const { uid } = req;
 
   try {
     const favorite = await UserFavorite.findById(id);
@@ -63,6 +70,12 @@ const deleteUserFavorite = async (req, res = response) => {
         msg: "Registro de Favorito no encontrado con ese ID",
       });
     }
+
+    await User.findByIdAndUpdate(
+      { _id: uid },
+      { $inc: { favoritesCounter: -1 } },
+      { new: true }
+    );
 
     await UserFavorite.findByIdAndDelete(id);
 

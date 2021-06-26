@@ -1,43 +1,40 @@
 import React from "react";
 import { Route, Switch, withRouter } from "react-router";
 
-import Header from "../layout/Header";
-import Brand from "../components/Brand";
-import Navbar from "../components/Navbar";
-import LoginForm from "../components/LoginForm";
-import RegisterForm from "../components/RegisterForm";
+import Header from "../components/common/Header/Header";
+import Brand from "../components/common/Header/Brand/Brand";
+import Navbar from "../components/common/Header/Navbar/Navbar";
+import LoginForm from "../components/AuthPage/LoginForm/LoginForm";
+import RegisterForm from "../components/AuthPage/RegisterForm/RegisterForm";
 
-import LoginPage from "../pages/LoginPage";
-import HomePage from "../pages/HomePage";
-import DetailPage from "../pages/DetailPage";
-import NotFoundPage from "../pages/NotFoundPage";
-import ResultPage from "../pages/ResultPage";
+import AuthPage from "../components/AuthPage/AuthPage";
+import HomePage from "../components/HomePage/HomePage";
+import DetailPage from "../components/DetailPage/DetailPage";
+import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
+import ResultPage from "../components/ResultPage/ResultPage";
 
 function NoAuthenticatedRouter() {
   return (
     <>
-      <Header>
-        <Brand />
-        <Navbar userInfo={null} />
-      </Header>
+      <Header />
 
       <Switch>
         <Route
           exact
           path="/login"
           render={() => (
-            <LoginPage>
+            <AuthPage>
               <LoginForm />
-            </LoginPage>
+            </AuthPage>
           )}
         />
         <Route
           exact
           path="/register"
           render={() => (
-            <LoginPage>
+            <AuthPage>
               <RegisterForm />
-            </LoginPage>
+            </AuthPage>
           )}
         />
 

@@ -1,0 +1,57 @@
+@import "../../../styles/base/colors.scss";
+
+.button {
+  min-width: 94px;
+  width: auto;
+  height: 37px;
+  margin: 0 24px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, $gradient-1, $gradient-2);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border: none;
+  &:hover {
+    filter: brightness(0.75);
+  }
+  > p {
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.25px;
+  }
+  &--header {
+    color: $grey-700;
+    background-image: none;
+    background-color: transparent;
+    > p {
+      color: $grey-700;
+    }
+    &:hover {
+      background-image: none;
+      background-color: $grey-200;
+    }
+  }
+  &--home {
+    background-image: none;
+    background-color: #fff;
+    > p {
+      color: $grey-700;
+    }
+    &:hover {
+      background-image: none;
+      background-color: $grey-200;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .button > p {
+    font-size: 1em;
+  }
+}

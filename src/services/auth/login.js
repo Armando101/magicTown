@@ -11,7 +11,6 @@ const login = async (username, password) => {
 
   if (body.ok) {
     localStorage.setItem("token", body.token);
-    localStorage.setItem("token-init-date", new Date().getTime());
   } else {
     throw Error(body.msg);
   }
@@ -21,6 +20,7 @@ const login = async (username, password) => {
     username: body.username,
     avatar: body.avatar,
     description: body.description,
+    role: body.role,
   };
 };
 

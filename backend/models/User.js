@@ -21,6 +21,21 @@ const UserSchema = Schema({
     default:
       "https://img.favpng.com/8/0/5/computer-icons-user-profile-avatar-png-favpng-6jJk1WU2YkTBLjFs4ZwueE8Ub_t.jpg",
   },
+  role: {
+    type: String,
+    required: true,
+    default: "Usuario",
+  },
+  reviewsCounter: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  favoritesCounter: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
 });
 
 UserSchema.method("toJSON", function () {

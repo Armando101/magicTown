@@ -1,0 +1,44 @@
+@import "../../../styles/abstract/mixins.scss";
+@import "../../../styles/base/colors.scss";
+
+.user-form {
+  @include flex-column;
+  width: 644px;
+
+  background-color: #fff;
+  border: 1px solid $primary-brand-600;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin: auto auto 30px;
+  > * {
+    margin: 10px 0;
+  }
+  > label {
+    font-size: 1.6rem;
+    letter-spacing: 0.15px;
+    color: $grey-500;
+    text-align: left;
+    font-weight: 600;
+  }
+  > input,
+  textarea {
+    padding: 20px 24px;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid $grey-300;
+  }
+  > textarea {
+    resize: none;
+  }
+  > button {
+    margin: 10px auto;
+    max-width: 400px;
+  }
+  &__error {
+    color: red;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin: auto;
+  }
+}

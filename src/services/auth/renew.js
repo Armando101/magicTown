@@ -9,7 +9,7 @@ const renew = async () => {
     localStorage.setItem("token", body.token);
     localStorage.setItem("token-init-date", new Date().getTime());
   } else {
-    throw Error();
+    throw Error(body.msg);
   }
 
   return {
@@ -17,6 +17,7 @@ const renew = async () => {
     username: body.username,
     avatar: body.avatar,
     description: body.description,
+    role: body.role,
   };
 };
 

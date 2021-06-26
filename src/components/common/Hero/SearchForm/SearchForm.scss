@@ -1,0 +1,95 @@
+@import "../../../../styles/base/fonts.scss";
+@import "../../../../styles/base/colors.scss";
+@import "../../../../styles/abstract/mixins.scss";
+@import "../../../../styles/base/breakpoints.scss";
+
+.searchbar {
+  @include flex-column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin: 150px auto;
+  text-align: center;
+  width: 100%;
+  &__form {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  &__input {
+    height: 100%;
+    width: 420px;
+    padding: 8px 8px 8px 16px;
+    font-size: 1.6rem;
+    font-family: $main-font-family;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    &::placeholder {
+      color: $grey-300;
+    }
+    @media (max-width: $breakpoint-m) {
+      width: auto;
+    }
+  }
+  &__submit {
+    height: 100%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: $primary-brand-500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    > img {
+      width: 70%;
+      height: 70%;
+    }
+    &:hover {
+      background-color: $primary-brand-600;
+    }
+  }
+  h1 {
+    font-size: 6.4rem;
+    margin-top: 80px;
+    color: $background-color;
+    text-shadow: 0px 0px 11px black;
+    & span {
+      color: $primary-brand-500;
+    }
+  }
+  @media screen and (max-width: $breakpoint-l) {
+    > h1 {
+      font-size: 4.8rem;
+    }
+  }
+  @media screen and (max-width: $breakpoint-m) {
+    > h1 {
+      font-size: 4.2rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .searchbar__input {
+    width: 240px;
+    font-size: 14px;
+  }
+  .searchbar__form {
+    height: 40px;
+  }
+  .searchbar__submit {
+    width: 40px;
+  }
+  .searchbar__submit > img {
+    width: 24px;
+    height: 24px;
+  }
+  .searchbar > h1 {
+    margin-top: 24px;
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 768px) {
+  .searchbar > h1 {
+    font-size: 40px;
+  }
+}

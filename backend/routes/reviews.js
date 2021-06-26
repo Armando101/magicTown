@@ -6,6 +6,7 @@ const { Router } = require("express");
 const { check } = require("express-validator");
 
 const {
+  getAllReviews,
   getLatestReviews,
   getTownReviews,
   getUserReviews,
@@ -16,6 +17,8 @@ const { validateFields } = require("../middlewares/field-validator");
 const { validateJwt } = require("../middlewares/jwt-validator");
 
 const router = Router();
+
+router.get("/", [validateJwt], getAllReviews);
 
 router.get("/latest", getLatestReviews);
 

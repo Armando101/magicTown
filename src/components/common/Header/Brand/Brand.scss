@@ -1,0 +1,37 @@
+@import "../../../../styles/abstract/mixins.scss";
+@import "../../../../styles/base/colors.scss";
+@import "../../../../styles/base/breakpoints.scss";
+
+.brand {
+  @include flex-row;
+  height: 100%;
+  align-items: center;
+  color: #fff;
+  > * {
+    margin: 0 20px;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  img {
+    height: 60px;
+    width: 60px;
+    @media (max-width: $breakpoint-s + 40px) {
+      margin: 0 5px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-xl) {
+    h2 {
+      font: 3em sans-serif;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 840px) {
+    justify-content: center;
+    h2 {
+      display: none;
+    }
+  }
+}

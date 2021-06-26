@@ -1,0 +1,29 @@
+@import "../../../styles/abstract/mixins.scss";
+
+.avatar {
+  @include flex-row;
+  height: 75px;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 10;
+  &__username {
+    margin-right: 15px;
+  }
+  &__userphoto {
+    height: 100%;
+    width: 75px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .commentscard {
+    .avatar__userphoto {
+      height: 100%;
+      width: 50px;
+    }
+  }
+  .avatar {
+    margin-right: 8px;
+  }
+}

@@ -21,6 +21,7 @@ const register = async (username, password) => {
     username: body.username,
     avatar: body.avatar,
     description: body.description,
+    role: body.role,
   };
 };
 

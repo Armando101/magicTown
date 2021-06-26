@@ -1,6 +1,17 @@
 const { response } = require("express");
 
 const TownReview = require("../models/TownReview");
+const User = require("../models/User");
+const Town = require("../models/Town");
+
+const getAllReviews = async (req, res = response) => {
+  const reviews = await TownReview.find().populate([
+    { path: "user", select: ["username"] },
+    { path: "town", select: ["name"] },
+  ]);
+
+  res.status(201).json({ ok: true, reviews });
+};
 
 const getLatestReviews = async (req, res = response) => {
   try {
@@ -80,6 +91,12 @@ const addReview = async (req, res = response) => {
     });
     await review.save();
 
+    await User.findByIdAndUpdate({ _id: id }, { $inc: { reviewsCounter: 1 } });
+    await Town.findByIdAndUpdate(
+      { _id: review.town },
+      { $inc: { reviewsCounter: 1, totalReviewsCounter: 1 } }
+    );
+
     res.status(201).json({ ok: true, review });
   } catch (error) {
     console.log(error);
@@ -90,6 +107,7 @@ const addReview = async (req, res = response) => {
 };
 
 module.exports = {
+  getAllReviews,
   getLatestReviews,
   getTownReviews,
   getUserReviews,

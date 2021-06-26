@@ -1,0 +1,56 @@
+@import "../../../styles/abstract/mixins.scss";
+@import "../../../styles/base/colors.scss";
+@import "../../../styles/base/breakpoints.scss";
+
+.header {
+  @include flex-row;
+  width: 100%;
+  height: 88px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  background-color: transparent;
+  transition: all 0.7s ease-in;
+  &--scrolled {
+    position: sticky;
+    top: 0;
+    background-color: $primary-brand-500;
+    max-width: none;
+  }
+  > * {
+    margin: 0 56px;
+  }
+  > nav {
+    @include flex-row;
+    height: 100%;
+    width: auto;
+    align-items: center;
+  }
+  &--fixed {
+    background-color: $primary-brand-500;
+  }
+  @media screen and (max-width: $breakpoint-xl) {
+    > * {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header > * {
+    margin: 0px;
+  }
+  .brand h2 {
+    font-size: 3.2rem !important;
+  }
+}

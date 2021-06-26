@@ -63,6 +63,16 @@ const TownSchema = Schema({
     required: true,
     default: [],
   },
+  reviewsCounter: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  totalReviewsCounter: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
 });
 
 TownSchema.index({

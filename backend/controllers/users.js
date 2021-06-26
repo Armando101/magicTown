@@ -2,6 +2,12 @@ const { response } = require("express");
 
 const User = require("../models/User");
 
+const getAllUsers = async (req, res = response) => {
+  const users = await User.find({ role: "Usuario" });
+
+  res.status(201).json({ ok: true, users });
+};
+
 const patchUserInfo = async (req, res = response) => {
   const { id } = req.params;
   const { uid } = req;
@@ -46,4 +52,28 @@ const patchUserInfo = async (req, res = response) => {
   }
 };
 
-module.exports = { patchUserInfo };
+const deleteUser = async (req, res = response) => {
+  const { id } = req.params;
+
+  try {
+    const user = await User.findById(id);
+
+    if (!user) {
+      return res.status(404).json({
+        ok: false,
+        msg: "Registro de Usuario no encontrado con ese ID",
+      });
+    }
+
+    await User.findByIdAndDelete(id);
+
+    res.status(201).json({ ok: true });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ ok: false, msg: "Please talk to the System Manager" });
+  }
+};
+
+module.exports = { getAllUsers, patchUserInfo, deleteUser };

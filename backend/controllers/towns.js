@@ -2,10 +2,10 @@ const { response } = require("express");
 
 const Town = require("../models/Town");
 
-const getTowns = async (req, res = response) => {
+const getAllTowns = async (req, res = response) => {
   const towns = await Town.find();
 
-  res.status(201).json(towns);
+  res.status(201).json({ ok: true, towns });
 };
 
 const getTownById = async (req, res = response) => {
@@ -43,6 +43,7 @@ const getTownByKeyword = async (req, res = response) => {
       (err, towns) => {
         if (err || towns.length == 0) {
           return res.status(400).json({
+            ok: false,
             msg: `No encontramos algun pueblo con esta palabra: '${keyword}'`,
           });
         }
@@ -135,7 +136,7 @@ const updateTownRate = async (req, res = response) => {
 };
 
 module.exports = {
-  getTowns,
+  getAllTowns,
   getTownById,
   getTownByKeyword,
   getTopRatedTowns,

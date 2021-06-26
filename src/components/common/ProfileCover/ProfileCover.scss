@@ -1,0 +1,96 @@
+@import "@styles/base/colors.scss";
+@import "@styles/abstract/mixins.scss";
+
+.profile-cover {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 3fr;
+  margin: 30px;
+  & > img {
+    width: 144px;
+    height: 144px;
+    border-radius: 300px;
+    border: solid 2px $primary-brand-300;
+    margin-left: auto;
+  }
+  &__user {
+    @include flex-column(center);
+    margin-left: 25px;
+
+    &-name {
+      font-size: 2.3rem;
+      font-weight: normal;
+      color: $grey-600;
+      margin-bottom: 10px;
+    }
+    &-date {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: $grey-400;
+    }
+  }
+  & Button {
+    align-self: center;
+    width: 240px;
+  }
+  &__social {
+    @include flex-row(normal, center);
+    align-self: center;
+    & > p {
+      font-size: 1.9rem;
+      font-weight: 500;
+      margin-right: 15px;
+    }
+    & img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .profile-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > img {
+      margin-left: 85px;
+    }
+    &__user {
+      margin-left: 0px;
+      flex-direction: row;
+    }
+    &__social {
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+  }
+  .profile-cover__social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .profile-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > img {
+      margin: auto;
+    }
+    &__user {
+      margin-left: 0px;
+      flex-direction: row;
+    }
+    &__social {
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+  }
+  .profile-cover__social img {
+    width: 40px;
+    height: 40px;
+    margin-right: none;
+  }
+}

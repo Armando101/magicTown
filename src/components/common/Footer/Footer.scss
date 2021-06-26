@@ -1,0 +1,11 @@
+@import "../../../styles/abstract/mixins.scss";
+@import "../../../styles/base/colors.scss";
+
+.footer {
+  @include flex-row;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: $primary-brand-600, $alpha: 0.8);
+}

@@ -33,6 +33,7 @@ const createUser = async (req, res = response) => {
       username: user.username,
       avatar: user.avatar,
       description: user.description,
+      role: user.role,
       token,
     });
   } catch (error) {
@@ -74,6 +75,7 @@ const userLogin = async (req, res = response) => {
       username: user.username,
       avatar: user.avatar,
       description: user.description,
+      role: user.role,
       token,
     });
   } catch (error) {
@@ -87,18 +89,24 @@ const userLogin = async (req, res = response) => {
 const renewToken = async (req, res = response) => {
   const { uid, username } = req;
 
-  const user = await User.findOne({ username });
+  try {
+    const user = await User.findOne({ username });
 
-  const token = await generateJWT(uid, username);
+    const token = await generateJWT(uid, username);
 
-  res.json({
-    ok: true,
-    token,
-    uid: user.id,
-    username: user.username,
-    avatar: user.avatar,
-    description: user.description,
-  });
+    res.json({
+      ok: true,
+      token,
+      uid: user.id,
+      username: user.username,
+      avatar: user.avatar,
+      description: user.description,
+      role: user.role,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(401).json({ ok: false, msg: "No es posible renovar el token" });
+  }
 };
 
 module.exports = {

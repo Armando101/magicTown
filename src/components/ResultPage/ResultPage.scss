@@ -1,0 +1,51 @@
+@import "../../styles/base/breakpoints.scss";
+@import "../../styles/base/colors.scss";
+
+.results-cards {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 10px 18px;
+  margin: 30px 0;
+  @media (max-width: $breakpoint-m) {
+    grid-template-columns: 1fr;
+  }
+}
+
+[role="progressbar"] {
+  margin: 56px auto;
+  color: $primary-brand-800;
+}
+
+.failure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__title {
+    font-size: 4rem;
+    color: $primary-brand-600;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  &__copy {
+    font-size: 1.9rem;
+    color: $grey-500;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    margin-bottom: 1.6rem;
+  }
+  &__drop {
+    font-size: 1.6rem;
+    color: $grey-500;
+    letter-spacing: 0.15px;
+    font-weight: normal;
+  }
+  > img {
+    margin-top: -50px;
+    width: 65%;
+    max-width: 750px;
+  }
+}

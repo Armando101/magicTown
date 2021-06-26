@@ -1,0 +1,22 @@
+@import "@styles/base/colors.scss";
+
+.drawer {
+  &__icon {
+    width: 1.2em !important;
+    height: 1.2em !important;
+    &--logout {
+      color: #ff8269;
+    }
+  }
+
+  &__button-text {
+    > span {
+      font-size: 1.6rem;
+    }
+    &--logout {
+      > span {
+        color: #ff8269;
+      }
+    }
+  }
+}

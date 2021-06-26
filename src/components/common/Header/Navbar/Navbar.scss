@@ -1,0 +1,95 @@
+@import "../../../../styles/abstract/mixins.scss";
+@import "../../../../styles/base/colors.scss";
+@import "../../../../styles/base/breakpoints.scss";
+
+.navbar {
+  > .button--navbar-popper {
+    @include flex-column;
+    background-image: none;
+    background-color: #fff;
+    min-width: auto;
+    margin-right: -8px;
+    padding: 0 16px 0 8px;
+    > p {
+      transition: all 0.3s ease-in;
+      padding: 0;
+      width: 20px;
+      border: 1px solid #000;
+      margin: 0 auto;
+    }
+    &::before {
+      transition: all 0.3s ease-in;
+      content: "";
+      width: 20px;
+      border: 1px solid #000;
+      margin: auto auto 4px;
+    }
+    &::after {
+      transition: all 0.3s ease-in;
+      content: "";
+      width: 20px;
+      border: 1px solid #000;
+      margin: 4px auto auto;
+    }
+    &.--clicked {
+      > p {
+        border: none;
+      }
+      &::before {
+        transform: rotate(45deg) translate(8px, 4px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(4px, 1px);
+      }
+    }
+    &:hover {
+      background-image: none;
+      background-color: $grey-200;
+    }
+  }
+  @media screen and (max-width: $breakpoint-m) {
+    > .button {
+      margin: 0 12px;
+      > p {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+      }
+    }
+    > .button--navbar-popper {
+      > p {
+        padding: 0;
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-m - 80px) {
+    > .button {
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: $breakpoint-s + 40px) {
+    > .button {
+      height: auto;
+    }
+  }
+}
+.navbar-menu {
+  margin-top: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  > .button {
+    margin: 0;
+    height: auto;
+    background-image: none;
+    background-color: transparent;
+    > p {
+      color: $grey-700;
+      padding: 15px 24px;
+      border-radius: 8px;
+      font-size: 1.6rem;
+      &:hover {
+        background-image: none;
+        background-color: $grey-200;
+      }
+    }
+  }
+}

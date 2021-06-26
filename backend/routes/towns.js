@@ -6,7 +6,7 @@ const { Router } = require("express");
 const { check } = require("express-validator");
 
 const {
-  getTowns,
+  getAllTowns,
   getTownById,
   getTownByKeyword,
   getTopRatedTowns,
@@ -19,7 +19,7 @@ const { validateJwt } = require("../middlewares/jwt-validator");
 
 const router = Router();
 
-router.get("/", getTowns);
+router.get("/", [validateJwt], getAllTowns);
 
 router.get(
   "/town/:id",
