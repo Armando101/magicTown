@@ -20,15 +20,6 @@ function Discover() {
     console.error(error.message);
   }
 
-  // useEffect(() => {
-  //   let isMounted = true;
-  //   getTopRated().then((towns) => {
-  //     isMounted && setTopRatedTowns(towns);
-  //   });
-
-  //   return () => (isMounted = false);
-  // }, []);
-
   return (
     <div className="discover">
       <h3 className="section-title">

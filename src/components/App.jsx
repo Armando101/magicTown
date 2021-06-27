@@ -20,7 +20,6 @@ function App() {
         const userFavorites = await getUserFavorites(renewedUser.uid);
         setUserFavorites(userFavorites);
       } catch (error) {
-        // setError(error.message);
         console.log(error.message);
       }
     }

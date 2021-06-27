@@ -71,7 +71,7 @@ const getTopRatedTowns = async (req, res = response) => {
 
 const addTown = async (req, res = response) => {
   const { name } = req.body;
-
+  console.log("uwu");
   try {
     let town = await Town.findOne({ name });
 
@@ -83,8 +83,6 @@ const addTown = async (req, res = response) => {
     }
 
     town = new Town(req.body);
-
-    // console.log(town);
     await town.save();
 
     res.status(201).json({
@@ -117,8 +115,29 @@ const addTown = async (req, res = response) => {
 
 const updateTown = async (req, res = response) => {
   const { id } = req.params;
-
   try {
+    if (req.body.rate) {
+      const { rateAccumulator, totalReviewsCounter } = await Town.findById(
+        { _id: id },
+        { rateAccumulator: 1, totalReviewsCounter: 1 }
+      );
+      const averageRate = Math.trunc(rateAccumulator / totalReviewsCounter);
+
+      const updatedTown = await Town.findByIdAndUpdate(
+        id,
+        { rate: averageRate },
+        {
+          new: true,
+        }
+      );
+      if (!updatedTown) {
+        return res.status(404).json({
+          ok: false,
+          msg: "Pueblo no encontrado con el ID dado",
+        });
+      }
+      res.status(201).json({ ok: true, updatedTown });
+    }
     const updatedTown = await Town.findByIdAndUpdate(id, req.body, {
       new: true,
     });

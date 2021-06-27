@@ -24,14 +24,6 @@ function Reviews() {
     console.error(error.message);
   }
 
-  // useEffect(() => {
-  //   let isMounted = true;
-  //   getLatestReviews().then((reviews) => {
-  //     isMounted && setLatestReviews(reviews);
-  //   });
-  //   return () => (isMounted = false);
-  // }, []);
-
   return (
     <div className="review">
       <div className="review__image" role="image" aria-label="Guanajuato">

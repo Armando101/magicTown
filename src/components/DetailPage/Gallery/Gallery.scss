@@ -1,6 +1,5 @@
 .gallery {
   width: 100%;
-  // overflow: hidden;
   padding: 30px;
   position: relative;
   white-space: nowrap;
@@ -15,8 +14,6 @@
   }
   &__carrousel {
     overflow: scroll;
-    // left: 0px;
-    // position: relative;
   }
   &__img {
     width: 326px;

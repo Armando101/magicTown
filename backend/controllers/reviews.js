@@ -94,7 +94,13 @@ const addReview = async (req, res = response) => {
     await User.findByIdAndUpdate({ _id: id }, { $inc: { reviewsCounter: 1 } });
     await Town.findByIdAndUpdate(
       { _id: review.town },
-      { $inc: { reviewsCounter: 1, totalReviewsCounter: 1 } }
+      {
+        $inc: {
+          reviewsCounter: 1,
+          totalReviewsCounter: 1,
+          rateAccumulator: req.body.rate,
+        },
+      }
     );
 
     res.status(201).json({ ok: true, review });

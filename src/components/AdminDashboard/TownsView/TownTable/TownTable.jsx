@@ -28,7 +28,7 @@ import useTable from "../../useTable/useTable";
 
 import { useFetch } from "../../../../hooks/useFetch";
 import getAllTowns from "../../../../services/towns/getAllTowns";
-import patchTownRate from "../../../../services/towns/patchTownRate";
+import patchTown from "../../../../services/towns/patchTown";
 import addTown from "../../../../services/towns/addTown";
 
 const useStyles = makeStyles((theme) => ({
@@ -122,17 +122,16 @@ function TownsTable() {
 
   const addOrEdit = async (town, resetForm) => {
     if (!town.id || town.id == 0) {
-      console.log(`insert town`, town);
       await addTown(town);
     } else {
-      console.log(`update town`, town);
-      await patchTownRate(town.id, { ...town });
+      await patchTown(town.id, { ...town });
     }
     resetForm();
     setRecordForEdit(null);
 
     const data = await getAllTowns();
     setRecords(data);
+    setFormVisible(false);
   };
 
   return (

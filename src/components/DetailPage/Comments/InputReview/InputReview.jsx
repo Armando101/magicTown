@@ -11,7 +11,7 @@ import { useForm } from "../../../../hooks/useForm";
 
 import addReview from "../../../../services/reviews/addReview";
 import getTownReviews from "../../../../services/reviews/getTownReviews";
-import patchTownRate from "../../../../services/towns/patchTownRate";
+import patchTown from "../../../../services/towns/patchTown";
 
 import "./InputReview.scss";
 
@@ -49,7 +49,7 @@ const InputReview = ({ townId, setReviews, openModal }) => {
       const reviews = await getTownReviews(townId);
       setReviews(reviews);
 
-      await patchTownRate(townId, { rate });
+      await patchTown(townId, { rate });
     } catch (error) {
       console.error(error.message);
     }

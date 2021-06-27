@@ -20,9 +20,31 @@ const initialFValues = {
 };
 
 export default function TownForm({ addOrEdit, recordForEdit }) {
+  useEffect(() => {
+    if (recordForEdit != null) {
+      const {
+        rateAccumulator,
+        reviewsCounter,
+        totalReviewsCounter,
+        ethnics,
+        rate,
+        ...filteredValues
+      } = recordForEdit;
+      setValues({
+        ...filteredValues,
+        attractions: recordForEdit.attractions.join(","),
+        festivities: recordForEdit.festivities.join(","),
+        dishes: recordForEdit.dishes.join(","),
+        ethnics: recordForEdit.ethnics.join(","),
+      });
+    }
+  }, [recordForEdit]);
+
   const validate = (fieldValues = values) => {
     let temp = { ...errors };
     Object.keys(fieldValues).forEach((key) => {
+      if (key == "ethnics") return;
+
       if (key in fieldValues) {
         temp[key] = fieldValues[key] ? "" : "This field is required.";
       }
@@ -39,7 +61,6 @@ export default function TownForm({ addOrEdit, recordForEdit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (validate()) {
       addOrEdit(
         {
@@ -53,18 +74,6 @@ export default function TownForm({ addOrEdit, recordForEdit }) {
       );
     }
   };
-
-  useEffect(() => {
-    if (recordForEdit != null) {
-      setValues({
-        ...recordForEdit,
-        attractions: recordForEdit.attractions.join(","),
-        festivities: recordForEdit.festivities.join(","),
-        dishes: recordForEdit.dishes.join(","),
-        ethnics: recordForEdit.ethnics.join(","),
-      });
-    }
-  }, [recordForEdit]);
 
   return (
     <Form onSubmit={handleSubmit}>

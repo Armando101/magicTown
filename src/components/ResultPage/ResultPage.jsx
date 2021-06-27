@@ -23,10 +23,6 @@ function ResultPage() {
 
   const { keyword } = useParams();
 
-  // const [towns, setTowns] = useState([{}]);
-  // const [errorFound, setError] = useState(false);
-  // const [isLoading, setLoading] = useState(true);
-
   useEffect(() => {
     setResultState({ ...resultState, isLoading: true });
     setTimeout(async () => {

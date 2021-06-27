@@ -45,7 +45,6 @@
   }
   .town-card {
     @include flex-column;
-    // width: 0px;
   }
   .town-card__body > .button {
     margin-top: 16px;

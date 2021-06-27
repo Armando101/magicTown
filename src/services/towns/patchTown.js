@@ -1,6 +1,6 @@
 import { fetchWithToken } from "../../helpers/fetch";
 
-const patchTownRate = async (id, rate) => {
+const patchTown = async (id, rate) => {
   const resp = await fetchWithToken(`towns/town/${id}`, { ...rate }, "PATCH");
 
   const body = await resp.json();
@@ -12,4 +12,4 @@ const patchTownRate = async (id, rate) => {
   }
 };
 
-export default patchTownRate;
+export default patchTown;

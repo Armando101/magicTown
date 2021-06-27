@@ -74,6 +74,11 @@ const TownSchema = Schema({
     required: true,
     default: 0,
   },
+  rateAccumulator: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
 });
 
 TownSchema.index({

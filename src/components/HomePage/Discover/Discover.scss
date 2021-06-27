@@ -30,7 +30,6 @@
 @media (max-width: $breakpoint-m) {
   .discover {
     display: grid;
-    // grid-template-rows: none;
     grid-template-columns: 1fr;
   }
   .discover > .section-title {
