@@ -11,7 +11,7 @@ const {
   getTownByKeyword,
   getTopRatedTowns,
   addTown,
-  updateTownRate,
+  updateTown,
 } = require("../controllers/towns");
 
 const { validateFields } = require("../middlewares/field-validator");
@@ -48,10 +48,9 @@ router.patch(
   [
     validateJwt,
     check("id", "El identificador es obligatorio").not().isEmpty(),
-    check("rate", "La calificacion es obligatoria").not().isEmpty(),
     validateFields,
   ],
-  updateTownRate
+  updateTown
 );
 
 module.exports = router;

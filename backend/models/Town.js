@@ -9,6 +9,7 @@ const TownSchema = Schema({
   rate: {
     type: Number,
     required: true,
+    default: 0,
   },
   incorporation_year: {
     type: String,

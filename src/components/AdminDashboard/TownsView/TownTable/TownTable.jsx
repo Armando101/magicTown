@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import PageHeader from "../../PageHeader/PageHeader";
 import Controls from "../../controls/Controls";
+import TownForm from "../TownForm/TownForm";
 
 import {
   Paper,
@@ -10,6 +11,7 @@ import {
   TableRow,
   Toolbar,
   InputAdornment,
+  CircularProgress,
 } from "@material-ui/core";
 
 import {
@@ -26,6 +28,8 @@ import useTable from "../../useTable/useTable";
 
 import { useFetch } from "../../../../hooks/useFetch";
 import getAllTowns from "../../../../services/towns/getAllTowns";
+import patchTownRate from "../../../../services/towns/patchTownRate";
+import addTown from "../../../../services/towns/addTown";
 
 const useStyles = makeStyles((theme) => ({
   pageContent: {
@@ -77,11 +81,20 @@ const headCells = [
 function TownsTable() {
   const classes = useStyles();
   const [records, setRecords] = useState([]);
+  const [recordForEdit, setRecordForEdit] = useState(null);
+  const [showForm, setFormVisible] = useState(false);
   const [filterFn, setFilterFn] = useState({
     fn: (items) => {
       return items;
     },
   });
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   const { data, loading } = useFetch(getAllTowns);
   useEffect(() => {
@@ -105,6 +118,21 @@ function TownsTable() {
         }
       },
     });
+  };
+
+  const addOrEdit = async (town, resetForm) => {
+    if (!town.id || town.id == 0) {
+      console.log(`insert town`, town);
+      await addTown(town);
+    } else {
+      console.log(`update town`, town);
+      await patchTownRate(town.id, { ...town });
+    }
+    resetForm();
+    setRecordForEdit(null);
+
+    const data = await getAllTowns();
+    setRecords(data);
   };
 
   return (
@@ -134,70 +162,95 @@ function TownsTable() {
             variant={"outlined"}
             startIcon={<AddCircle position={"start"} />}
             className={classes.newButton}
+            color={"primary"}
+            onClick={() => {
+              setRecordForEdit(null);
+              setFormVisible(true);
+            }}
           />
         </Toolbar>
-        <TblContainer>
-          <TblHead />
-          <TableBody>
-            {recordsAfterPagingAndSorting().map((town) => (
-              <TableRow key={town.id}>
-                <TableCell className={classes.tableCell}>{town.rate}</TableCell>
-                <TableCell className={classes.tableCell}>{town.name}</TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.state}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.incorporation_year}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.weather}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.biome}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.attractions.length}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.festivities.length}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.dishes.length}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.ethnics.length}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.reviewsCounter}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {town.totalReviewsCounter}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  <Controls.ActionButton
-                    color={"secondary"}
-                    variant={"outlined"}
-                    // onClick={() => {
-                    //   handleDelete(user.id);
-                    // }}
-                  >
-                    <Edit className={classes.actionsButton} />
-                  </Controls.ActionButton>
-                  <Controls.ActionButton
+        {isLoading ? (
+          <>
+            <CircularProgress size={160} />
+          </>
+        ) : (
+          <>
+            <TblContainer>
+              <TblHead />
+              <TableBody>
+                {recordsAfterPagingAndSorting().map((town) => (
+                  <TableRow key={town.id}>
+                    <TableCell className={classes.tableCell}>
+                      {town.rate}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.name}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.state}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.incorporation_year}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.weather}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.biome}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.attractions.length}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.festivities.length}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.dishes.length}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.ethnics.length}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.reviewsCounter}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {town.totalReviewsCounter}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      <Controls.ActionButton
+                        color={"secondary"}
+                        variant={"outlined"}
+                        onClick={() => {
+                          setRecordForEdit(town);
+                          setFormVisible(true);
+                        }}
+                      >
+                        <Edit className={classes.actionsButton} />
+                      </Controls.ActionButton>
+                      {/* <Controls.ActionButton
                     color={"primary"}
                     onClick={() => {
                       console.log(`clicked`);
                     }}
                   >
                     <Info className={classes.actionsButton} />
-                  </Controls.ActionButton>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </TblContainer>
-        <TblPagination />
+                  </Controls.ActionButton> */}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </TblContainer>
+            <TblPagination />
+          </>
+        )}
       </Paper>
+      {showForm && (
+        <>
+          <Paper className={classes.pageContent}>
+            <TownForm recordForEdit={recordForEdit} addOrEdit={addOrEdit} />
+          </Paper>
+        </>
+      )}
     </>
   );
 }

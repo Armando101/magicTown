@@ -16,7 +16,9 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:hover": {
       backgroundColor: "#db2829",
-      color: "#fff",
+      "& .MuiButton-label": {
+        color: "#fff",
+      },
     },
   },
   secondary: {
@@ -37,6 +39,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "linear-gradient(to right, #0e41c2, #356bf2)",
     "& .MuiButton-label": {
       color: "#fff",
+    },
+    "&:hover": {
+      backgroundImage: "none",
+      borderColor: "#0e41c2",
+      "& .MuiButton-label": {
+        color: "#000",
+      },
     },
   },
 }));

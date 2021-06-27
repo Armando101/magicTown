@@ -6,7 +6,13 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   input: {
     "& .MuiInputLabel-outlined": {
-      fontSize: "2rem",
+      fontSize: "1.65rem",
+    },
+    "& .MuiInputBase-root": {
+      fontSize: "1.6rem",
+    },
+    "& .MuiSvgIcon-root": {
+      fontSize: "2.5rem",
     },
   },
 }));

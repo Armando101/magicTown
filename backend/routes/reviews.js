@@ -11,6 +11,7 @@ const {
   getTownReviews,
   getUserReviews,
   addReview,
+  deleteReview,
 } = require("../controllers/reviews");
 
 const { validateFields } = require("../middlewares/field-validator");
@@ -48,6 +49,16 @@ router.post(
     validateFields,
   ],
   addReview
+);
+
+router.delete(
+  "/:id",
+  [
+    validateJwt,
+    check("id", "El identificador es obligatorio").not().isEmpty(),
+    validateFields,
+  ],
+  deleteReview
 );
 
 module.exports = router;

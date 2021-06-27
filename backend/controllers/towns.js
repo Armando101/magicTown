@@ -84,24 +84,28 @@ const addTown = async (req, res = response) => {
 
     town = new Town(req.body);
 
+    // console.log(town);
     await town.save();
 
     res.status(201).json({
-      id: town.id,
-      name: town.name,
-      rate: town.rate,
-      incorporation_year: town.incorporation_year,
-      description: town.description,
-      state: town.state,
-      weather: town.weather,
-      biome: town.biome,
-      attractions: town.attractions,
-      festivities: town.festivities,
-      dishes: town.dishes,
-      ethnics: town.ethnics,
-      photos: town.photos,
-      mapURL: town.mapURL,
-      coverURL: town.coverURL,
+      ok: true,
+      town: {
+        id: town.id,
+        name: town.name,
+        rate: town.rate,
+        incorporation_year: town.incorporation_year,
+        description: town.description,
+        state: town.state,
+        weather: town.weather,
+        biome: town.biome,
+        attractions: town.attractions,
+        festivities: town.festivities,
+        dishes: town.dishes,
+        ethnics: town.ethnics,
+        photos: town.photos,
+        mapURL: town.mapURL,
+        coverURL: town.coverURL,
+      },
     });
   } catch (error) {
     console.log(error);
@@ -111,7 +115,7 @@ const addTown = async (req, res = response) => {
   }
 };
 
-const updateTownRate = async (req, res = response) => {
+const updateTown = async (req, res = response) => {
   const { id } = req.params;
 
   try {
@@ -141,5 +145,5 @@ module.exports = {
   getTownByKeyword,
   getTopRatedTowns,
   addTown,
-  updateTownRate,
+  updateTown,
 };

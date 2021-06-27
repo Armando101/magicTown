@@ -14,7 +14,8 @@
 
 [role="progressbar"] {
   margin: 56px auto;
-  color: $primary-brand-800;
+  color: $primary-brand-800 !important;
+  display: block !important;
 }
 
 .failure {

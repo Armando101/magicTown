@@ -35,7 +35,6 @@ function AuthenticatedRouter({ userInfo }) {
           </>
         ) : (
           <>
-            {/* <Redirect to={"/admin/dashboard/users"} /> */}
             <Route
               exact
               path="/admin/dashboard"

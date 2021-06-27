@@ -106,10 +106,35 @@ const addReview = async (req, res = response) => {
   }
 };
 
+const deleteReview = async (req, res = response) => {
+  const { id } = req.params;
+
+  try {
+    const review = await TownReview.findById(id);
+
+    if (!review) {
+      return res.status(404).json({
+        ok: false,
+        msg: "Registro de Reseña no encontrado con ese ID",
+      });
+    }
+
+    await TownReview.findByIdAndDelete(id);
+
+    res.status(201).json({ ok: true });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ ok: false, msg: "Please talk to the System Manager" });
+  }
+};
+
 module.exports = {
   getAllReviews,
   getLatestReviews,
   getTownReviews,
   getUserReviews,
   addReview,
+  deleteReview,
 };

@@ -10,6 +10,7 @@ import {
   TableRow,
   Toolbar,
   InputAdornment,
+  CircularProgress,
 } from "@material-ui/core";
 
 import { Search, RateReview, CloseOutlined } from "@material-ui/icons";
@@ -20,6 +21,7 @@ import useTable from "../../useTable/useTable";
 
 import { useFetch } from "../../../../hooks/useFetch";
 import getAllReviews from "../../../../services/reviews/getAllReviews";
+import deleteReview from "../../../../services/reviews/deleteReview";
 
 const useStyles = makeStyles((theme) => ({
   pageContent: {
@@ -64,6 +66,13 @@ function ReviewsTable() {
       return items;
     },
   });
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   const { data, loading } = useFetch(getAllReviews);
   useEffect(() => {
@@ -82,10 +91,34 @@ function ReviewsTable() {
         } else {
           return items.filter((x) => {
             target = target.toLowerCase();
-            return x.username.toLowerCase().includes(target);
+            return x.user.username.toLowerCase().includes(target);
           });
         }
       },
+    });
+  };
+
+  const handleDelete = (id) => {
+    swal({
+      title: "Are you sure to delete this record?",
+      text: " You can't undo this operation?",
+      icon: "warning",
+      dangerMode: true,
+      buttons: {
+        cancel: {
+          visible: true,
+          text: "Cancel",
+        },
+        confirm: {
+          text: "Yes, delete this record",
+        },
+      },
+    }).then(async (willDeleteRecord) => {
+      if (willDeleteRecord) {
+        await deleteReview(id);
+        const reviews = await getAllReviews();
+        setRecords(reviews);
+      }
     });
   };
 
@@ -112,39 +145,47 @@ function ReviewsTable() {
             onChange={handleSearch}
           />
         </Toolbar>
-        <TblContainer>
-          <TblHead />
-          <TableBody>
-            {recordsAfterPagingAndSorting().map((review) => (
-              <TableRow key={review.id}>
-                <TableCell className={classes.tableCell}>
-                  {review.rate}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {review.user.username}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {review.town.name}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {review.description}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  <Controls.ActionButton
-                    color={"delete"}
-                    variant={"outlined"}
-                    // onClick={() => {
-                    //   handleDelete(user.id);
-                    // }}
-                  >
-                    <CloseOutlined className={classes.actionsButton} />
-                  </Controls.ActionButton>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </TblContainer>
-        <TblPagination />
+        {isLoading ? (
+          <>
+            <CircularProgress size={160} />
+          </>
+        ) : (
+          <>
+            <TblContainer>
+              <TblHead />
+              <TableBody>
+                {recordsAfterPagingAndSorting().map((review) => (
+                  <TableRow key={review.id}>
+                    <TableCell className={classes.tableCell}>
+                      {review.rate}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {review.user.username}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {review.town.name}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {review.description}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      <Controls.ActionButton
+                        color={"delete"}
+                        variant={"outlined"}
+                        onClick={() => {
+                          handleDelete(review.id);
+                        }}
+                      >
+                        <CloseOutlined className={classes.actionsButton} />
+                      </Controls.ActionButton>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </TblContainer>
+            <TblPagination />
+          </>
+        )}
       </Paper>
     </>
   );

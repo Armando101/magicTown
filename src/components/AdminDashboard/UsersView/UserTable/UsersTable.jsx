@@ -13,6 +13,7 @@ import {
   TableRow,
   Toolbar,
   InputAdornment,
+  CircularProgress,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Search, CloseOutlined, Info } from "@material-ui/icons";
@@ -71,6 +72,13 @@ function UsersTable() {
       return items;
     },
   });
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   const { data, loading } = useFetch(getAllUsers);
   useEffect(() => {
@@ -143,52 +151,60 @@ function UsersTable() {
             onChange={handleSearch}
           />
         </Toolbar>
-        <TblContainer>
-          <TblHead />
-          <TableBody>
-            {recordsAfterPagingAndSorting().map((user) => (
-              <TableRow key={user.id}>
-                <TableCell>
-                  <Avatar src={user.avatar} alt={user.username} />
-                </TableCell>
-                <TableCell
-                  className={(classes.tableCell, classes.tableCell_Medium)}
-                >
-                  {user.username}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {user.description}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {user.reviewsCounter}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {user.favoritesCounter}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  <Controls.ActionButton
-                    color={"delete"}
-                    variant={"outlined"}
-                    onClick={() => {
-                      handleDelete(user.id);
-                    }}
-                  >
-                    <CloseOutlined className={classes.actionsButton} />
-                  </Controls.ActionButton>
-                  <Controls.ActionButton
+        {isLoading ? (
+          <>
+            <CircularProgress size={160} />
+          </>
+        ) : (
+          <>
+            <TblContainer>
+              <TblHead />
+              <TableBody>
+                {recordsAfterPagingAndSorting().map((user) => (
+                  <TableRow key={user.id}>
+                    <TableCell>
+                      <Avatar src={user.avatar} alt={user.username} />
+                    </TableCell>
+                    <TableCell
+                      className={(classes.tableCell, classes.tableCell_Medium)}
+                    >
+                      {user.username}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {user.description}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {user.reviewsCounter}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {user.favoritesCounter}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      <Controls.ActionButton
+                        color={"delete"}
+                        variant={"outlined"}
+                        onClick={() => {
+                          handleDelete(user.id);
+                        }}
+                      >
+                        <CloseOutlined className={classes.actionsButton} />
+                      </Controls.ActionButton>
+                      {/* <Controls.ActionButton
                     color={"primary"}
                     onClick={() => {
                       console.log(`clicked`);
                     }}
                   >
                     <Info className={classes.actionsButton} />
-                  </Controls.ActionButton>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </TblContainer>
-        <TblPagination />
+                  </Controls.ActionButton> */}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </TblContainer>
+            <TblPagination />
+          </>
+        )}
       </Paper>
     </>
   );

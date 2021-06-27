@@ -11,6 +11,33 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     fontSize: "1.4rem",
   },
+  secondary: {
+    backgroundColor: "#fff",
+    borderColor: "#0e41c2",
+    "& .MuiButton-label": {
+      color: "#000",
+    },
+    "&:hover": {
+      backgroundColor: "#0e41c2",
+      color: "#fff",
+      "& .MuiButton-label": {
+        color: "#fff",
+      },
+    },
+  },
+  primary: {
+    backgroundImage: "linear-gradient(to right, #0e41c2, #356bf2)",
+    "& .MuiButton-label": {
+      color: "#fff",
+    },
+    "&:hover": {
+      backgroundImage: "none",
+      borderColor: "#0e41c2",
+      "& .MuiButton-label": {
+        color: "#000",
+      },
+    },
+  },
 }));
 
 function Button({ text, size, color, variant, onClick, ...other }) {
@@ -23,7 +50,7 @@ function Button({ text, size, color, variant, onClick, ...other }) {
       onClick={onClick}
       {...other}
       classes={{
-        root: classes.root,
+        root: `${classes.root} ${classes[color]}`,
         label: classes.label,
       }}
     >

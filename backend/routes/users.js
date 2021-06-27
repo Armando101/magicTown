@@ -17,6 +17,7 @@ const { validateJwt } = require("../middlewares/jwt-validator");
 const router = Router();
 
 router.get("/", [validateJwt], getAllUsers);
+
 router.patch(
   "/:id",
   [
@@ -26,6 +27,7 @@ router.patch(
   ],
   patchUserInfo
 );
+
 router.delete(
   "/:id",
   [
