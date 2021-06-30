@@ -42,6 +42,10 @@ Production Environment
 npm run build
 ```
 
+## 📎 Liga de la aplicación:
+
+* [Try me!](https://pueblos-magicos-frontend.herokuapp.com/)
+
 ## 💻 Colaboradores
 
 * María Herminia Jiménez Castillo - [Herminia-Jimenez](https://github.com/Herminia-Jimenez/)
